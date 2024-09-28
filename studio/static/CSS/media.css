@@ -1,0 +1,301 @@
+
+/* секция .image-banner фиксация текста */
+@media (max-width: 1240px) and (min-width: 768px) {  
+    .banner-title-top {
+        top: 550px;
+        right: 50px;
+    }
+   
+}
+/* секция .imobile-card-wark  скрыта */
+@media (max-width: 1240px) {
+    .mobile-card-wark {
+      display: none;
+    }
+  }
+
+@media (max-width: 1150px) and (min-width: 1100px) {
+    .conteiner-card-top-wark {
+        gap: 3px; /* Устанавливаем расстояние между картами */
+        
+    }
+}
+@media (max-width: 1024px){
+
+  .about-page_conteiner-title {
+
+    margin-left:0px;
+    margin-top: 0px;
+    margin-top: 300px;
+
+  }
+
+  
+ 
+}
+
+@media (max-width: 1158px) {
+
+  .conteiner-card-top-wark  {
+
+    height: 600px;
+  }
+
+}
+
+@media (max-width: 1100px) {
+  
+    .mobile-card-wark {
+      display: block; /* Включаем .mobile-card-wark */
+    }
+    .form-button-one {/* форма-кнопка */
+
+      margin-top: 20px;
+    }
+    .form-inline-top {
+
+      margin-top: 20px;
+      
+    }
+    
+    .column-space-star-left { /*колонка ракета смещена левая  */
+      margin-left: 70px;
+
+    }
+    .column-space-star-right {/*колонка ракета смещена лправая */
+
+      margin-right: 70px
+
+    }
+}
+
+@media (max-width: 1075px) {/* увеличиваем пространство для карточек */
+
+  .center-raceta-mars-description-conteiner {
+
+    gap:320px;
+
+  }
+
+
+}
+@media (max-width: 992px) {/* logo-mars */
+  .navbar-brand {
+
+    display: none;
+  }
+
+  .center-raceta-mars-description-conteiner {
+
+    gap:200px;
+
+  }
+
+
+}
+
+@media (max-width: 790px) {
+
+  .card-top-wark-section {
+
+    height: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .card-top-wark-section {
+
+    height: 880px;
+  }
+  .footer_new  {
+
+    display: none;
+  } 
+  .mobile-footer_section {
+
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {/* замена главного экрана на 768 px */
+
+ 
+
+  .banner{/* замена главного экрана на 768 px */
+
+    display: none;
+
+  }
+
+  .planshet-banner  {/* замена главного экрана на 768 px */
+
+    display: block;
+
+  }
+
+  .planshet_vizitca {/* баннер  включаем */
+
+    display: block;
+  }
+
+  .planshet-vizitca__image {/* баннер  включаем  */
+
+    display: block;
+  }
+
+  .vizitka-conteiner {
+
+    display: none;
+  }
+ 
+  /* .form-img-conteiner {
+
+    width: ;
+  } */
+
+  .form-inline-top {/* меняется форма на колонку */
+
+    flex-direction: column;
+    gap: 10px;
+
+  } 
+
+  .form-control  {/* меняется ширина формы */
+
+    width: 320px;
+  }
+  .form-conteiner-top-text {
+
+    margin-top: -270px;
+  }
+  .form-button-one {
+    margin-top: 5px;
+  }
+
+  .form-conteiner-top-text h6 {
+
+    font-size: 30px;
+
+  }
+  .section-footer {/* футер */
+
+    display: none;
+  }
+
+  .section_footer-mobile {/* футер моб */
+
+    display: block;
+  }
+
+}
+@media (max-width: 790px) {
+  .card-section-text {
+
+    display: block;
+  }
+  .center-raceta-mars_img-two-mobile{
+    display: flex;
+  }
+  .center-raceta-mars_img-one-mobile{
+    display: flex;
+  }
+  .center-raceta-mars_img-tree-mobile{
+
+    display: flex;
+  }
+
+  .center-raceta-mars_img-one {
+
+    display: none;
+  }
+  .center-raceta-mars_img-two {
+
+    display: none;
+  }
+  .center-raceta-mars_img-tree{
+
+    display: none;
+
+  }
+
+  .mobile-card-wark {
+
+    display: none;
+  }
+  .card-top-wark-section {
+
+    display: block;
+   
+  }
+ 
+}
+@media (max-width: 709px) {/* большая ширина контейнера для карт */
+
+  .card-context-conteiner {
+    height: 1400px;
+
+  }
+}
+
+@media (max-width: 480px) {
+
+  .planshet-banner {
+
+    display: none;
+  }
+  .banner-mobile-section {
+
+    display: block;
+  }
+  .planshet_vizitca {
+
+    display: none;
+  }
+  .planshet-vizitca__image  {
+
+    display: none;
+
+  }
+  .telegram-mobile {
+
+    display: block;
+
+  }
+  .section_footer-mobile { /* footer */
+
+    display: none;
+  }
+
+  .footer-mobile-two { /* footer  вк*/
+
+
+    display: block;
+  }
+  .raceta-center_planshet-one {/* ракета плпншет */
+
+    display: none;
+
+  }
+  .raceta-center_planshet-two {/* ракета плпншет */
+
+    display: none;
+
+  }
+  .raceta-center_planshet-three {
+
+    display: none;
+
+  }
+  .section-raceta-mobile-sait {
+
+    display: block;
+  }
+
+
+}
+
+
+
+
+

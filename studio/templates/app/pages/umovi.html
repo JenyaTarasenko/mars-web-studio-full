@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+  <head> 
+    <!-- Required meta tags -->
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- библиотека  иконок  https://cdnjs.com/libraries/font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- слайдер -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- мой CSS -->
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+    <!-- мой media CSS -->
+    <link rel="stylesheet" href="{% static 'CSS/media.css' %}">
+
+    <title>Mars design-studio</title>
+  </head>
+
+    <body>
+
+        {% include 'include/menu/menu.html' %}
+
+        <section class="etapy-section">
+
+            <!-- контейнер этапы  -->
+            <div class="etapy-name_conteiner">
+                <div class="etepy-name">
+                    <h1>“Умови оплати<br>з MARS””</h1>
+                </div>
+            </div>
+            <!-- контейнер этапы  -->
+    
+             <!-- контейнер описание -->
+            <div class="etapy-item_conteiner">
+                <div class="etapy-item">
+                    <h2>&nbsp;&nbsp;&nbsp;Це мінімальні умови для початку нашої співпраці. У них ми врахували взаємовигідні інтереси, описали умови оплати, а також зазначили, що саме входить у вартість послуги, а що потрібно придбати окремо.</h2>
+                </div>
+            </div><!-- контейнер описание -->
+    
+            <!-- контейнер этапы -->
+            <div class="etapy-name_conteiner">
+                <div class="etepy-name">
+                    <h3>Для початку нашої співпраці...</h3>
+                </div>
+            </div><!-- контейнер этапы -->
+    
+            <!-- контейнер этапы -->
+            <div class="etapy-image-conteiner">
+    
+                <div class="etapy-image">
+    
+                    <img src="{% static '/image/Цифра 1.png' %}"  alt="mars-studio">
+                    <h4>“Предоплата”</h4>
+    
+                    <div class="etapy-description">
+                        <h4>&nbsp;&nbsp;&nbsp;Для старту роботи необхідно внести передоплата в розмірі 50% від загальної вартості проєкту. Предоплата здійснюється після узгодження всіх деталей та підписання договору.</h4>
+                    </div>
+    
+                </div>
+    
+                <div class="etapy-image">
+    
+                    <img src="{% static '/image/Цифра 2.png' %}"  alt="mars-studio">
+                    <h4>Поетапна оплата”</h4>
+    
+                    <div class="etapy-description">
+                        <h4>&nbsp;&nbsp;&nbsp;Також ми можемо розбити оплату на 3-4 платежі та поділити етапи виконання. Тоді оплата здійснюватиметься після завершення кожного етапу. Розподіл етапів і суми погоджуються заздалегідь. Однак передоплату за перший етап потрібно буде внести — ми не працюємо без передоплати.</h4>
+                    </div>
+    
+                </div>
+    
+                <div class="etapy-image">
+    
+                    <img src="{% static '/image/Цифра 3.png' %}"  alt="mars-studio">
+                    <h4>“Фінальна оплата”</h4>
+    
+                    <div class="etapy-description">
+                        <h4>&nbsp;&nbsp;&nbsp;Останні 50% оплачуються після завершення роботи та її схвалення клієнтом. У випадку відсутності зауважень протягом 5 робочих днів після здачі проекту він вважається завершеним, а фінальний платіж стає обов’язковим.</h4>
+                    </div>
+    
+                </div>
+    
+                <div class="etapy-image">
+                    <img src="{% static '/image/Цифра 4.png' %}"  alt="mars-studio">
+                    <h4>“Додаткові роботи”</h4>
+    
+                    <div class="etapy-description">
+                        <h4>&nbsp;&nbsp;&nbsp;Всі зміни або додаткові завдання, які не були узгоджені під час початкового обговорення, будуть оцінюватися окремо. Вартість та строки виконання таких робіт обговорюються перед їх початком.</h4>
+                    </div>
+                </div>
+    
+    
+                <div class="etapy-image">
+                    <img src="{% static '/image/Цифра 5.png' %}"  alt="mars-studio">
+                    <h4>“Способи оплати”</h4>
+    
+                    <div class="etapy-description">
+                        <h4>&nbsp;&nbsp;&nbsp;Оплата здійснюється через банківський переказ, платіжні системи (PayPal) або інші узгоджені способи.</h4>
+                    </div>
+    
+                    <div class="etapy-description">
+                        <h4><strong style="font-weight: 800;">!!! Пам'ятайте!!!</strong>!!! Пам'ятайте!!! Це опис ідеального прикладу співпрації, але життя не ідеальне, ми робимо спільну справу, тому завжди можемо знайти спільну мову та взаємовигідні компроміси! </h4>
+                    </div>
+    
+    
+                </div>
+    
+                <div class="etapy-image">
+                    <img src="{% static '/image/Цифра 6.png' %}" alt="mars-studio">
+                    <h4>“Повернення Коштів”</h4>
+    
+                    <div class="etapy-description">
+                        <h4>&nbsp;&nbsp;&nbsp;Повернення коштів можливе лише у випадку скасування проекту на початкових етапах, але не пізніше, ніж після виконання 30% робіт. Усі повернення узгоджуються індивідуально.</h4>
+                    </div>
+    
+                </div>
+    
+                <div class="etapy-image">
+                    <img src="{% static '/image/Цифра 7.png' %}" alt="mars-studio">
+                    <h4>“Конфіденційність і Право Власності”</h4>
+    
+                    <div class="etapy-description">
+                        <h4>&nbsp;&nbsp;&nbsp; Оплачений проект переходить у власність клієнта. Веб-агенція зобов'язується зберігати конфіденційність інформації клієнта.</h4>
+                    </div>
+    
+                </div>
+            </div> <!-- контейнер этапы -->
+
+        </section>
+    
+
+
+
+        {% include 'include/form/contact_form.html' %}
+
+        {% include 'include/footer/footer.html' %}
+        
+            
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+        <script src="/script.js"></script>
+
+    </body>
+   </html>

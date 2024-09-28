@@ -1,0 +1,88 @@
+{% load static %}
+
+<!-- футер destop --> 
+<footer class="footer_new">
+    <div class="footer_new_section">
+        <div class="footer_new_conteiner_left">
+            <div class="footer_new_logo"></div>
+            <div class="footer_new_telephone">
+              <a href="tel:+38(099)6072979">+38 (099) 607 29 79</a>
+              <a href="tel:+38(097)9113226">+38 (097) 911 32 26</a>
+            </div>
+            <div class="footer_new_items">
+                <h6 class="vizi-text">Графік роботи:<br>пн-пт с 9.00 до 19.00/ сб, нд - вихідний.</h6>
+            </div>
+            <div class="footer-icon-mobile footer_new_mobile">
+                <img src="{% static '/image/facebook-icons.png' %}" alt="" class="image-conteiner-items">
+                <img src="{% static '/image/behance.png' %}" alt="" class="image-conteiner-items">
+                <img src="{% static '/image/instagramm.png' %}" alt="" class="image-conteiner-items">
+                <img src="{% static '/image/pinterest.png' %}" alt="" class="image-conteiner-items">
+            </div>
+            <div class="footer_new_item_text">
+                всі права захищені - Web Studio “Mars” 2024 
+            </div>
+
+        </div>
+        <div class="footer_new_conteiner_right">
+            <div class="footer_new_item-one">
+                <h6 class="vizi-text text-footer">документ</h6>
+                <div class="footer_new_item-one-downloud">
+                    <a href="путь_к_вашему_файлу" download>Умови роботи</a>
+                    <a href="путь_к_вашему_файлу" download>Етапи роботи</a>
+                    <a href="путь_к_вашему_файлу" download>Договір</a>
+                    <a href="путь_к_вашему_файлу" download>Призентація студії</a>
+                </div>
+                
+                <div class="footer_new_item-one_item">
+                    <h6 class="vizi-text text-footer">сервіс</h6>
+                    <div class="footer_new_item-one-downloud">
+                        <a href="путь_к_вашему_файлу" download>Адміністрування сайту</a>
+                        <a href="путь_к_вашему_файлу" download>Призентація студії</a>
+                    </div>
+                   
+
+                </div>
+            </div>
+            <div class="footer_new_intem_two">
+                <h6 class="vizi-text text-footer">Меню</h6>
+                <a href="{% url "mars:index" %}">Головна</a>
+                <a href="">Послуги</a>
+                <a href="">Проекти</a>
+            </div>
+
+        </div>
+    </div>
+</footer> <!-- футер destop --> 
+
+
+
+
+<!-- футер mobile --> 
+<footer class="mobile-footer_section">
+  <div class="mobile-footer_image">
+    <div class="mobile-footer-section_conteiner">
+      <div class="mobile-footer-telephone">
+        <a href="tel:+38(099)6072979">+38 (099) 607 29 79</a>
+        <a href="tel:+38(097)9113226">+38 (097) 911 32 26</a>
+      </div>
+      <div class="mobile-footer-description">
+        <p>Графік роботи:</p>
+        <h6 class="vizi-text">пн-пт с 9.00 до 19.00/ сб, нд - вихідний.</h6>
+      </div>
+      <div class="mobile-conteiner-image_icon">
+        <a href=""><img src="{% static '/image/facebook-icons.png' %}" class="image-conteiner-items"></a>
+        <a href=""><img src="{% static '/image/behance.png' %}" class="image-conteiner-items"></a>
+        <a href=""><img src="{% static '/image/instagramm.png' %}" class="image-conteiner-items"></a>
+        <a href=""><img src="{% static '/image/pinterest.png' %}"class="image-conteiner-items"></a>
+      </div>
+      <div class="mobile-conteiner_prava">
+        <p>всі права захищені - Web Studio “Mars” 2024 </p>
+      </div>
+
+
+    </div>
+
+  </div>
+</footer><!-- футер mobile --> 
+
+

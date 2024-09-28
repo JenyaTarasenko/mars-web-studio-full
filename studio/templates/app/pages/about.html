@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+  <head> 
+    <!-- Required meta tags -->
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- библиотека  иконок  https://cdnjs.com/libraries/font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- слайдер -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- мой CSS -->
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+    <!-- мой media CSS -->
+    <link rel="stylesheet" href="{% static 'CSS/media.css' %}">
+
+    <title>Mars design-studio</title>
+  </head>
+  <body>
+
+    {% include 'include/menu/menu.html' %}
+
+    <section class="about-page_section">
+        <div class="about-page_conteiner-image">
+          <div class="about-page_conteiner-title">
+    
+            <div class="about-page_items">
+              <h1>хлопці<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;з дніпра</h1>
+            </div>
+            <div class="about-page_items-description">
+              <p>Ми створюємо сайти саме для бізнесів та стартапів</p>
+              <p>Наша команда має досвід у рекламі та дизайні, тому ми занємо як буде краще для вашего бізнеса, як буде краще для Вас!</p>
+            </div>
+          </div>
+        </div>
+       </section>
+    
+    
+        <!-- секция мета студии марс  -->
+     <section class="meta_studio">
+    
+        <div class="meta_studio-conteiner">
+            <div class="meta_studio-description">
+              <h2>мета студії</h2>
+            </div>
+           
+            <div class="meta_studio-items-one">
+              <p>Основна ідея – це діджиталізація бізнесу.Ми розуміємо, що світ все більше переходить в онлайн.Багато сервісів та послуг вже доступні онлайн: купівля квитків, меню в ресторанах, конференції, концерти та інше.</p>
+            </div>
+            <div class="meta_studio-items-two">
+              <p>Сучасні виклики змушують бізнес бути онлайн.Як кажуть: "Якщо тебе нема в інтернеті, тебе не існує". Ми, Mars, хочемо допомогти бізнесу діджиталізуватись!</p>
+            </div>
+        </div>
+    </section><!-- секция мета студии марс  -->
+    
+    <section class="princip_studio">
+        
+        <div class="princip_studio-discription">
+            <h3>принципи mars</h3>
+        </div>
+
+        <div class="princip_studio-conteiner">
+            
+            
+            <div class="princip_studio-items">
+              <!-- карта 1  -->
+              <div class="pricip_card">
+                <div class="princip-card-items">
+                  <h5>Вірність</h5>
+                </div>
+                <div class="pricip-card_image">
+                  <img src="{% static '/image/free-icon-mercury-5821181 1.png' %}" alt="logo-mars-studio">
+                </div>
+              </div><!-- карта 1  -->
+    
+              <!-- карта 2  -->
+              <div class="pricip_card">
+                <div class="pricip-card_image">
+                  <img src="{% static '/image/chesnist_mars.png' %}" alt="logo-mars-studio">
+                </div>
+                <div class="princip-card-items">
+                  <h5>Чесність</h5>
+                </div>
+              </div><!-- карта 2  -->
+    
+              <!-- карта 3  -->
+              <div class="pricip_card">
+                <div class="princip-card-items">
+                  <h5>Перемагати</h5>
+                </div>
+                <div class="pricip-card_image">
+                  <img src="{% static '/image/peremagaty.png' %}" alt="logo-mars-studio">
+                </div>
+              </div><!-- карта 3  -->
+    
+              <!-- карта 4  -->
+              <div class="pricip_card">
+                <div class="pricip-card_image">
+                  <img src="{% static '/image/prostota.png' %}" alt="logo-mars-studio">
+                </div>
+                <div class="princip-card-items">
+                  <h5>Простота</h5>
+                </div>
+              </div><!-- карта 4  -->
+    
+              <!-- карта 5  -->
+              <div class="pricip_card">
+                <div class="princip-card-items">
+                  <h5>Win-Win</h5>
+                </div>
+                <div class="pricip-card_image">
+                  <img src="{% static '/image/win-win.png' %}" alt="logo-mars-studio">
+                </div>
+              </div>
+            </div><!-- карта 5  -->
+        </div>
+    </section>
+
+
+    {% include 'include/form/contact_form.html' %}
+
+    {% include 'include/footer/footer.html' %}
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="/script.js"></script>
+
+  </body>
+</html>
