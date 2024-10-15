@@ -240,10 +240,11 @@
 
 @media (max-width: 480px) {
 
-  .planshet-banner {
+  /* .planshet-banner {
 
     display: none;
-  }
+  } */
+  
   .banner-mobile-section {
 
     display: block;
@@ -257,11 +258,7 @@
     display: none;
 
   }
-  /* .telegram-mobile {
-
-    display: block;
-
-  } */
+ 
   .section_footer-mobile { /* footer */
 
     display: none;
