@@ -68,7 +68,7 @@
          <!-- навигация  -->
         <div class="banner-title-top">
           <h1>&nbsp;створення &<br>обслуговування сайтів</h1>
-          <div class="mars-button"><img src="{% static 'image/кнопка.png' %}"><span>ЗАМОВИТИ</span></div>
+          <a href="#form-top"><div class="mars-button"><img src="{% static 'image/кнопка.png' %}"><span>ЗАМОВИТИ</span></div></a>
         </div>
       </div>
   </section>
@@ -111,7 +111,7 @@
       </nav>
       <div class="planshet-banner-text_conteiner">
         <h1>створення &<br>обслуговування сайтів</h1>
-        <div class="mars-button"><img src="{% static 'image/кнопка.png' %}"><span>ЗАМОВИТИ</span></div>
+        <a href="#form-top"><div class="mars-button"><img src="{% static 'image/кнопка.png' %}"><span>ЗАМОВИТИ</span></div></a>
       </div>
     </div>
   </section>
@@ -155,18 +155,19 @@
 
       <div class="banner-mobile-conteiner">
         <h1>&nbsp;&nbsp;&nbsp;створення &<br>обслуговування сайтів</h1>
-        <div class="mars-button-mobile mars-button"><img src="{% static 'image/кнопка.png' %}"><span>ЗАМОВИТИ</span></div>
+        <a href="#form-top"><div class="mars-button"><img src="{% static 'image/кнопка.png' %}"><span>ЗАМОВИТИ</span></div></a>
 
       </div>
     </div>
   </section><!--   секция banner-mobile -->
 
-  <section class="card-section-text">
-    <div class="card-section-text_title">
-      <h5 class="vizi-text text_poslugi">Послуги</h5>
-    </div>
-  </section>
-
+<!--   секция text -->
+ <section class="new-text">
+  <div class="new-text-conteiner">
+    <h5 class="new-text-block">послуги</h5>
+  </div>
+ </section>
+ <!--   секция text -->
  
   <!-- секция карта -->
   <section class="card-top-wark-section">
@@ -214,7 +215,7 @@
         <div class="row justify-content-end">
             <div class="col-md-6">
                 <div class="vizitka-text text-right">
-                    <h2 class="vizi-text"><span class="vizi-span">Сайт</span><br>&nbsp;&nbsp;Візитка</h2>
+                    <h2 class="vizi-text"><span class="vizi-span">[ сайт ]</span><br>&nbsp;&nbsp;Візитка</h2>
                     <div class="vizitka-text_items">
                       <h5>&nbsp;&nbsp;Забронювати домен + Підключити хостинг, опис комапнії та ваші послуги + посилання на ваші соціальні сторінки = стисла форма на одному блоці в цій формі ви зможете походити примірятись, спробувати з нами попрацювати…та інше</h5>
                       <h6 class="vizi-text">вартість:<span class="vizi-span" style="color: #020607;">&nbsp;від 100$</span></h6>
@@ -226,33 +227,59 @@
     </div>
   </section> <!-- конец секция баннер  -->
 
+  <section class="cosmonavt-planshet_section">
+    <div class="cosmonavt-planshet">
 
-  <!-- секция планшет банер -->
-<section class="planshet_vizitca">
-  <div class="vizitka-planshet_desckription">
-    <div class="vizitka-planshet_conteiner">
-      <div class="vizitka-text vizitca-title">
-        <h2 class="vizi-text"><span class="vizi-span">Сайт</span><br>&nbsp;&nbsp;Візитка</h2>
-        <div class="vizitka-text_items">
-          <h5>&nbsp;&nbsp;Забронювати домен + Підключити хостинг, опис комапнії та ваші послуги + посилання на ваші соціальні сторінки = стисла форма на одному блоці в цій формі ви зможете походити примірятись, спробувати з нами попрацювати…та інше</h5>
-          <h6 class="vizi-text">вартість:<span class="vizi-span" style="color: #020607;">&nbsp;від 100$</span></h6>
+      <div class="cosmonavt-planshet_conteiner">
+
+        <div class="cosmonavt-planshet_title">
+          <h5>[ Сайт ]</h5>
+          <h6 class="vizi-text cosmo-text">&nbsp;Візитка</h6>
+
         </div>
+
+        <div class="cosmonavt-planshet_description">
+          <h6>
+            &nbsp;Забронювати домен + Підключити хостинг, опис комапнії та ваші послуги + посилання  
+            на ваші соціальні сторінки = стисла форма на одному блоці) в цій формі ви зможете походити примірятись, спробувати з нами попрацювати…та інше
+          </h6>
+
+        </div>
+
+        <div class="cosmonavt-planshet_price">
+          <p class="cosmo-text">
+            <span class="vizi-text">вартість:</span> 
+            <span class="price-value">від 100$</span>
+          </p>
+
+        </div>
+
+
+      </div>
+
+      <div class="cosmonavt-planshet_img">
+      
+      </div>
+      <div class="cosmonavt-planshet_img-mobile">
+      
+      </div>
+    
+
     </div>
-    </div>
-  </div>
-</section>
+
+  </section>
   
-<section class="planshet-vizitca__image">
-  <div class="vizitka-planshet_image">
+<!--   секция text -->
+<section class="new-text-center">
+  <div class="new-text-center-conteiner">
+    <h5 class="new-text-block">проекти</h5>
   </div>
 </section>
- 
-  <!-- секция планшет банер -->
-
+ <!--   секция text -->
 
  
 
-   <!--   секция карты  -->
+<!--   секция карты  -->
 <section class="card-context-section">
     <div class="card-context-conteiner">
 
@@ -275,7 +302,7 @@
       {% endfor %}
     </div>
 </section>
-  <!--   секция карты  -->
+<!--   секция карты  -->
 
 
 
@@ -376,16 +403,15 @@
     </div>
 </section>
 
-  <!--   секция why-us -->
-  <section class="why-us ms-5">
-    <div class="conteiner">
-      <div class="row">
-        <div class="col-md-6  why-us-text">
-          <h6>чому ми?<span>Це наші остані аргументи...</span></h6>
-        </div>
-      </div>
-    </div>
-  </section><!--   секция why-us -->
+<!--   секция text -->
+<section class="new-text-top">
+  <div class="new-text-top-conteiner">
+    <h5 class="new-text-block">переваги</h5>
+  </div>
+</section>
+ <!--   секция text -->
+
+
  <section class="card_mini_section">
   <div class="card_mini_conteiner">
 

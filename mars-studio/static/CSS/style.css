@@ -24,7 +24,10 @@ html,body {
     
     
 
- }
+}
+html {
+    scroll-behavior: smooth;
+}
 /* общие стили */
 
 
@@ -89,6 +92,8 @@ html,body {
     display: inline-block;
 
 }
+
+
 .mars-button img {
 
     display: block;
@@ -176,10 +181,10 @@ html,body {
 
 .vizitka-image {
 
-    background-image: url(../image/vartist.png);
+    background-image: url(../image/sait-destop.png);
     background-position: center;
     background-size: cover;
-    height: 700px;
+    height: 750px;
     width: 100%;
 }
 
@@ -2389,11 +2394,182 @@ mage-conteiner-items {
 
 }
 
+/* -------------------------------cosmonavt-planshet-------------------------------------- */
+.cosmonavt-planshet_section {
 
-/* -------------------------------about-page_section-------------------------------------- */
+    display: none;
+}
+.cosmonavt-planshet_img-mobile {
 
-/* -------------------------------about-page_section-------------------------------------- */
+    display: none;
+    background-image: url(../image/poslugi-mobi.png);
+    width: 100%;
+    height: 700px;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
 
+}
+.cosmonavt-planshet {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.cosmonavt-planshet_conteiner {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 460px;
+    height: 410px;
+    flex-direction: column;
+    position: absolute;/* абсолютное позиционирование */
+    transform: translateY(-320px);/* поднять вверх контеинер */
+    margin: 20px;
+
+
+}
+.cosmonavt-planshet_title h6 {
+
+    font-weight: 800;
+    font-size: 80px;
+ 
+}
+.cosmonavt-planshet_title {
+
+    margin-right: 80px;
+
+
+}
+.cosmonavt-planshet_title h5 {
+
+
+    font-weight: 500;
+    font-size: 20px;
+    color: #010506;
+
+
+}
+
+.cosmonavt-planshet_img {
+
+    background-image: url(../image/cosmonavt-poslugi2.png);
+    width: 100%;
+    height: 1191px;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+.cosmonavt-planshet_description {
+
+   
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #010506;
+    line-height: 18.75px
+}
+.cosmonavt-planshet_price {
+
+    width: 460px;
+    height: 410px;
+    margin-top: 20px;
+
+
+}
+
+.cosmonavt-planshet_price p{
+
+
+    font-weight: 800;
+    font-size: 30px;
+
+
+
+
+}
+.price-value {
+
+    color: #010506;
+
+}
+
+.cosmo-text {
+
+    display: block;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 8px;       /* Еще больше увеличиваем расстояние между буквами */
+    text-transform: uppercase;
+}
+
+/* -------------------------------cosmonavt-planshet-------------------------------------- */
+/* -------------------------------new text-------------------------------------- */
+
+
+
+.new-text {
+
+
+}
+.new-text-conteiner {
+
+  
+    display: flex;
+    margin-left: 65px;
+    width: 100%;
+    height: 45px;
+
+}
+.new-text-block {
+
+    font-weight: 800;
+    font-size: 60px;
+    color: #020607E5;
+    text-transform: uppercase;
+}
+
+/* -------------------------------new text-------------------------------------- */
+/* -------------------------------new text top-------------------------------------- */
+
+.new-text-top {
+
+
+}
+
+.new-text-top-conteiner {
+
+    display: flex;
+    justify-content: center;
+
+}
+/* -------------------------------new text top-------------------------------------- */
+
+/* -------------------------------new text center-------------------------------------- */
+.new-text-center {
+
+
+}
+.new-text-center-conteiner {
+
+    display: flex;
+    margin-left: 650px;
+    width: 100%;
+    height: 45px;
+
+
+
+}
+
+/* -------------------------------new text center-------------------------------------- */
 
 /* -------------------------------pages abaut-------------------------------------- */
 

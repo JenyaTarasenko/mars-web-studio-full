@@ -40,6 +40,25 @@
 
     height: 600px;
   }
+  .new-text-conteiner {
+
+    justify-content: center;
+    text-align: center;
+    margin-left: 0;
+
+  }
+  .new-text-block {
+
+    font-size: 50px;
+  }
+  .new-text-center-conteiner {
+
+    justify-content: center;
+    text-align: center;
+    margin-left:0;
+
+
+  }
 
 }
 
@@ -133,6 +152,10 @@
     display: block;
 
   }
+  .cosmonavt-planshet_section {
+
+    display: block;
+  }
 
   .planshet_vizitca {/* баннер  включаем */
 
@@ -190,10 +213,7 @@
 
 }
 @media (max-width: 790px) {
-  .card-section-text {
-
-    display: block;
-  }
+  
   .center-raceta-mars_img-two-mobile{
     display: flex;
   }
@@ -230,6 +250,51 @@
   }
  
 }
+
+
+@media (max-width: 526px) {
+
+  .cosmonavt-planshet_section {
+  
+    margin-top: 200px;
+  }  
+
+  .cosmonavt-planshet_conteiner {
+
+    width: 280px;
+    height: 250px;
+  }
+  .cosmonavt-planshet_title h6 {
+
+    font-weight: 800;
+    font-size: 50px;
+  }
+  .cosmonavt-planshet_price {
+    width: 280px;
+    height: 250px
+   
+
+  } 
+  .cosmonavt-planshet_price p {
+  
+    font-size: 18px;
+  }   
+  .cosmonavt-planshet_title h5 {
+    font-weight: 500;
+    font-size: 19px;
+  }  
+}
+@media (max-width: 709px) {
+  .cosmonavt-planshet_img {
+
+    display: none;
+  }
+
+  .cosmonavt-planshet_img-mobile {
+    
+    display: block;
+  }
+}
 @media (max-width: 709px) {/* большая ширина контейнера для карт */
 
   .card-context-conteiner {
@@ -240,24 +305,17 @@
 
 @media (max-width: 480px) {
 
-  /* .planshet-banner {
+  .planshet-banner {
 
     display: none;
-  } */
+  }
   
   .banner-mobile-section {
 
     display: block;
   }
-  .planshet_vizitca {
-
-    display: none;
-  }
-  .planshet-vizitca__image  {
-
-    display: none;
-
-  }
+  
+ 
  
   .section_footer-mobile { /* footer */
 
@@ -288,8 +346,22 @@
 
     display: block;
   }
+  .cosmonavt-planshet_title h6 {
+ 
+    font-size: 35px;
+  }  
 
+  .cosmonavt-planshet {
 
+    margin-top: 150px;
+
+  }
+  .cosmonavt-planshet_conteiner {
+
+    width: 280px;
+    height: 250px;
+
+  }
 }
 
 
