@@ -33,7 +33,7 @@
   <section class="banner">
       <div class="image-banner"><!-- картинка  -->
         <!-- навигация  -->
-        <nav class="navbar navbar-expand-lg navbar-light" style="position: absolute; top: 0; left: 0; right: 0; z-index: 100;">
+        {% comment %} <nav class="navbar navbar-expand-lg navbar-light" style="position: absolute; top: 0; left: 0; right: 0; z-index: 100;">
           <div class="container-fluid">
             <!-- логотип -->
             <a class="navbar-brand" href="#"><img src="{% static 'image/лого.png' %}" alt="Mars logo" style="width: 103px; height: 60px;"></a>
@@ -64,11 +64,50 @@
               </ul>
             </div>
           </div>
+        </nav> {% endcomment %}
+        <nav class="navbar navbar-expand-lg navbar-light" style="position: absolute; top: 0; left: 0; right: 0; z-index: 100;">
+          <div class="container-fluid d-flex justify-content-between">
+              
+              <!-- Логотип слева -->
+              <a class="navbar-brand order-lg-1" href="#">
+                  <img src="{% static 'image/лого.png' %}" alt="Mars logo" style="width: 103px; height: 60px;">
+              </a>
+      
+              <!-- Иконка бургера справа -->
+              <button class="navbar-toggler order-lg-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon" style="background-image: url('{% static 'image/burger2.svg' %}');"></span>
+              </button>
+      
+              <!-- Меню навигации -->
+              <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="{% url 'mars:index' %}">Головна</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="{% url 'mars:about' %}">Про нас</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Послуги</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Проекти</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Умови</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Контакти</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
         </nav>
+      
          <!-- навигация  -->
         <div class="banner-title-top">
-          <h1>&nbsp;створення &<br>обслуговування сайтів</h1>
-          <a href="#form-top"><div class="mars-button"><img src="{% static 'image/кнопка.png' %}"><span>ЗАМОВИТИ</span></div></a>
+          <h1>&nbsp;&nbsp;створення &<br>обслуговування сайтів</h1>
+          <a href="{% url "mars:about" %}"><div class="mars-button"><img src="{% static 'image/кнопка.png' %}"><span>про студію</span></div></a>
         </div>
       </div>
   </section>
@@ -77,7 +116,7 @@
   <!-- планшетная версия  главного экрана -->
   <section class="planshet-banner">
     <div class="image_planshet-banner">
-      <nav class="navbar navbar-expand-lg navbar-light" style="position: absolute; top: 0; left: 0; right: 0; z-index: 300;">
+      {% comment %} <nav class="navbar navbar-expand-lg navbar-light" style="position: absolute; top: 0; left: 0; right: 0; z-index: 300;">
         <div class="container-fluid">
           <!-- логотип -->
           <a class="navbar-brand" href="#"><img src="/image/лого.png" alt="Mars logo" style="width: 103px; height: 60px;"></a>
@@ -108,10 +147,48 @@
             </ul>
           </div>
         </div>
+      </nav> {% endcomment %}
+      <nav class="navbar navbar-expand-lg navbar-light" style="position: absolute; top: 0; left: 0; right: 0; z-index: 100;">
+        <div class="container-fluid d-flex justify-content-between">
+            <!-- Логотип слева -->
+            <a class="navbar-brand" href="#">
+                <img src="{% static 'image/лого.png' %}" alt="Mars logo" style="width: 103px; height: 60px;">
+            </a>
+    
+            <!-- Меню навигации -->
+            <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'mars:index' %}">Головна</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'mars:about' %}">Про нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Послуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Проекти</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Умови</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Контакти</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <!-- Иконка бургера справа -->
+            <button class="navbar-toggler order-lg-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="background-image: url('{% static 'image/burger2.svg' %}');"></span>
+            </button>
+        </div>
       </nav>
+    
       <div class="planshet-banner-text_conteiner">
-        <h1>створення &<br>обслуговування сайтів</h1>
-        <a href="#form-top"><div class="mars-button"><img src="{% static 'image/кнопка.png' %}"><span>ЗАМОВИТИ</span></div></a>
+        <h1>&nbsp;&nbsp;створення &<br>обслуговування сайтів</h1>
+        <a href="{% url "mars:about" %}"><div class="mars-button"><img src="{% static 'image/кнопка.png' %}"><span>про студію</span></div></a>
       </div>
     </div>
   </section>
@@ -155,7 +232,7 @@
 
       <div class="banner-mobile-conteiner">
         <h1>&nbsp;&nbsp;&nbsp;створення &<br>обслуговування сайтів</h1>
-        <a href="#form-top"><div class="mars-button"><img src="{% static 'image/кнопка.png' %}"><span>ЗАМОВИТИ</span></div></a>
+        <a href="{% url "mars:about" %}"><div class="mars-button"><img src="{% static 'image/кнопка.png' %}"><span>про студію</span></div></a>
 
       </div>
     </div>
@@ -215,10 +292,10 @@
         <div class="row justify-content-end">
             <div class="col-md-6">
                 <div class="vizitka-text text-right">
-                    <h2 class="vizi-text"><span class="vizi-span">[ сайт ]</span><br>&nbsp;&nbsp;Візитка</h2>
+                    <h2 class="vizi-text"><span class="vizi-span">&nbsp;&nbsp;[ сайт ]</span><br>&nbsp;&nbsp;&nbsp;&nbsp;Візитка</h2>
                     <div class="vizitka-text_items">
                       <h5>&nbsp;&nbsp;Забронювати домен + Підключити хостинг, опис комапнії та ваші послуги + посилання на ваші соціальні сторінки = стисла форма на одному блоці в цій формі ви зможете походити примірятись, спробувати з нами попрацювати…та інше</h5>
-                      <h6 class="vizi-text">вартість:<span class="vizi-span" style="color: #020607;">&nbsp;від 100$</span></h6>
+                      <h6 class="vizi-text">&nbsp;&nbsp;&nbsp;&nbsp;вартість:<span class="vizi-span">&nbsp;від 100$</span></h6>
                     </div>
                     
                 </div>
@@ -240,8 +317,7 @@
 
         <div class="cosmonavt-planshet_description">
           <h6>
-            &nbsp;Забронювати домен + Підключити хостинг, опис комапнії та ваші послуги + посилання  
-            на ваші соціальні сторінки = стисла форма на одному блоці) в цій формі ви зможете походити примірятись, спробувати з нами попрацювати…та інше
+            &nbsp;За допомогою цієї послуги ви зможете почати просування своєї компанії в інтернеті. Забронюйте домен (адресу сайта), підключіть хостинг (сервер), створіть опис компанії, підберіть візуальні матеріали та розмістіть посилання на соціальні сторінки компанії. Також через цю послугу ви зможете познайомитись з Web Studio “Mars” та розпочати тісну співпрацю.
           </h6>
 
         </div>
@@ -283,7 +359,7 @@
 <section class="card-context-section">
     <div class="card-context-conteiner">
 
-      {% for item in items|slice:"2:" %}
+      {% for item in items|slice:":2" %}
         <div class="card-context">
           <div class="card-context-img">
             <img src="{{ item.image.url }}" class="card-image" alt="{{item.name}}" style="object-fit: cover; width: 100%; height: 200px; border-radius: 30px 30px 0 0;">
@@ -293,7 +369,7 @@
             <h5 class="vizi-text">{{ item.name }}</h5>
           </div>
           <div class="card-context-title_items">
-           <h6>{{ item.description|truncatewords:20 }}</h6>
+           <h6>{{ item.description|truncatewords:30 }}</h6>
           </div>
           <div class="card-context-title_items_button" style="top: 90px;">
             <a href="{% url 'mars:websait_detail' item.slug %}"><div class="card-context-card mars-button-topcard"><img src="{% static 'image/Кнопка 3.png' %}"></div></a>

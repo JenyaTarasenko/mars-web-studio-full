@@ -155,6 +155,11 @@
   .cosmonavt-planshet_section {
 
     display: block;
+    margin-top: 350px;
+  }
+  .cosmonavt-planshet_img-mobile {
+    
+    margin-bottom: 120px;
   }
 
   .planshet_vizitca {/* баннер  включаем */

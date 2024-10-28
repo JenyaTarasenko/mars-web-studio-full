@@ -11,7 +11,7 @@ a {
     text-decoration: none;
     font-family: Inter, sans-serif;
     font-size: 16px; 
-    color: #CCC5B9; 
+    color: #FAFAFFE5; 
 }
 
 html,body {
@@ -43,6 +43,13 @@ html {
     left: 0;
 } */
 
+
+
+.navbar-collapse {
+    width: 200px; /* Ширина 200px */
+    
+    background-color: rgba(0, 0, 0, 0.5)
+}
 .navbar-toggler {
     border: none; /* Убираем обводку */
 }
@@ -56,12 +63,18 @@ html {
 
     fill:white;
 }
+
+
 .navbar-nav .nav-link {
 
     font-family: Inter, sans-serif;
     font-weight: 400;
     font-size: 16px;
     color :#CCC5B9 !important; 
+    padding: 10px; 
+    text-align: center; 
+
+
 
 }
 .navbar-nav {
@@ -107,7 +120,8 @@ html {
 }
 .mars-button span {
 
-    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
     position: absolute; 
     top: 50%; 
     left: 50%; 
@@ -115,6 +129,7 @@ html {
     color: white;
     font-size: 18px;
     /* transition: opacity 0.3s ease; /* Добавляем плавный переход */
+    text-transform: uppercase;
     
 }
 
@@ -205,6 +220,7 @@ html {
     font-weight: 900;
     font-size: 90px;
     color:#ffd769;
+    text-transform: uppercase;
 }
 .vizi-text {
 
@@ -228,12 +244,21 @@ html {
 
     width: 440px;
     height: 210px;
-    color: #020607;
+  
+    
+
+
+}
+.vizitka-text_items h5 {
+
     line-height: 30px;
-    font-weight: 900;
+    font-weight: 300;
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 5%;
+    font-family: Inter, sans-serif;
+    color: #020607;
+    
 
 
 }
@@ -242,6 +267,7 @@ html {
 
     font-size: 40px;
     color: #ffd769;
+    text-transform: uppercase;
 
 }
 
@@ -560,10 +586,13 @@ html {
 }
 .banner-title-top h1 {
 
-    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
     line-height: 30px;
     letter-spacing: 5%;
     color: #CCC5B9;
+    font-weight: 100;
+
 
 
 }
@@ -706,7 +735,8 @@ html {
 
 .card-item-top-wark h6 {
 
-    font-weight: 300;
+    font-family: Inter, sans-serif;
+    font-weight: 200;
     font-size: 18px;
     color: #FAFAFF;
     letter-spacing: 5%;
@@ -810,10 +840,11 @@ html {
 
 .card-context-title {/* контейнер описание */
 
-    width: 244px;
+    /* width: 244px; */
     height:60px;
     position: relative;
     margin: 20px;
+    padding: 20px;
 
 }
 .card-context-title h5 {
@@ -826,19 +857,22 @@ html {
 
 .card-context-title_items {/* контейнер описание 2*/
      
-    width: 244px;
+    /* width: 244px; */
     height:100px;
     margin: 20px;
     margin-top: 40px;
+    padding: 10px;
     
 
 }
 .card-context-title_items h6 {
 
+    font-family: Inter, sans-serif;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: 5%;
     color: #FAFAFF;
+  
 }
 .card-context-title_items_button {
     position: relative; /* Абсолютное позиционирование внутри карты */
@@ -994,7 +1028,7 @@ html {
     position: absolute;
     font-size: 25px;
     top: 550px;
-    right: 200px;
+    right: 100px;
     margin-top: 200px; 
    
  
@@ -1002,12 +1036,18 @@ html {
 }
 .planshet-banner-text_conteiner h1 {
 
-    font-size: 25px;
+    /* font-size: 25px;
     line-height: 30px;
     letter-spacing: 5%;
     color: #CCC5B9;
     font-weight: 400;
-    text-align: center;
+    text-align: center; */
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 5%;
+    color: #CCC5B9;
+    font-weight: 100;
 
 }
 /* ------------------------------planshet-banner---------------------------------------- */
@@ -1151,12 +1191,12 @@ html {
 }
 .banner-mobile-conteiner h1 { /* текст  */
 
-    font-size: 20px;
-    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
     line-height: 30px;
     letter-spacing: 5%;
-    color:#CCC5B9;
-    text-transform: uppercase;
+    color: #CCC5B9;
+    font-weight: 100;
 }
 
 /* -------------------------------banner-mobile-section--------------------------------------- */
@@ -1644,7 +1684,7 @@ html {
 
     display: flex;
     flex-direction: column;
-    color:#FAFAFFE5;
+    color:#FAFAFF;
    
 
     
@@ -1698,6 +1738,7 @@ html {
     flex-direction: column;
     margin-bottom: 20px;
     text-align: left;
+    gap:10px;
 
 
 }
@@ -1708,6 +1749,7 @@ html {
     flex-direction: column;
     margin-top: 20px;
     text-align: left;
+    gap:10px;
   
 
 
@@ -1754,6 +1796,7 @@ html {
     display: flex;
     flex-direction: column;
     margin-left: 50px;
+    gap:10px;
 }
 .footer_new_item_two a {
 
@@ -2430,14 +2473,14 @@ mage-conteiner-items {
     height: 410px;
     flex-direction: column;
     position: absolute;/* абсолютное позиционирование */
-    transform: translateY(-320px);/* поднять вверх контеинер */
+    transform: translateY(-400px);/* поднять вверх контеинер */
     margin: 20px;
 
 
 }
 .cosmonavt-planshet_title h6 {
 
-    font-weight: 800;
+    font-weight: 900;
     font-size: 80px;
  
 }
@@ -2472,10 +2515,22 @@ mage-conteiner-items {
 .cosmonavt-planshet_description {
 
    
-    font-size: 12px;
+    font-size: 18px;
     letter-spacing: 2px;
     color: #010506;
-    line-height: 18.75px
+    line-height: 18.75px;
+    font-family: 'Inter', sans-serif;
+}
+.cosmonavt-planshet_description h6{
+
+    font-size: 18px;
+    letter-spacing: 5px;
+    color: #010506;
+    line-height: 25px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+
+
 }
 .cosmonavt-planshet_price {
 
@@ -2526,7 +2581,7 @@ mage-conteiner-items {
     display: flex;
     margin-left: 65px;
     width: 100%;
-    height: 45px;
+    height: 30px;
 
 }
 .new-text-block {

@@ -8,7 +8,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-d7mknz71=27lkgw)kr(_ykkhf9i!_tuyj)q^7lgwr3vnjb##6@'
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['jdreamer.pythonanywhere.com', 'localhost', '127.0.0.1']
 
