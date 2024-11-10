@@ -9,13 +9,15 @@
 a {
 
     text-decoration: none;
+
     font-family: Inter, sans-serif;
     font-size: 16px; 
     color: #FAFAFFE5; 
 }
 
 html,body {
-
+   
+    font-family: Raleway, sans-serif;
     font-family: Inter, sans-serif;
     font-size: 16px; 
     color: #CCC5B9; 
@@ -220,6 +222,7 @@ html {
     font-weight: 900;
     font-size: 90px;
     color:#ffd769;
+    font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
 }
 .vizi-text {
@@ -633,7 +636,7 @@ html {
 }
 .form-conteiner-top-text h6 {
 
-    font-size: 40px;
+    font-size: 50px;
     color: #252422;
     font-weight: 900;
 
@@ -709,15 +712,16 @@ html {
 .card-title-top-wark { /* карта  описанте*/
 
     position: absolute;
-    top: 20px;
+    top: 30px;
     left: 40px;
 }
 
 .card-title-top-wark h5 {/* карта  описанте*/
 
-    font-weight: 900;
+    font-weight: 800;
     font-size: 23px;
     color: #FAFAFF;
+    font-family: 'Raleway', sans-serif;
 
 }
 
@@ -729,14 +733,14 @@ html {
     margin: 10px;
     width: 240px;
     height: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   
 }
 
 .card-item-top-wark h6 {
 
     font-family: Inter, sans-serif;
-    font-weight: 200;
+    font-weight:100;
     font-size: 18px;
     color: #FAFAFF;
     letter-spacing: 5%;
@@ -850,8 +854,9 @@ html {
 .card-context-title h5 {
 
 
-    font-size: 23px;
+    font-size: 27px;
     font-weight: 900;
+    font-family: Raleway, sans-serif;
 
 }
 
@@ -1347,7 +1352,7 @@ html {
 .detail-name h1 {
 
     font-weight: 800;
-    font-size: 50px;
+    font-size: 80px;
 
 }
 
@@ -1443,7 +1448,7 @@ html {
 .opisanie-name h3 {
 
     font-weight: 800;
-    font-size: 50px;
+    font-size: 80px;
 
 }
 
@@ -1460,7 +1465,7 @@ html {
 
 .opisanie-description h5 {
 
-    font-weight: 300;
+    font-weight: 200;
     font-size: 30px;
     line-height: 40px;
     letter-spacing: 5%;
@@ -1619,7 +1624,7 @@ html {
 .etapy-image h4 {
 
     font-weight: 800;
-    font-size: 20px;
+    font-size: 25px;
     color: #020607;
 
 }
@@ -1633,10 +1638,10 @@ html {
     padding: 30px;
 }
 
-.etapy-description  h4{
+.etapy-description h4{
 
 
-    font-weight: 300;
+    font-weight: 200;
     font-size: 20px;
     color: #020607;
 
@@ -1973,9 +1978,10 @@ mage-conteiner-items {
 .center-raceta-mars-conteiner h4{
 
     color:  #FFFFFF;
-
-    font-size: 50px;
-    font-weight: 800;
+    font-family: Raleway, sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: uppercase;
 
 
 }
@@ -2393,7 +2399,7 @@ mage-conteiner-items {
     display: flex;
     justify-content: center;
     align-items: center; */
-    background-image: url(../image/about_title.png);
+    background-image: url(../image/detail-destop.png);
     width: 100%;
     height: 1050px;
     display: flex;
@@ -2412,7 +2418,7 @@ mage-conteiner-items {
     height: 520px;
     flex-direction: column;
     margin-left: 600px;
-    margin-top: 200px;
+    margin-top: 300px;
 }
 
 
@@ -2524,7 +2530,7 @@ mage-conteiner-items {
 .cosmonavt-planshet_description h6{
 
     font-size: 18px;
-    letter-spacing: 5px;
+   
     color: #010506;
     line-height: 25px;
     font-family: 'Inter', sans-serif;
@@ -2579,15 +2585,16 @@ mage-conteiner-items {
 
   
     display: flex;
-    margin-left: 65px;
+    margin-left: 70px;
     width: 100%;
     height: 30px;
 
 }
 .new-text-block {
 
-    font-weight: 800;
-    font-size: 60px;
+    font-weight: 900;
+    font-family: 'Raleway', sans-serif;
+    font-size: 70px;
     color: #020607E5;
     text-transform: uppercase;
 }
@@ -2629,3 +2636,532 @@ mage-conteiner-items {
 /* -------------------------------pages abaut-------------------------------------- */
 
 
+
+/* ------------------------------- perezapusk_section -------------------------------------- */
+
+
+.perezapusk_image {
+
+    background-image: url(../image/perezapusk-destop.png);
+    width: 100%;
+    height: 700px;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;              
+    justify-content: center;
+    align-items: center; 
+
+
+
+}
+
+.perezapusk_conteiner {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center; 
+    justify-content: center;
+    width: 600px;
+    height: 600px;
+  
+    
+}
+
+
+.perezapusk_conteiner-title {
+
+    text-align: right;
+    width: 840px;
+    height: 150px;
+
+
+}
+.perezapusk_conteiner-title h1{
+
+    font-family: Raleway, sans-serif;
+    font-weight: 900;
+    font-size: 90px;
+    line-height: 100px;
+    color: #FAFAFF;
+}
+
+
+.perezapusk_conteiner-description {
+
+    margin-top: 20px;
+    width: 840px;
+    height: 20px;
+    margin-left: 550px;
+
+
+
+}
+.perezapusk_conteiner-description p{
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #FED700;
+    margin-left: 300px;
+}
+
+
+.perezapusk_conteiner-items {
+
+    width: 440px;
+    height: 100px;
+   
+    margin-left: 500px;
+    margin-top: 50px;
+}
+.perezapusk_conteiner-items h2{
+
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FAFAFF;
+    font-family: Inter, sans-serif;
+    margin-top: 40px;
+
+
+}
+.perezapusk-button {
+
+    width: 312px;
+    height: 60px;
+    border-radius: 30px; /* Округляет углы */
+    background-color:#FED700; /* Цвет кнопки */
+    color: #020607; /* Цвет текста */
+    border: none; /* Убирает рамку */
+    font-size: 16px; /* Размер текста */
+    cursor: pointer;
+    margin-top: 100px;
+    margin-left: 500px;
+
+}
+/* -------------------------------perezapusk_section-------------------------------------- */
+
+
+/* -------------------------------vam-potribno_section-------------------------------------- */
+
+
+.vam-potribno_section {
+
+
+}
+
+.vam-potribno_conteiner {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* .vam-potribno_image {
+
+
+    width: 550px;        
+    height: 330px; 
+   
+
+
+
+} */
+
+.vam-potribno_image {
+    flex: 1;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.vam-potribno_image img {
+    width: 100%; /* Адаптивная ширина */
+    height: auto; /* Сохраняет пропорции изображения */
+    max-width: 550px; /* Ограничение ширины */
+    max-height: 330px; /* Ограничение высоты */
+  }
+
+/* .vam-potribno_items-conteiner {
+
+    width: 600px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+
+} */
+
+.vam-potribno_items-conteiner {
+    flex: 1;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 600px;
+    max-height: 370px;
+    box-sizing: border-box; 
+}
+    
+ .vam-potribno_items__description h3 {
+
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 60px;
+    color: #020607;
+
+ }
+ .vam-potribno_items__text p {
+
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 5;
+    font-family: Inter, sans-serif;
+    color: #252422;
+ }
+
+
+
+/* -------------------------------vam-potribno_section-------------------------------------- */
+
+/* -------------------------------perezapusk-fon-section-------------------------------------- */
+
+.perezapusk-fon-section {
+
+
+}
+.perezapusk-fon-image {
+
+    background-image: url(../image/perezapusk-fon-desktop.png);
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+
+}
+
+.perezapusk-fon-text h4{  
+
+    font-weight: 800;
+    font-size: 65px;
+    margin-top: 30px;
+    color: #FAFAFF;
+  
+   
+
+
+}
+.perezapusk-fon-text {
+
+    max-height: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+}
+/* -------------------------------perezapusk-fon-section-------------------------------------- */
+/* -------------------------------proponuemo-section-------------------------------------- */
+.proponuemo-section {
+
+   
+
+
+}
+.proponuemo-section-conteiner {
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+
+
+}
+
+.proponuemo-description-conteiner {
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+
+
+}
+.proponuemo-items {
+
+    display: flex;
+    justify-content: center;
+   
+    flex-direction: column;
+
+  
+
+    margin-top: 30px;
+   
+   
+   
+
+
+}
+.proponuemo-description-conteiner h5 {
+
+    font-size: 80px;
+    font-weight: 800;
+    color: #252422;
+
+
+}
+
+.proponuemo-image-logo {
+
+    display: flex;
+    flex-direction: row;
+    margin-right: 100px;
+    gap: 10px;
+    align-items: flex-start;
+
+}
+.proponuemo-logo {
+
+    display: flex;
+    width: 40px;
+    height: 40px;
+
+}
+/* .proponuemo-text {
+
+    display: flex;
+    max-width: 500px;
+    max-height: 200px;
+} */
+
+.proponuemo-text {
+    max-width: 500px;
+    max-height: 200px;
+    /* overflow: hidden; 
+    text-align: center; */
+    flex-grow: 1; 
+}
+
+.proponuemo-image-logo img {
+
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+
+}
+.proponuemo-image-logo p {
+
+    font-size: 30px;
+    font-weight: 800;
+    color: #252422;
+}
+
+.proponuemo-items__text {
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    max-width: 540px;
+    padding: 10px;
+
+}
+
+.proponuemo-items__text h5 {
+
+    font-weight: 300;
+    font-size: 25px;
+    font-family: Inter, sans-serif;
+    color: #252422;
+
+}
+.proponuemo-text-item {
+
+    width: 500px;
+    height: 200px;
+
+
+}
+
+ 
+
+
+/* -------------------------------proponuemo-section-------------------------------------- */
+
+/* -------------------------------vi-otrimuete-section-------------------------------------- */
+.vi-otrimuete-section {
+
+
+}
+
+.vi-otrimuete-image {
+
+
+    background-image: url(../image/vi-otrimaete-desctop.png);
+    width: 100%;
+    height: 350px;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+
+
+}
+.vi-otrimuete-conteiner {
+
+    max-width:  500px;
+    margin-left: 500px;
+
+}
+.vi-otrimuete-description h5 {
+
+    font-weight: 800;
+    font-size: 60px;
+    color: #FED700;
+}
+
+.vi-otrimuete-item h6{
+
+    font-weight: 200;
+    font-size: 25px;
+    line-height: 25px;
+    color: #FAFAFF;
+
+
+
+}
+
+.vi-button {
+
+    width: 312px;
+    height: 60px;
+    border-radius: 30px; /* Округляет углы */
+    background-color:#FED700; /* Цвет кнопки */
+    color: #020607; /* Цвет текста */
+    border: none; /* Убирает рамку */
+    font-size: 16px; /* Размер текста */
+    cursor: pointer;
+    margin-top: 30px;
+
+
+
+    
+}
+
+/* -------------------------------vi-otrimuete-section-------------------------------------- */
+
+.about--section-two {
+    display: none;
+
+
+    /* display: none; */
+}
+.about-image_planshet {
+
+    background-image: url(../image/vi-otrimaete-desctop.png);
+    width: 100%;
+    height: 350px;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+
+
+}
+
+.about-image_planshet-item {
+
+    background-image: url(../image/vi-otrimaete-desctop.png);
+    width: 100%;
+    height: 350px;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+
+
+}
+.about-image_planshet-stvoreno {
+
+    display: none;
+    background-image: url(../image/stvorenna-planshet.png);
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+
+}
+.about-page_conteiner-title__planshet {
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.about-page_items__planshet, .about-page_items-description__planshet {
+
+    /* max-width: 318px;
+    max-height: 400px; */
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about-page_items__planshet h1{
+
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 70px;
+    color:#020607;
+}
+.about-page_items-description__planshet p {
+
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 40px;
+    color:#020607;
+
+}
+
+.about-image_planshet-stvoreno {
+
+    display: none;
+}
+
+
+/* font-family: Inter, sans-serif; */
+/* font-family: Raleway, sans-serif; */

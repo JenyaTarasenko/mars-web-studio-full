@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- слайдер -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <!-- мой CSS -->
+
+    <!-- мой style CSS -->
     <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
     <!-- мой media CSS -->
     <link rel="stylesheet" href="{% static 'CSS/media.css' %}">
@@ -33,22 +34,46 @@
 
     <section class="about-page_section">
         <div class="about-page_conteiner-image">
+        
           <div class="about-page_conteiner-title">
     
             <div class="about-page_items">
               <h1>хлопці<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;з дніпра</h1>
             </div>
-            <div class="about-page_items-description">
+            <div class="about-page_items-descriptiontitle">
               <p>Ми створюємо сайти саме для бізнесів та стартапів</p>
               <p>Наша команда має досвід у рекламі та дизайні, тому ми занємо як буде краще для вашего бізнеса, як буде краще для Вас!</p>
             </div>
           </div>
+         
         </div>
-       </section>
+    </section>
+
+
+    {% comment %} planshet-version {% endcomment %}
+    <section class="about--section-two">
+      <div class="about-image_planshet"></div>
+     
+      <div class="about-page_conteiner-title__planshet">
+      
+          <div class="about-page_items__planshet">
+            <h1>хлопці<br>&nbsp;&nbsp;&nbsp;&nbsp;з дніпра</h1>
+          </div>
+          <div class="about-page_items-description__planshet">
+            
+            <p>Ми створюємо сайти саме для бізнесів та стартапів.Наша команда має досвід у рекламі та дизайні, тому ми занємо як буде краще для вашего бізнеса, як буде краще для Вас!</p>
+          </div>
+      </div>
+
+      <div class="about-image_planshet-item"></div>
+      
+
+    </section> 
+    {% comment %} planshet-version {% endcomment %}
     
     
         <!-- секция мета студии марс  -->
-     <section class="meta_studio">
+    <section class="meta_studio">
     
         <div class="meta_studio-conteiner">
             <div class="meta_studio-description">
@@ -62,6 +87,7 @@
               <p>Сучасні виклики змушують бізнес бути онлайн.Як кажуть: "Якщо тебе нема в інтернеті, тебе не існує". Ми, Mars, хочемо допомогти бізнесу діджиталізуватись!</p>
             </div>
         </div>
+
     </section><!-- секция мета студии марс  -->
     
     <section class="princip_studio">
@@ -126,13 +152,14 @@
             </div><!-- карта 5  -->
         </div>
     </section>
+    <div class="about-image_planshet-stvoreno"></div>
 
 
     {% include 'include/form/contact_form.html' %}
 
     {% include 'include/footer/footer.html' %}
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 

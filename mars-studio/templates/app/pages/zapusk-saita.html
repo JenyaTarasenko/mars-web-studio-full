@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+  <head> 
+    <!-- Required meta tags -->
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- библиотека  иконок  https://cdnjs.com/libraries/font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- слайдер -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- мой CSS -->
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+    <!-- мой media CSS -->
+    <link rel="stylesheet" href="{% static 'CSS/media.css' %}">
+
+    <title>Mars design-studio</title>
+  </head>
+  <body>
+    
+     <section class="perezapusk_section">
+        <div class="perezapusk_image">
+
+            <nav class="navbar navbar-expand-lg navbar-light" style="position: absolute; top: 0; left: 0; right: 0; z-index: 100;">
+                <div class="container-fluid d-flex justify-content-between">
+                    
+                    <!-- Логотип слева -->
+                    <a class="navbar-brand order-lg-1" href="#">
+                        <img src="{% static 'image/лого.png' %}" alt="Mars logo" style="width: 103px; height: 60px;">
+                    </a>
+            
+                    <!-- Иконка бургера справа -->
+                    <button class="navbar-toggler order-lg-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon" style="background-image: url('{% static 'image/burger2.svg' %}');"></span>
+                    </button>
+            
+                    <!-- Меню навигации -->
+                    <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="{% url 'mars:index' %}">Головна</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'mars:about' %}">Про нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Послуги</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Проекти</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Умови</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Контакти</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="perezapusk_conteiner">
+              <div class="perezapusk_conteiner-description">
+                <p>Ми пропонуємо послугу</p>
+              </div>
+              <div class="perezapusk_conteiner-title">
+                <h1>“Перезапуск сайту”</h1>
+              </div>
+              <div class="perezapusk_conteiner-items">
+                <h2>Це допоможе зробити ваш сайт сучасним, зручним та ефективним інструментом для розвитку бізнесу.</h2>
+              </div>
+            
+              <div class="perezapusk_conteiner-button">
+                <button class="perezapusk-button">ЗАМОВИТИ</button>
+              </div>
+              
+  
+
+            </div>
+        </div>
+    </section>
+
+    <section class="vam-potribno_section">
+      <div class="vam-potribno_conteiner">
+        <div class="vam-potribno_image">
+          <img src="{% static 'image/robots-desctop.png' %}" alt="Описание изображения">
+        </div>
+        <div class="vam-potribno_items-conteiner">
+          <div class="vam-potribno_items__description">
+            <h3>Чому вам це потрібно?</h3>
+          </div>
+          <div class="vam-potribno_items__text">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ваш САЙТ — це обличчя вашого бізнесу, це як офіс або шоурум тільки ОНЛАЙН. Якщо сайт виглядає застарілим або працює з перебоями, або в ньому немає сучасних функцій ви ризикуєте втратити клієнтів.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="perezapusk-fon-section">
+      <div class="perezapusk-fon-image">
+        <div class="perezapusk-fon-text">
+          <h4>Зробимо ваш сайт<br>сучасним!</h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="proponuemo-section">
+      <div class="proponuemo-section-conteiner">
+        <div class="proponuemo-description-conteiner">
+
+          <h5>Пропонуємо <br>зробити:</h5>
+          <div class="proponuemo-items">
+
+            <div class="proponuemo-image-logo">
+
+              <div class="proponuemo-logo">
+                <img src="{% static '/image/etapy-logo.png' %}" alt="Этапы mars-studio">
+              </div>
+             
+              <div class="proponuemo-text">
+                 <p>Аудит сайту</p>
+              </div>
+             
+            </div>
+            <div class="proponuemo-items__text">
+              <h5> Зробимо детальний аналіз, щоб зрозуміти, що варто покращити у функціональності та дизайні.</h5>
+            </div>
+          </div>
+
+          <div class="proponuemo-items">
+
+            <div class="proponuemo-image-logo">
+
+              <div class="proponuemo-logo">
+                <img src="{% static '/image/etapy-logo.png' %}" alt="Этапы mars-studio">
+              </div>
+             
+              <div class="proponuemo-text">
+                 <p>Редизайн</p>
+              </div>
+             
+            </div>
+            <div class="proponuemo-items__text">
+              <h5> Створимо сучасний і привабливий дизайн, який відповідатиме очікуванням ваших клієнтів.</h5>
+            </div>
+          </div>
+
+          <div class="proponuemo-items">
+
+            <div class="proponuemo-image-logo">
+
+              <div class="proponuemo-logo">
+                <img src="{% static '/image/etapy-logo.png' %}" alt="Этапы mars-studio">
+              </div>
+             
+              <div class="proponuemo-text">
+                 <p>Оптимізацію швидкості</p>
+              </div>
+             
+            </div>
+            <div class="proponuemo-items__text">
+              <h5>Прискоримо завантаження сайту, щоб користувачі залишалися задоволеними, а пошукові системи — прихильними.</h5>
+            </div>
+          </div>
+          
+        </div>
+        <div class="proponuemo-description-conteiner">
+          <div class="proponuemo-items">
+
+            <div class="proponuemo-image-logo">
+
+              <div class="proponuemo-logo">
+                <img src="{% static '/image/etapy-logo.png' %}" alt="Этапы mars-studio">
+              </div>
+             
+              <div class="proponuemo-text">
+                 <p>SEO-оптимізацію</p>
+              </div>
+             
+            </div>
+            <div class="proponuemo-items__text">
+              <h5> Покращимо видимість сайту в пошукових системах, оновивши структуру та контент.</h5>
+            </div>
+          </div>
+
+          <div class="proponuemo-items">
+
+            <div class="proponuemo-image-logo">
+
+              <div class="proponuemo-logo">
+                <img src="{% static '/image/etapy-logo.png' %}" alt="Этапы mars-studio">
+              </div>
+             
+              <div class="proponuemo-text">
+                 <p>Інтеграцію нових функцій</p>
+              </div>
+             
+            </div>
+            <div class="proponuemo-items__text">
+              <h5> Додамо корисні інструменти, такі як форми зворотного зв'язку, онлайн-чат та інтеграцію з соцмережами.</h5>
+            </div>
+          </div>
+
+          <div class="proponuemo-items">
+
+            <div class="proponuemo-image-logo">
+
+              <div class="proponuemo-logo">
+                <img src="{% static '/image/etapy-logo.png' %}" alt="Этапы mars-studio">
+              </div>
+             
+              <div class="proponuemo-text">
+                 <p>Безпека</p>
+              </div>
+             
+            </div>
+            <div class="proponuemo-items__text">
+              <h5>   Інтеруємо сучасні рішення для захисту сайту від загроз і забезпечення безпеки даних.</h5>
+            </div>
+          </div>
+
+          <div class="proponuemo-items">
+
+            <div class="proponuemo-image-logo">
+
+              <div class="proponuemo-logo">
+                <img src="{% static '/image/etapy-logo.png' %}" alt="Этапы mars-studio">
+              </div>
+             
+              <div class="proponuemo-text">
+                 <p>Мобільну адаптацію</p>
+              </div>
+             
+            </div>
+            <div class="proponuemo-items__text">
+              <h5>Забезпечимо бездоганний вигляд і роботу сайту на всіх мобільних пристроях.</h5>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+    <section class="vi-otrimuete-section">
+      <div class="vi-otrimuete-image">
+        <div class="vi-otrimuete-conteiner">
+          <div class="vi-otrimuete-description">
+            <h5>Ви отримуєте:</h5>
+          </div>
+          <div class="vi-otrimuete-item">
+            <h6>Оновлений, швидкий та зручний сайт, який відображає ваші цінності та допомагає досягати бізнес-цілей.</h6>
+          </div>
+          <div class="vi-otrimuete-button">
+            <button class="vi-button">ЗАМОВИТИ</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+{% include 'include/form/contact_form.html' %}
+
+{% include 'include/footer/footer.html' %}
+
+
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+ 
+  <script src="/script.js"></script>
+
+</body>
+</html>
+  

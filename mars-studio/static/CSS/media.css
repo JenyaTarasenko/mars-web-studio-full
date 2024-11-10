@@ -122,7 +122,16 @@
 }
 
 @media (max-width: 768px) {
+  .about-page_section {
 
+    display: none;
+
+  }
+
+  .about--section-two {
+    display: block;
+
+  }
   .card-top-wark-section {
 
     height: 880px;
@@ -139,8 +148,26 @@
 
 @media (max-width: 768px) {/* замена главного экрана на 768 px */
 
+  .horizontal-bar {
+
+    
+    width: 480px;
+    height: 1px; /* Высота полосы */
+    background-color: black; /* Цвет полосы */
+    margin: 0 auto; /* Центрирование по горизонтали */
+
+  }
+  .etapy-description {
+
+    padding: 0;
+  }
+
  
 
+  .about-image_planshet-stvoreno {
+
+    display: block;
+  }
   .banner{/* замена главного экрана на 768 px */
 
     display: none;
@@ -155,7 +182,7 @@
   .cosmonavt-planshet_section {
 
     display: block;
-    margin-top: 350px;
+    margin-top: 150px;
   }
   .cosmonavt-planshet_img-mobile {
     
@@ -257,6 +284,15 @@
 }
 
 
+@media (max-width: 709px) {
+
+  .cosmonavt-planshet_section {
+    display: block;
+    margin-top: 300px;
+  }  
+
+
+}
 @media (max-width: 526px) {
 
   .cosmonavt-planshet_section {
@@ -275,14 +311,14 @@
     font-size: 50px;
   }
   .cosmonavt-planshet_price {
-    width: 280px;
-    height: 250px
+    width: 300px;
+    height: 300px
    
 
   } 
   .cosmonavt-planshet_price p {
   
-    font-size: 18px;
+    font-size: 25px;
   }   
   .cosmonavt-planshet_title h5 {
     font-weight: 500;
@@ -306,9 +342,66 @@
     height: 1400px;
 
   }
-}
+  .cosmonavt-planshet_section {
 
+    margin-top: 300px
+  }
+}
+@media (max-width: 526px) {
+
+  /* .cosmonavt-planshet_section {
+    margin-top: 400px;
+  } */
+  .cosmonavt-planshet_img-mobile {
+
+    margin-top: 200px;
+  }  
+  .center-raceta-mars-conteiner h4 {
+
+    font-size: 50px;
+  }
+}
 @media (max-width: 480px) {
+  .center-raceta-mars-conteiner h4{
+
+    font-size: 40px;
+
+  }
+  .horizontal-bar {
+
+    width: 380px;
+  }
+
+  .about-image_planshet-stvoreno {
+
+    display: block;
+    background-image: url(../image/stvorenna-mobile.png);
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+  }
+
+  .about-page_items__planshet h1 ,
+  .meta_studio-description h2,
+  .princip_studio-discription h3{ /* about planshet*/
+
+    font-size: 50px;
+
+  }
+  .about-page_items-description__planshet p,
+  .meta_studio-items-one p,
+  .meta_studio-items-two p {
+
+    font-size: 20px;
+
+
+  }
 
   .planshet-banner {
 
@@ -367,7 +460,25 @@
     height: 250px;
 
   }
+
 }
+
+
+@media (max-width: 380px) {
+
+  .form-conteiner-top-text h6 {
+    font-size: 20px;
+  }  
+
+  .horizontal-bar {
+
+    width: 280px;
+  }
+
+
+}
+
+
 
 
 

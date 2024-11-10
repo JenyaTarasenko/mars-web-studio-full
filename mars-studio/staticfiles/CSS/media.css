@@ -122,7 +122,16 @@
 }
 
 @media (max-width: 768px) {
+  .about-page_section {
 
+    display: none;
+
+  }
+
+  .about--section-two {
+    display: block;
+
+  }
   .card-top-wark-section {
 
     height: 880px;
@@ -309,6 +318,18 @@
 }
 
 @media (max-width: 480px) {
+
+  .about-page_items__planshet h1 ,.meta_studio-description h2, .princip_studio-discription h3{ /* about planshet*/
+
+    font-size: 50px;
+
+  }
+  .about-page_items-description__planshet p,.meta_studio-items-one p,.meta_studio-items-two p {
+
+    font-size: 20px;
+
+
+  }
 
   .planshet-banner {
 
