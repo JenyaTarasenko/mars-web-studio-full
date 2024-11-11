@@ -103,6 +103,10 @@
 
     display: none;
   }
+  .perezapusk_conteiner-title {
+
+    width: 0;
+  }
 
   .center-raceta-mars-description-conteiner {
 
@@ -147,6 +151,18 @@
 }
 
 @media (max-width: 768px) {/* замена главного экрана на 768 px */
+
+  .detail-name h1  {
+
+    font-size: 50px;
+  }
+
+  .opisanie-name h3 {
+
+    font-size: 50px;
+
+
+  }
 
   .horizontal-bar {
 
@@ -362,6 +378,11 @@
   }
 }
 @media (max-width: 480px) {
+
+  .opisanie-url a {
+
+    font-size: 20px;
+  }
   .center-raceta-mars-conteiner h4{
 
     font-size: 40px;
