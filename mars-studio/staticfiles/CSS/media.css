@@ -99,6 +99,21 @@
 
 }
 @media (max-width: 992px) {/* logo-mars */
+
+  .vam-potribno_items-conteiner {
+
+    margin-left: 500px;
+  }
+
+  .perezapusk_conteiner__planshet {
+
+    display: block;
+  }
+
+  .perezapusk_conteiner {
+
+    display: none;
+  }
   .navbar-brand {
 
     display: none;
@@ -116,6 +131,14 @@
 
 
 }
+@media (max-width: 863px) {
+
+  
+
+
+
+
+}
 
 @media (max-width: 790px) {
 
@@ -126,6 +149,69 @@
 }
 
 @media (max-width: 768px) {
+
+
+  .vi-otrimuete-image {
+
+    background-image: url(../image/perezapusk-bottom.png);
+    width: 100%;
+    height: 440px;
+
+
+  }
+
+  .vi-otrimuete-conteiner {
+
+    margin-right: 500px;
+  }
+  .vi-otrimuete-description h5 {
+
+    font-size: 40px;
+  }
+  .vi-otrimuete-item h6{
+
+    font-size: 20px
+  }
+  .vam-potribno_items-conteiner {
+
+    margin-right: 500px;
+    margin-bottom: 450px;
+  }
+
+  .vam-potribno_image {
+
+    background-image: url(../image/vam-potribno-planshet.png);
+    width: 100%;
+    height: 904px;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;              
+    justify-content: center;
+    align-items: center; 
+
+  }
+  .vam-potribno_items__description h3 {
+
+    width: 400px;
+    text-align: center;
+  }
+
+  .vam-potribno_items__text {
+
+    width: 400px;
+
+  }
+  .vam-potribno_items__text p {
+
+    margin-top: 30px;
+    padding: 10px;
+    
+
+    
+  }
+
+
   .about-page_section {
 
     display: none;
@@ -151,6 +237,46 @@
 }
 
 @media (max-width: 768px) {/* замена главного экрана на 768 px */
+
+  .perezapusk_image {
+
+    background-image: url(../image/perezapusk-planshet2.png);
+    width: 100%;
+    height: 1300px;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;              
+    justify-content: center;
+    align-items: center; 
+
+
+
+  }
+
+
+
+  .perezapusk-fon-image  {
+
+    background-image: url(../image/zrobimo-sait-planshet.png);
+    width: 100%;
+    height: 500px;
+
+  }
+  .perezapusk-fon-text h4 {
+
+    margin-bottom: 90px;
+    font-size: 50px;
+  }
+
+  .perezapusk_conteiner-items__planshet {
+
+    margin-left: 100px;
+  }
+  .perezapusk_conteiner__planshet {
+
+    margin-top: 700px;
+  }
 
   .detail-name h1  {
 
@@ -378,6 +504,38 @@
 }
 @media (max-width: 526px) {
 
+  .perezapusk_conteiner-items__planshet h2 {
+
+    margin-left: 0;
+  }
+
+  .perezapusk_conteiner-description__planshet p {
+
+    font-size: 18px;
+    text-align: center;
+    margin-right: 250px
+
+  }
+  .perezapusk_conteiner-title__planshet h1 {
+
+    font-size: 50px;
+
+  }
+
+  .perezapusk_conteiner-description__planshet {
+
+    display: none;
+  }
+  .perezapusk_conteiner-description__planshet-two {
+
+    display: block;
+    margin-left: 200px;
+    
+
+
+
+  }
+
   .about-image_planshet{
 
     background-image: url(../image/abaut-text-mobile.png);
@@ -421,7 +579,78 @@
     font-size: 50px;
   }
 }
+@media (max-width: 470px) {
+  .perezapusk-fon-text h4 {
+    margin-bottom: 150px;
+  }  
+}
 @media (max-width: 480px) {
+
+  .perezapusk_conteiner-items__planshet {
+
+    width:400px;
+    margin-right: 40px;
+  }
+
+  .vi-otrimuete-description h5{
+
+    font-size: 50px;
+  }
+
+
+  .vam-potribno_image {
+
+    background-image: url(../image/vam-potribno-mobile.png);
+    width: 100%;
+    height: 670px;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;              
+    justify-content: center;
+    align-items: center; 
+
+
+
+  }
+  
+  .vam-potribno_items-conteiner {
+
+    margin-bottom: 220px; 
+  }
+
+  .vam-potribno_items__description h3 {
+
+    font-size: 45px;
+
+
+  }
+
+  .vam-potribno_items__text {
+    width: 350px;
+    padding: 15px;
+  }
+  
+  .vam-potribno_items__text p {
+
+    font-size: 19px;
+
+  }
+  .perezapusk_image {
+
+    background-image: url(../image/perezapusk-mobil.png);
+    width: 100%;
+    height: 1300px;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;              
+    justify-content: center;
+    align-items: center; 
+
+
+
+  }
 
   .about-page_items__planshet h1{
     
@@ -445,12 +674,12 @@
     width: 380px;
   }
 
-  .about-image_planshet-stvoreno {
+  .perezapusk_image {
 
     display: block;
-    background-image: url(../image/stvorenna-mobile.png);
+    background-image: url(../image/perezapusk-mobile3.png);
     width: 100%;
-    height: 200px;
+    height: 830px;
     justify-content: center;
     background-position: center;
     background-repeat: no-repeat;
@@ -459,10 +688,13 @@
     align-items: center; 
 
   }
+  .perezapusk_conteiner__planshet {
+    margin-top: 200px;
+  }  
 
   .about-page_items__planshet h1 ,
   .meta_studio-description h2,
-  .princip_studio-discription h3{ /* about planshet*/
+  .princip_studio-discription h3{ 
 
     font-size: 50px;
 
@@ -547,7 +779,21 @@
 
     width: 280px;
   }
+  .perezapusk_conteiner-items__planshet  {
 
+    width: 350px;
+  }
+  .perezapusk_conteiner-title__planshet h1 {
+    font-size: 40px;
+  }  
+  .perezapusk_conteiner-description__planshet-two {
+
+    margin-left: 130px
+  }
+  .perezapusk-button__planshet {
+
+    width: 300px;
+  }  
 
 }
 

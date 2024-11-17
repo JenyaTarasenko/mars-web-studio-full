@@ -88,25 +88,56 @@
   
 
             </div>
+              {% comment %} секция planshet {% endcomment %}
+            <div class="perezapusk_conteiner__planshet">
+
+              <div class="perezapusk_conteiner-description__planshet">
+                <p>Ми пропонуємо послугу</p>
+              </div>
+              <div class="perezapusk_conteiner-description__planshet-two">
+                <p>Пропонуємо</p>
+              </div>
+              <div class="perezapusk_conteiner-title__planshet">
+                <h1>“Перезапуск<br>сайту”</h1>
+              </div>
+              <div class="perezapusk_conteiner-items__planshet">
+                <h2>Це допоможе зробити ваш сайт сучасним, зручним та ефективним інструментом для розвитку бізнесу.</h2>
+              </div>
+            
+              <div class="perezapusk_conteiner-button__planshet">
+                <button class="perezapusk-button__planshet">ЗАМОВИТИ</button>
+              </div>
+        
+
+            </div>
+
+          {% comment %} секция planshet {% endcomment %}
         </div>
     </section>
 
+   
+    
+    
+  {% comment %} секция  vam-potribno_section{% endcomment %}
     <section class="vam-potribno_section">
-      <div class="vam-potribno_conteiner">
+      
         <div class="vam-potribno_image">
-          <img src="{% static 'image/robots-desctop.png' %}" alt="Описание изображения">
-        </div>
-        <div class="vam-potribno_items-conteiner">
-          <div class="vam-potribno_items__description">
-            <h3>Чому вам це потрібно?</h3>
+          <div class="vam-potribno_items-conteiner">
+            <div class="vam-potribno_items__description">
+              <h3>Чому вам це потрібно?</h3>
+            </div>
+            <div class="vam-potribno_items__text">
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ваш САЙТ — це обличчя вашого бізнесу, це як офіс або шоурум тільки ОНЛАЙН. Якщо сайт виглядає застарілим або працює з перебоями, або в ньому немає сучасних функцій ви ризикуєте втратити клієнтів.</p>
+            </div>
           </div>
-          <div class="vam-potribno_items__text">
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ваш САЙТ — це обличчя вашого бізнесу, це як офіс або шоурум тільки ОНЛАЙН. Якщо сайт виглядає застарілим або працює з перебоями, або в ньому немає сучасних функцій ви ризикуєте втратити клієнтів.</p>
-          </div>
+          
         </div>
-      </div>
+       
+     
     </section>
+  {% comment %} секция  vam-potribno_section{% endcomment %}  
 
+  {% comment %} секция  perezapusk-fon-section{% endcomment %}
     <section class="perezapusk-fon-section">
       <div class="perezapusk-fon-image">
         <div class="perezapusk-fon-text">
@@ -114,7 +145,11 @@
         </div>
       </div>
     </section>
+    {% comment %} секция perezapusk-fon-section{% endcomment %}
+ 
 
+
+    
     <section class="proponuemo-section">
       <div class="proponuemo-section-conteiner">
         <div class="proponuemo-description-conteiner">
@@ -271,7 +306,7 @@
     </section>
 
 
-    {% include 'include/form/contact_form.html' %}
+  
 
     {% include 'include/footer/footer.html' %}
 

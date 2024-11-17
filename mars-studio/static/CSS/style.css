@@ -2741,8 +2741,115 @@ mage-conteiner-items {
     margin-left: 500px;
 
 }
-/* -------------------------------perezapusk_section-------------------------------------- */
 
+
+
+/* -------------------------------perezapusk_section-------------------------------------- */
+/* -------------------------------perezapusk_planshet-------------------------------------- */
+.perezapusk_conteiner__planshet {
+
+    display:none;
+
+   
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+
+
+}
+
+
+.perezapusk_conteiner-description__planshet-two {
+
+    display: none;
+}
+.perezapusk_conteiner-description__planshet-two p{
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #FED700;
+
+
+}
+
+.perezapusk_conteiner-description__planshet,
+.perezapusk_conteiner-title__planshet,
+.perezapusk_conteiner-items__planshet,
+.perezapusk_conteiner-button__planshet{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+
+
+.perezapusk_conteiner-description__planshet {
+
+    width: 600px;
+    text-align: right;
+
+}
+.perezapusk_conteiner-description__planshet p{
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #FED700;
+    margin-left: 224px;
+    
+   
+}
+
+.perezapusk_conteiner-title__planshet h1{
+
+    /* font-family: Raleway, sans-serif; */
+    font-weight: 900;
+    font-size: 70px;
+    /* line-height: 100px; */
+    color: #FAFAFF;
+    text-align: right;
+
+    
+}
+
+.perezapusk_conteiner-items__planshet {
+
+    width: 500px;
+    text-align: left;
+    padding: 10px;
+    margin-left: 90px;
+    width: 400px;
+
+
+}
+.perezapusk_conteiner-items__planshet h2{
+
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FAFAFF;
+    font-family: Inter, sans-serif;
+    margin-top: 40px;
+    margin-left: 60px;
+    padding: 10px;
+
+
+}
+.perezapusk-button__planshet {
+
+    width: 312px;
+    height: 60px;
+    border-radius: 30px; /* Округляет углы */
+    background-color:#FED700; /* Цвет кнопки */
+    color: #020607; /* Цвет текста */
+    border: none; /* Убирает рамку */
+    font-size: 16px; /* Размер текста */
+    cursor: pointer;
+    margin-top: 20px;
+}    
+/* -------------------------------perezapusk_planshet-------------------------------------- */
 
 /* -------------------------------vam-potribno_section-------------------------------------- */
 
@@ -2752,55 +2859,26 @@ mage-conteiner-items {
 
 }
 
-.vam-potribno_conteiner {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-/* .vam-potribno_image {
-
-
-    width: 550px;        
-    height: 330px; 
-   
-
-
-
-} */
 
 .vam-potribno_image {
-    flex: 1;
-    max-width: 100%;
-    display: flex;
+
+    background-image: url(../image/vam-potribno-destop.png);
+    width: 100%;
+    height: 420px;
     justify-content: center;
-    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;              
+    justify-content: center;
+    align-items: center; 
+
   
 }
-.vam-potribno_image img {
-    width: 100%; /* Адаптивная ширина */
-    height: auto; /* Сохраняет пропорции изображения */
-    max-width: 550px; /* Ограничение ширины */
-    max-height: 330px; /* Ограничение высоты */
-  }
 
-/* .vam-potribno_items-conteiner {
 
-    width: 600px;
-    height: 370px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    
-
-} */
 
 .vam-potribno_items-conteiner {
-    flex: 1;
+   
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -2810,12 +2888,13 @@ mage-conteiner-items {
     max-width: 600px;
     max-height: 370px;
     box-sizing: border-box; 
+    margin-left: 550px
 }
     
  .vam-potribno_items__description h3 {
 
     font-size: 50px;
-    font-weight: 800;
+    font-weight: 900;
     line-height: 60px;
     color: #020607;
 
@@ -2842,7 +2921,7 @@ mage-conteiner-items {
 }
 .perezapusk-fon-image {
 
-    background-image: url(../image/perezapusk-fon-desktop.png);
+    background-image: url(../image/zrobimo-sait-desctop.png);
     width: 100%;
     height: 500px;
     justify-content: center;
@@ -2859,7 +2938,7 @@ mage-conteiner-items {
 
     font-weight: 800;
     font-size: 65px;
-    margin-top: 30px;
+    margin-top: 90px;
     color: #FAFAFF;
   
    
@@ -2907,7 +2986,7 @@ mage-conteiner-items {
 
     display: flex;
     justify-content: center;
-   
+    padding: 20px;
     flex-direction: column;
 
   
@@ -2921,8 +3000,8 @@ mage-conteiner-items {
 }
 .proponuemo-description-conteiner h5 {
 
-    font-size: 80px;
-    font-weight: 800;
+    font-size: 70px;
+    font-weight: 900;
     color: #252422;
 
 
@@ -2969,7 +3048,7 @@ mage-conteiner-items {
 .proponuemo-image-logo p {
 
     font-size: 30px;
-    font-weight: 800;
+    font-weight: 900;
     color: #252422;
 }
 
@@ -2985,8 +3064,8 @@ mage-conteiner-items {
 
 .proponuemo-items__text h5 {
 
-    font-weight: 300;
-    font-size: 25px;
+    font-weight: 200;
+    font-size: 20px;
     font-family: Inter, sans-serif;
     color: #252422;
 
@@ -3035,13 +3114,13 @@ mage-conteiner-items {
 .vi-otrimuete-description h5 {
 
     font-weight: 800;
-    font-size: 60px;
+    font-size: 50px;
     color: #FED700;
 }
 
 .vi-otrimuete-item h6{
 
-    font-weight: 200;
+    font-weight: 100;
     font-size: 25px;
     line-height: 25px;
     color: #FAFAFF;
@@ -3163,5 +3242,32 @@ mage-conteiner-items {
 }
 
 
+/* ------------------------------- vam_povezlo-planshet-------------------------------------- */
+.vam-potribno_section__planshet {
+
+    display: none;
+
+
+}
+.vam-potribno_section__planshet-image {
+
+    background-image: url(../image/perezapusk-planshet.png);
+    width: 100%;
+    height: 1300px;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+
+
+
+}
+/* ------------------------------- vam_povezlo-planshet-------------------------------------- */
+
 /* font-family: Inter, sans-serif; */
 /* font-family: Raleway, sans-serif; */
+
+
