@@ -449,7 +449,7 @@
 
   .cosmonavt-planshet_conteiner {
 
-    width: 320px;
+ 
     /* height: 250px; */
     padding: 10px;
   }
@@ -582,6 +582,13 @@
   }  
 }
 @media (max-width: 480px) {
+
+  .cosmonavt-planshet_conteiner {
+
+    max-width: 400px;
+    padding: 10px;
+    
+  }
 
   .proponuemo-txt {
 
@@ -771,7 +778,7 @@
     margin-top: 150px;
 
   }
-  
+ 
 }
 
 

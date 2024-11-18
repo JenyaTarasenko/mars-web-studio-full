@@ -131,14 +131,7 @@
 
 
 }
-@media (max-width: 863px) {
 
-  
-
-
-
-
-}
 
 @media (max-width: 790px) {
 
@@ -456,13 +449,13 @@
 
   .cosmonavt-planshet_conteiner {
 
-    width: 320px;
+ 
     /* height: 250px; */
     padding: 10px;
   }
   .cosmonavt-planshet_title h6 {
 
-   
+    font-weight: 800;
     font-size: 50px;
   }
   .cosmonavt-planshet_price {
@@ -503,6 +496,10 @@
   }
 }
 @media (max-width: 526px) {
+  .perezapusk_conteiner-description__planshet-two p{
+
+    margin-left: 100px;
+  }
 
   .perezapusk_conteiner-items__planshet h2 {
 
@@ -586,6 +583,28 @@
 }
 @media (max-width: 480px) {
 
+  .cosmonavt-planshet_conteiner {
+
+    max-width: 400px;
+    padding: 10px;
+    
+  }
+
+  .proponuemo-txt {
+
+    font-size: 50px;
+    padding: 20px;
+  }
+  .perezapusk-fon-text h4  {
+
+    font-size: 40px;
+    margin-top: 20px;
+
+
+  }
+
+ 
+
   .perezapusk_conteiner-items__planshet {
 
     width:400px;
@@ -594,7 +613,7 @@
 
   .vi-otrimuete-description h5{
 
-    font-size: 50px;
+    font-size: 40px;
   }
 
 
@@ -759,13 +778,7 @@
     margin-top: 150px;
 
   }
-  .cosmonavt-planshet_conteiner {
-
-    width: 280px;
-    height: 250px;
-
-  }
-
+ 
 }
 
 
