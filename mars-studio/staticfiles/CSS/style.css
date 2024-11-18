@@ -2562,6 +2562,19 @@ mage-conteiner-items {
     color: #010506;
 
 }
+.text-cosmonavt {
+    font-weight: 900;
+    font-size: 40px;
+
+
+}
+.cosmonsvt-prise {
+
+    font-weight: 900;
+    font-size: 30px;
+
+
+}
 
 .cosmo-text {
 
@@ -2998,7 +3011,7 @@ mage-conteiner-items {
 
 
 }
-.proponuemo-description-conteiner h5 {
+.proponuemo-txt{
 
     font-size: 70px;
     font-weight: 900;
