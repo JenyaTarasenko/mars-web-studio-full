@@ -32,44 +32,8 @@
   <section class="perezapusk_section">
         <div class="perezapusk_image">
 
-            <nav class="navbar navbar-expand-lg navbar-light" style="position: absolute; top: 0; left: 0; right: 0; z-index: 100;">
-                <div class="container-fluid d-flex justify-content-between">
-                    
-                    <!-- Логотип слева -->
-                    <a class="navbar-brand order-lg-1" href="#">
-                        <img src="{% static 'image/лого.png' %}" alt="Mars logo" style="width: 103px; height: 60px;">
-                    </a>
-            
-                    <!-- Иконка бургера справа -->
-                    <button class="navbar-toggler order-lg-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon" style="background-image: url('{% static 'image/burger2.svg' %}');"></span>
-                    </button>
-            
-                    <!-- Меню навигации -->
-                    <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="{% url 'mars:index' %}">Головна</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{% url 'mars:about' %}">Про нас</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Послуги</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Проекти</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Умови</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Контакти</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+          {% include 'include/menu/menu.html' %}
+          
             <div class="perezapusk_conteiner">
               <div class="perezapusk_conteiner-description">
                 <p>Ми пропонуємо послугу</p>

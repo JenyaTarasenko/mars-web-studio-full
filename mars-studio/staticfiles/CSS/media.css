@@ -231,6 +231,25 @@
 
 @media (max-width: 768px) {/* замена главного экрана на 768 px */
 
+  .text-align {
+
+
+    text-align: none;
+  }
+
+  .meta_studio-items-two p, .meta_studio-items-one  {
+
+    text-align: left;
+
+
+  }
+  
+
+  .about-image-raceta-style-desctop {
+
+    display: none;
+  }
+
   .perezapusk_image {
 
     background-image: url(../image/perezapusk-planshet2.png);
@@ -582,6 +601,11 @@
   }  
 }
 @media (max-width: 480px) {
+
+  .detail-image_one {
+
+    width: 380px;
+  }
 
   .cosmonavt-planshet_conteiner {
 

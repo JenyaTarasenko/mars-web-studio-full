@@ -32,84 +32,52 @@
     <link rel="stylesheet" href="{% static 'CSS/media.css' %}">
 
     <title>Mars design-studio</title>
+    <script src="{% static 'js/script.js' %}"></script>
   </head>
   <body>
     
   <!-- секция главного экрана -->
   <section class="banner">
       <div class="image-banner"><!-- картинка  -->
-        <!-- навигация  -->
-        {% comment %} <nav class="navbar navbar-expand-lg navbar-light" style="position: absolute; top: 0; left: 0; right: 0; z-index: 100;">
-          <div class="container-fluid">
-            <!-- логотип -->
-            <a class="navbar-brand" href="#"><img src="{% static 'image/лого.png' %}" alt="Mars logo" style="width: 103px; height: 60px;"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon" style="background-image: url('{% static '/image/burger2.svg' %}');"></span>
+        {% comment %} <nav class="navbar navbar-expand-lg" style="position: absolute; top: 0; left: 0; right: 0; z-index: 100; background-color: #000000;">
+          <div class="container d-flex justify-content-between align-items-center">
+            <!-- Логотип -->
+            <a class="navbar-brand" href="#">
+              <img src="{% static 'image/лого.png' %}" alt="Mars logo" style="width: 103px; height: 60px;">
+            </a>
+            <!-- Бургер-меню -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon" style="background-image: url('{% static 'image/burger2.svg' %}'); background-size: contain; background-repeat: no-repeat; width: 30px; height: 30px;"></span>
             </button>
+            <!-- Навигация -->
             <div class="collapse navbar-collapse" id="navbarNav">
-              
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="{% url "mars:index" %}">Головна</a>
+                  <a class="nav-link {% if request.path == '/' %}active{% endif %}" aria-current="page" href="{% url 'mars:index' %}">Головна</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url "mars:about" %}">Про нас</a>
+                  <a class="nav-link {% if request.path == '/about-mars-studio/' %}active{% endif %}" href="{% url 'mars:about' %}">Про нас</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Послуги</a>
+                  <a class="nav-link" href="/#poslugi">Послуги</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Проекти</a>
+                  <a class="nav-link" href="/#projects">Проекти</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Умови</a>
+                  <a class="nav-link {% if 'umovi-raboti-mars' in request.path  %}active{% endif %}"href="{% url 'mars:umovi' %}">Умови</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Контакти</a>
+                  <a class="nav-link {% if 'etapy-raboti-mars/' in request.path  %}active{% endif %}" href="{% url 'mars:etapy' %}">Етапи</a>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link" href="/#form-top">Контакти</a>
                 </li>
               </ul>
             </div>
           </div>
         </nav> {% endcomment %}
-        <nav class="navbar navbar-expand-lg navbar-light" style="position: absolute; top: 0; left: 0; right: 0; z-index: 100;">
-          <div class="container-fluid d-flex justify-content-between">
-              
-              <!-- Логотип слева -->
-              <a class="navbar-brand order-lg-1" href="#">
-                  <img src="{% static 'image/лого.png' %}" alt="Mars logo" style="width: 103px; height: 60px;">
-              </a>
-      
-              <!-- Иконка бургера справа -->
-              <button class="navbar-toggler order-lg-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon" style="background-image: url('{% static 'image/burger2.svg' %}');"></span>
-              </button>
-      
-              <!-- Меню навигации -->
-              <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
-                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="{% url 'mars:index' %}">Головна</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="{% url 'mars:about' %}">Про нас</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">Послуги</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#projects">Проекти</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="{% url 'mars:umovi' %}">Умови</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#form-top">Контакти</a>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-        </nav>
-      
+        {% include 'include/menu/menu.html' %}
          <!-- навигация  -->
         <div class="banner-title-top">
           <h1>&nbsp;&nbsp;створення &<br>обслуговування сайтів</h1>
@@ -123,83 +91,47 @@
   <section class="planshet-banner">
     <div class="image_planshet-banner">
       
-      {% comment %} <nav class="navbar navbar-expand-lg navbar-light" style="position: absolute; top: 0; left: 0; right: 0; z-index: 100;">
-        <div class="container-fluid d-flex justify-content-between">
-            <!-- Логотип слева -->
-            <a class="navbar-brand" href="#">
-                <img src="{% static 'image/лого.png' %}" alt="Mars logo" style="width: 103px; height: 60px;">
-            </a>
-    
-            <!-- Меню навигации -->
-            <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{% url 'mars:index' %}">Головна</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'mars:about' %}">Про нас</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Послуги</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Проекти</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Умови</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Контакти</a>
-                    </li>
-                </ul>
-            </div>
-    
-            <!-- Иконка бургера справа -->
-            <button class="navbar-toggler order-lg-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon" style="background-image: url('{% static 'image/burger2.svg' %}');"></span>
-            </button>
-        </div>
-      </nav> {% endcomment %}
-      <nav class="navbar navbar-expand-lg navbar-light" style="position: absolute; top: 0; left: 0; right: 0; z-index: 100;">
-        <div class="container-fluid d-flex justify-content-between">
-            
-            <!-- Логотип слева -->
-            <a class="navbar-brand order-lg-1" href="#">
-                <img src="{% static 'image/лого.png' %}" alt="Mars logo" style="width: 103px; height: 60px;">
-            </a>
-    
-            <!-- Иконка бургера справа -->
-            <button class="navbar-toggler order-lg-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon" style="background-image: url('{% static 'image/burger2.svg' %}');"></span>
-            </button>
-    
-            <!-- Меню навигации -->
-            <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{% url 'mars:index' %}">Головна</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'mars:about' %}">Про нас</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/#poslugi">Послуги</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Проекти</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'mars:umovi' %}">Умови</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#form-top">Контакти</a>
-                    </li>
-                </ul>
-            </div>
+      {% comment %} <nav class="navbar navbar-expand-lg" style="position: absolute; top: 0; left: 0; right: 0; z-index: 100; background-color: #000000;">
+        <div class="container d-flex justify-content-between align-items-center">
+          <!-- Логотип -->
+          <a class="navbar-brand" href="#">
+            <img src="{% static 'image/лого.png' %}" alt="Mars logo" style="width: 103px; height: 60px;">
+          </a>
+          <!-- Бургер-меню -->
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="background-image: url('{% static 'image/burger2.svg' %}'); background-size: contain; background-repeat: no-repeat; width: 30px; height: 30px;"></span>
+          </button>
+          <!-- Навигация -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link {% if request.path == '/' %}active{% endif %}" aria-current="page" href="{% url 'mars:index' %}">Головна</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link {% if request.path == '/about-mars-studio/' %}active{% endif %}" href="{% url 'mars:about' %}">Про нас</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/#poslugi">Послуги</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/#projects">Проекти</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link {% if 'umovi-raboti-mars' in request.path  %}active{% endif %}"href="{% url 'mars:umovi' %}">Умови</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link {% if 'etapy-raboti-mars/' in request.path  %}active{% endif %}" href="{% url 'mars:etapy' %}">Етапи</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="/#form-top">Контакти</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
-    
-    
+     {% endcomment %}
+      {% include 'include/menu/menu.html' %}
+
       <div class="planshet-banner-text_conteiner">
         <h1>&nbsp;&nbsp;створення &<br>обслуговування сайтів</h1>
         <a href="{% url "mars:about" %}"><div class="mars-button"><img src="{% static 'image/кнопка.png' %}"><span>про студію</span></div></a>
@@ -211,44 +143,46 @@
   <!--   секция banner-mobile -->
   <section class="banner-mobile-section">
     <div class="banner-mobile-image">
-      <nav class="navbar navbar-expand-lg navbar-light" style="position: absolute; top: 0; left: 0; right: 0; z-index: 100;">
-        <div class="container-fluid d-flex justify-content-between">
-            
-            <!-- Логотип слева -->
-            <a class="navbar-brand order-lg-1" href="#">
-                <img src="{% static 'image/лого.png' %}" alt="Mars logo" style="width: 103px; height: 60px;">
-            </a>
-    
-            <!-- Иконка бургера справа -->
-            <button class="navbar-toggler order-lg-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon" style="background-image: url('{% static 'image/burger2.svg' %}');"></span>
-            </button>
-    
-            <!-- Меню навигации -->
-            <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{% url 'mars:index' %}">Головна</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'mars:about' %}">Про нас</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/#poslugi">Послуги</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Проекти</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'mars:umovi' %}">Умови</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#form-top">Контакти</a>
-                    </li>
-                </ul>
-            </div>
+      
+      {% comment %} <nav class="navbar navbar-expand-lg" style="position: absolute; top: 0; left: 0; right: 0; z-index: 100; background-color: #000000;">
+        <div class="container d-flex justify-content-between align-items-center">
+          <!-- Логотип -->
+          <a class="navbar-brand" href="#">
+            <img src="{% static 'image/лого.png' %}" alt="Mars logo" style="width: 103px; height: 60px;">
+          </a>
+          <!-- Бургер-меню -->
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="background-image: url('{% static 'image/burger2.svg' %}'); background-size: contain; background-repeat: no-repeat; width: 30px; height: 30px;"></span>
+          </button>
+          <!-- Навигация -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link {% if request.path == '/' %}active{% endif %}" aria-current="page" href="{% url 'mars:index' %}">Головна</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link {% if request.path == '/about-mars-studio/' %}active{% endif %}" href="{% url 'mars:about' %}">Про нас</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/#poslugi">Послуги</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/#projects">Проекти</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link {% if 'umovi-raboti-mars' in request.path  %}active{% endif %}"href="{% url 'mars:umovi' %}">Умови</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link {% if 'etapy-raboti-mars/' in request.path  %}active{% endif %}" href="{% url 'mars:etapy' %}">Етапи</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="/#form-top">Контакти</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </nav>
+      </nav> {% endcomment %}
+      {% include 'include/menu/menu.html' %}
     
 
       <div class="banner-mobile-conteiner">
@@ -277,7 +211,7 @@
           <h5>Сайт<br>візитка</h5>
         </div>
         <div class="card-item-top-wark">
-          <h6>З допомогою цієї послуги ви зможете почати просування своєї компанії в інтернеті.</h6>
+          <h6>За допомогою цієї послуги ви зможете почати просування своєї компанії в інтернеті.</h6>
         </div>
       </div>  
 
@@ -296,7 +230,7 @@
             <h5>Багатосторінковий<br>сайт</h5>
           </div>
           <div class="card-item-top-wark">
-            <h6>На цьому сайті ві можете добавити перехід на внутрішні сторінки сайту</h6>
+            <h6>На цьому сайті ви можете добавити перехід на внутрішні сторінки сайту</h6>
           </div>
         </div>  
     </div>
@@ -315,7 +249,7 @@
                 <div class="vizitka-text text-right">
                     <h2 class="vizi-text"><span class="vizi-span">&nbsp;&nbsp;[ сайт ]</span><br>&nbsp;&nbsp;&nbsp;&nbsp;Візитка</h2>
                     <div class="vizitka-text_items">
-                      <h5>&nbsp;&nbsp;Забронювати домен + Підключити хостинг, опис комапнії та ваші послуги + посилання на ваші соціальні сторінки = стисла форма на одному блоці в цій формі ви зможете походити примірятись, спробувати з нами попрацювати…та інше</h5>
+                      <h5>&nbsp;&nbsp;За допомогою цієї послуги ви зможете почати просування своєї компанії в інтернеті. Забронюйте домен (адресу сайта), підключіть хостинг (сервер), створіть опис компанії, підберіть візуальні матеріали та розмістіть посилання на соціальні сторінки компанії. Також через цю послугу ви зможете познайомитись з Web Studio “Mars” та розпочати тісну співпрацю.</h5>
                       <h6 class="vizi-text">&nbsp;&nbsp;&nbsp;&nbsp;вартість:<span class="vizi-span">&nbsp;від 100$</span></h6>
                     </div>
                     
@@ -369,7 +303,7 @@
 <!--   секция text -->
 <section class="new-text-center">
   <div class="new-text-center-conteiner">
-    <h5 class="new-text-block">проекти</h5>
+    <h5 class="new-text-block">проэкти</h5>
   </div>
 </section>
  <!--   секция text -->
@@ -442,7 +376,7 @@
         </div>
         <div class="mars-description-one">
           <h5 class="vizi-text">Eтапи<br>роботи</h5>
-          <p>Ми раді, що ви погодилися та розглядаєте можливість нашої співпраці. Хочемо нагадати вам, що ми разом з вами зацікавлені в успішності нашої місії, тому просимо розглядати наш підрозділ як ваших помічників, союзників тощо.</p>
+          <p>     Ми раді, що ви погодилися та розглядаєте можливість нашої співпраці. Хочемо нагадати вам, що ми разом з вами зацікавлені в успішності нашої місії, тому просимо розглядати наш підрозділ як ваших помічників, союзників тощо.</p>
           <a href="{% url "mars:etapy" %}"><button class="btn-center-mars">далі</button></a>
         </div>
 
@@ -456,7 +390,7 @@
             <a href="{% url 'mars:umovi' %}"><h6 class="vizi-text">умови<br>оплати</h6></a>
           </div>
           <div class="umovi-text">
-            <a href="{% url 'mars:etapy' %}"><h6 class="vizi-text">єтапи<br>роботи</h6></a>
+            <a href="{% url 'mars:etapy' %}"><h6 class="vizi-text">етапи<br>роботи</h6></a>
           </div>
           
         </div>
@@ -518,7 +452,7 @@
         <h5 class="vizi-text mini__text">чесність</h5>
       </div>
       <div class="card_mini_text_conteiner_text">
-        <h6 class="mini-description">чесність наш найкращи рекламний інструмент!</h6>
+        <h6 class="mini-description">чесність наш найкращий рекламний інструмент!</h6>
       </div>
     </div>
     <!-- card 1-->
@@ -563,12 +497,12 @@
 
 
        
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
   
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
  
-    <script src="/script.js"></script>
+  
   </body>
 </html>
