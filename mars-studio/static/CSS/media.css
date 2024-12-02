@@ -1,4 +1,12 @@
 
+
+@media (max-width: 1280px) {
+
+  .custom-container {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
 /* секция .image-banner фиксация текста */
 @media (max-width: 1240px) and (min-width: 768px) {  
     .banner-title-top {
@@ -98,7 +106,103 @@
 
 
 }
-@media (max-width: 992px) {/* logo-mars */
+@media (max-width: 991px) {
+  
+}
+@media (max-width: 992px) {
+  
+  .page-umovi .navbar-brand img {
+
+    content: url(../image/logo-grey.png);
+    width: 100px; 
+    height: auto;
+
+
+  }/* logo-mars */
+  /* page-umovi navbar */
+  .page-umovi .navbar {
+    background-color: transparent !important; /* Убираем фон c */
+  }
+  .page-umovi .bar {
+
+    background-color:#000000;
+    
+  }
+  .page-umovi .navbar:hover {
+    background-color: #010101!important;
+
+  }
+  .page-umovi .navbar-collapse {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 100%; /* Можно подстроить ширину по вашему усмотрению */
+    background-color: #010101; /* Для фона */
+  }
+
+  /* page-umovi navbar */
+
+
+
+    /* page-about navbar */
+  .page-about .navbar {
+    background-color: transparent !important; /* Убираем фон c */
+  }
+  .page-about .bar {
+  
+    background-color:#000000;
+      
+  }
+  .page-about .navbar:hover {
+
+    background-color: #010101!important;
+  
+  }
+  .page-about .navbar-collapse {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 100%; /* Можно подстроить ширину по вашему усмотрению */
+    background-color: #010101; /* Для фона */
+  }
+  .page-about .navbar-brand img {
+
+    content: url(../image/logo-grey.png);
+    width: 100px; 
+    height: auto;
+  }
+  /* page-about navbar */
+
+
+    /* page-raboti navbar */
+  .page-raboti .navbar {
+    background-color: transparent !important; /* Убираем фон c */
+  }
+  .page-raboti .bar {
+  
+    background-color:#000000;
+      
+  }
+  .page-raboti .navbar:hover {
+    background-color: #010101!important;
+  
+  }
+  .page-raboti .navbar-collapse {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 100%; /* Можно подстроить ширину по вашему усмотрению */
+    background-color: #010101; /* Для фона */
+  }
+  .page-raboti .navbar-brand img {
+
+    content: url(../image/logo-grey.png);
+    width: 100px; 
+    height: auto;
+  
+  }
+    /* page-raboti navbar */  
+
 
   .vam-potribno_items-conteiner {
 
@@ -114,10 +218,10 @@
 
     display: none;
   }
-  .navbar-brand {
+  /* .navbar-brand {
 
     display: none;
-  }
+  } */
   .perezapusk_conteiner-title {
 
     width: 0;
@@ -143,6 +247,16 @@
 
 @media (max-width: 768px) {
 
+  
+  .page-umovi .navbar-brand img {
+    width: 80px;  /* Уменьшаем логотип для мобильных устройств */
+    height: auto; /* Сохранение пропорций */
+  }
+
+  .page-about .navbar-brand img {
+    width: 80px;  /* Уменьшаем логотип для мобильных устройств */
+    height: auto; /* Сохранение пропорций */
+  }
 
   .vi-otrimuete-image {
 
@@ -230,6 +344,12 @@
 }
 
 @media (max-width: 768px) {/* замена главного экрана на 768 px */
+
+
+  .button-center-raceta-mars {
+
+    margin-bottom: 30px;
+  }
 
   .text-align {
 
@@ -490,6 +610,7 @@
   .cosmonavt-planshet_title h5 {
     font-weight: 500;
     font-size: 19px;
+
   }  
 }
 @media (max-width: 709px) {
@@ -503,6 +624,9 @@
     display: block;
   }
 }
+
+
+
 @media (max-width: 709px) {/* большая ширина контейнера для карт */
 
   .card-context-conteiner {
@@ -592,7 +716,7 @@
   }  
   .center-raceta-mars-conteiner h4 {
 
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 @media (max-width: 470px) {
@@ -601,6 +725,10 @@
   }  
 }
 @media (max-width: 480px) {
+  .navbar-brand {
+
+    display: none;
+  }
 
   .detail-image_one {
 

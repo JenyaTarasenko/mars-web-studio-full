@@ -4,49 +4,57 @@
 
 
 
+<body class="{% if 'umovi-raboti-mars' in request.path %}page-umovi{% elif 'about-mars-studio' in request.path %}page-about{% elif 'etapy-raboti-mars' in request.path %}page-raboti{% endif %}">
 
-<nav class="navbar navbar-expand-lg" style="position: absolute; top: 0; left: 0; right: 0; z-index: 100; background-color: #000000;">
-  <div class="container d-flex justify-content-between align-items-center">
-    <!-- Логотип -->
-    <a class="navbar-brand" href="#">
-      <img src="{% static 'image/лого.png' %}" alt="Mars logo" style="width: 103px; height: 60px;">
-    </a>
-    <!-- Бургер-меню -->
-    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="burger-icon">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </button>
-    <!-- Навигация -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item">
-          <a class="nav-link {% if request.path == '/' %}active{% endif %}" aria-current="page" href="{% url 'mars:index' %}">Головна</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {% if request.path == '/about-mars-studio/' %}active{% endif %}" href="{% url 'mars:about' %}">Про нас</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/#poslugi">Послуги</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/#projects">Проекти</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {% if 'umovi-raboti-mars' in request.path  %}active{% endif %}"href="{% url 'mars:umovi' %}">Умови</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {% if 'etapy-raboti-mars/' in request.path  %}active{% endif %}" href="{% url 'mars:etapy' %}">Етапи</a>
-        </li> 
-        <li class="nav-item">
-          <a class="nav-link" href="/#form-top">Контакти</a>
-        </li>
-      </ul>
+  <nav class="navbar navbar-expand-lg" style="position: absolute; top: 0; left: 0; right: 0; z-index: 100; background-color: #000000;">
+    <div class="container d-flex align-items-center">
+      {% comment %} контейнер лля 1280px {% endcomment %}
+     
+         <!-- Логотип -->
+        <a class="navbar-brand" href="#">
+          <img src="{% static 'image/лого.png' %}" alt="Mars logo"  class="d-block" style="width: 103px; height: 60px;">
+        </a>
+        <!-- Бургер-меню -->
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="burger-icon">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </button>
+        <!-- Навигация -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link {% if request.path == '/' %}active{% endif %}" aria-current="page" href="{% url 'mars:index' %}">Головна</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {% if request.path == '/about-mars-studio/' %}active{% endif %}" href="{% url 'mars:about' %}">Про нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#poslugi">Послуги</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#projects">Проекти</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {% if 'umovi-raboti-mars' in request.path  %}active{% endif %}"href="{% url 'mars:umovi' %}">Умови</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {% if 'etapy-raboti-mars/' in request.path  %}active{% endif %}" href="{% url 'mars:etapy' %}">Етапи</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="/#form-top">Контакти</a>
+            </li>
+          </ul>
+        </div>
+      
+      
+      {% comment %} контейнер лля 1280px {% endcomment %} 
     </div>
-  </div>
-</nav> 
+  </nav> 
+  
+</body>
 
 
 

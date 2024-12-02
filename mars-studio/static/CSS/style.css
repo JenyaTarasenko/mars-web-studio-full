@@ -6,6 +6,11 @@
     padding: 50px 0;
     
 } */
+
+@font-face {
+    font-family: 'MursGothic';
+    src: url('../fonts/MursGothic/MursGothic-WideDark.ttf') format('truetype');
+}
 a {
 
     text-decoration: none;
@@ -17,12 +22,14 @@ a {
 
 html,body {
    
-    font-family: Raleway, sans-serif;
-    font-family: Inter, sans-serif;
+    font-family: 'MursGothic', 'Raleway', 'Inter', sans-serif;
     font-size: 16px; 
     color: #CCC5B9; 
     min-width: 320px; 
-    overflow-x: hidden
+    overflow-x: hidden;
+    max-width: 1280px; /* Ограничиваем максимальную ширину */
+    margin: 0 auto; /* Центрируем контент */
+    padding: 0;
     
     
 
@@ -45,7 +52,10 @@ html {
     left: 0;
 } */
 
-
+.navbar-toggler:focus {
+    outline: none; /* Убирает обводку */
+    box-shadow: none; /* Убирает тень (если она есть) */
+  }
 
 .navbar-collapse {
     width: 200px; /* Ширина 200px */
@@ -134,9 +144,9 @@ html {
 
     opacity: 90%;
 }
-.navbar-brand {
+/* .navbar-brand {
     margin-left: auto;
-}
+} */
 /* меню навигации */
 .mars-title h1 {
 
@@ -152,6 +162,13 @@ html {
 /* Ховер для обычных ссылок */
 .navbar-nav .nav-link:hover {
     color: #E77B2D;  /* Оранжевый цвет для ховера */
+}
+
+.navbar-brand img {
+
+    width: 103px;
+    height: 60px;
+    display: block; 
 }
 
 
@@ -262,7 +279,7 @@ html {
     background-image: url(../image/sait-destop.png);
     background-position: center;
     background-size: cover;
-    height: 750px;
+    height: 800px;
     width: 100%;
 }
 
@@ -274,8 +291,9 @@ html {
 
 .vizitka-text span {
 
-    font-size: 40px;
-    color:#020607;
+    font-size: 35px;
+    color:#020607 !important;
+    font-family: Inter;
 }
 
 .vizitka-text h2 {
@@ -283,7 +301,7 @@ html {
     font-weight: 900;
     font-size: 90px;
     color:#ffd769;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'MursGothic', sans-serif;
     text-transform: uppercase;
 }
 .vizi-text {
@@ -329,7 +347,7 @@ html {
 
 .vizitka-text h6 {
 
-    font-size: 40px;
+    font-size: 35px;
     color: #ffd769;
     text-transform: uppercase;
 
@@ -506,6 +524,7 @@ html {
     height: 60px;
     border-radius: 30px;
     border: none;
+    font-family: 'Inter', sans-serif;
 }
 
 .form-control::placeholder {
@@ -701,6 +720,7 @@ html {
     font-size: 50px;
     color: #252422;
     font-weight: 900;
+    font-family: 'MursGothic', sans-serif;
 
 }
 
@@ -728,6 +748,7 @@ html {
     cursor: pointer; 
     color: #FAFAFF;
     text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
 }
 
 .form-button:hover {
@@ -789,7 +810,7 @@ html {
     font-weight: 800;
     font-size: 23px;
     color: #FAFAFF;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'MursGothic', sans-serif;
 
 }
 
@@ -924,7 +945,7 @@ html {
 
     font-size: 27px;
     font-weight: 900;
-    font-family: Raleway, sans-serif;
+    font-family: 'MursGothic',sans-serif;
 
 }
 
@@ -1024,8 +1045,11 @@ html {
     border: none;
     border-radius: 30px;
 
+   
+
 
 }
+
 
 .card_mini_text_conteiner {/*  rконтейнер для заголовка*/
 
@@ -1077,6 +1101,7 @@ html {
     letter-spacing: 5%;
     color: #FAFAFF;
     text-align: center;
+    font-family: 'Inter', sans-serif;
 
 
 }
@@ -1671,10 +1696,12 @@ html {
     font-size: 25px;
     line-height: 30px;
     color: #020607;
+    font-family: 'Inter', sans-serif;
 
 
 
 }
+
 
 .etapy-items_conteiner {
 
@@ -1748,6 +1775,8 @@ html {
     font-weight: 200;
     font-size: 20px;
     color: #020607;
+    font-family: 'Inter', sans-serif;
+
 
 
 }
@@ -1804,7 +1833,8 @@ html {
 
 .footer_new_items {
 
-    margin-left: 70px;
+    font-family: 'MursGothic', sans-serif;
+    margin-left: 150px;
     text-align: left;
     margin-top: 40px;
 }
@@ -1823,6 +1853,7 @@ html {
     margin-left: 70px;
     margin-top: 20px;
     color: #AEB2AA66;
+    font-family: 'Inter', sens serif;
 }
 
 .footer_new_mobile {
@@ -1892,6 +1923,7 @@ html {
     font-weight: 700;
     margin-right: 30px;
     text-transform: uppercase;
+    font-family: 'MursGothic', sans-serif;
 }
 .footer_new_items {
 
@@ -2011,7 +2043,6 @@ mage-conteiner-items {
 
 }
 
-
 .mobile-footer-description {
 
     display: flex;
@@ -2102,7 +2133,7 @@ mage-conteiner-items {
 .center-raceta-mars-conteiner h4{
 
     color:  #FFFFFF;
-    font-family: Raleway, sans-serif;
+    font-family: 'MursGothic', sans-serif;
     font-size: 60px;
     font-weight: 900;
     text-transform: uppercase;
@@ -2127,6 +2158,7 @@ mage-conteiner-items {
     color:  #FFFFFF;
     font-size: 25px;
     font-weight: 200;
+    font-family: 'Inter', sans-serif;
 
 
 
@@ -2203,8 +2235,9 @@ mage-conteiner-items {
 }
 .mars-description-one h5 {
 
-    font-weight: 800;
+    font-weight: 900;
     font-size: 35px;
+    font-family: 'MursGothic', sans-serif;
 
 }
 .mars-description-one p {
@@ -2213,8 +2246,16 @@ mage-conteiner-items {
     font-weight: 300;
     font-size: 20px;
     color:#252422;
+    font-family: 'Inter', sans-serif;
+    margin-top: 30px;
 
 }
+.right-text-center {
+    width: 220px;
+    height: 600px;
+    margin-top: 120px;
+}
+
 .btn-center-mars {
 
     background-color: #020607;
@@ -2259,6 +2300,14 @@ mage-conteiner-items {
     margin-top: 820px;
     
   
+
+}
+.text-mars-icons {
+
+    font-family: 'Inter', sans-serif;
+    color:#FAFAFF;
+
+
 
 }
 .icons-mars-social {
@@ -2328,6 +2377,7 @@ mage-conteiner-items {
 
     font-weight: 800;
     font-size: 40px;
+    font-family: 'MursGothic', sans-serif;
 }
 
 .center-raceta-mars_img-tree-mobile {
@@ -2394,6 +2444,7 @@ mage-conteiner-items {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 30px;
 }
 
 
@@ -2431,6 +2482,8 @@ mage-conteiner-items {
     font-weight: 200;
     letter-spacing: 5%;
     line-height: 40px;
+ 
+    font-family: 'Inter', sans-serif;
 }
 
 .meta_studio-items-two {
@@ -2453,6 +2506,8 @@ mage-conteiner-items {
     font-weight: 200;
     letter-spacing: 5%;
     line-height: 40px;
+    font-family: 'Inter', sans-serif; 
+
 }
 /* -------------------------------meta_studio-------------------------------------- */
 
@@ -2483,6 +2538,7 @@ mage-conteiner-items {
     color:#020607;
     font-weight: 900;
     letter-spacing: 5%;
+    font-family: 'MursGothic', sans-serif;
 
 }
 
@@ -2516,10 +2572,11 @@ mage-conteiner-items {
 
 .princip-card-items h5 {
 
-    font-weight: 700;
+    font-weight: 500;
     font-size: 25px;
     line-height: 40px;
     color: #000000;
+    font-family: 'Inter', sans-serif; 
 }
 /* -------------------------------princip_studio-------------------------------------- */
 .about-page_section {
@@ -2536,6 +2593,7 @@ mage-conteiner-items {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
 
 
 }
@@ -2589,8 +2647,10 @@ mage-conteiner-items {
     line-height: 40px;
     letter-spacing: 5%;
     color: #252422;
+    font-family: 'Inter', sans-serif; 
 
 }
+
 
 /* -------------------------------cosmonavt-planshet-------------------------------------- */
 .cosmonavt-planshet_section {
@@ -2651,6 +2711,7 @@ mage-conteiner-items {
     font-weight: 500;
     font-size: 20px;
     color: #010506;
+    font-family: "inter", sans-serif;
 
 
 }
@@ -2755,8 +2816,8 @@ mage-conteiner-items {
 .new-text-block {
 
     font-weight: 900;
-    font-family: 'Raleway', sans-serif;
-    font-size: 70px;
+    font-family: 'MursGothic',sans-serif;
+    font-size: 60px;
     color: #020607E5;
     text-transform: uppercase;
 }
@@ -2842,11 +2903,12 @@ mage-conteiner-items {
 }
 .perezapusk_conteiner-title h1{
 
-    /* font-family: Raleway, sans-serif; */
+    font-family: 'MursGothic', sans-serif;
     font-weight: 900;
     font-size: 90px;
     line-height: 100px;
     color: #FAFAFF;
+
 }
 
 
@@ -2867,6 +2929,8 @@ mage-conteiner-items {
     line-height: 30px;
     color: #FED700;
     margin-left: 300px;
+    font-family: 'Inter', sans-serif; 
+
 }
 
 
@@ -2935,6 +2999,8 @@ mage-conteiner-items {
     font-weight: 400;
     line-height: 30px;
     color: #FED700;
+    font-family: 'Inter', sans-serif;
+
 
 
 }
@@ -2964,6 +3030,8 @@ mage-conteiner-items {
     line-height: 30px;
     color: #FED700;
     margin-left: 224px;
+    font-family: 'Inter', sans-serif;
+
     
    
 }
@@ -3058,7 +3126,8 @@ mage-conteiner-items {
     max-width: 600px;
     max-height: 370px;
     box-sizing: border-box; 
-    margin-left: 550px
+    margin-left: 550px;
+    gap: 40px;
 }
     
  .vam-potribno_items__description h3 {
@@ -3294,6 +3363,7 @@ mage-conteiner-items {
     font-size: 25px;
     line-height: 25px;
     color: #FAFAFF;
+    font-family: 'Inter', sans-serif;
 
 
 
@@ -3339,6 +3409,7 @@ mage-conteiner-items {
     display: flex;
     justify-content: center;
     align-items: center; 
+    margin-top: 100px;
 
 
 
@@ -3400,13 +3471,17 @@ mage-conteiner-items {
     font-size: 70px;
     line-height: 70px;
     color:#020607;
+    font-family: 'MursGothic', sans-serif;
+    
+
 }
 .about-page_items-description__planshet p {
 
-    font-weight: 300;
+    font-weight: 200;
     font-size: 35px;
     line-height: 40px;
     color:#020607;
+    font-family: 'Inter', sans-serif;
 
 }
 
@@ -3468,3 +3543,5 @@ mage-conteiner-items {
 
 
 
+/* font-family: 'MursGothic', sans-serif;
+font-family: 'Inter', sans-serif; */
