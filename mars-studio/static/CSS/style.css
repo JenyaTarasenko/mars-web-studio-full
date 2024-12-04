@@ -749,6 +749,7 @@ html {
     color: #FAFAFF;
     text-transform: uppercase;
     font-family: 'Inter', sans-serif;
+    font-weight: 300;
 }
 
 .form-button:hover {
@@ -1077,7 +1078,7 @@ html {
 
 .mini__text {/*  контейнер для  текста */
 
-    font-size: 30px;
+    font-size: 27px;
     font-weight: 900;
     margin-top: 70px;
     text-transform: uppercase;
@@ -2057,6 +2058,8 @@ mage-conteiner-items {
 
     color:#AEB2AA66;
     font-size: 14px;
+    font-weight: 200;
+    font-family: 'Inter', sans-serif;
 
 }
 
@@ -2089,7 +2092,9 @@ mage-conteiner-items {
 .mobile-conteiner_prava p {
     font-size: 1rem; /* Базовый размер шрифта */
     line-height: 1.5;
-    text-align: justify;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+
 }
 
 
@@ -2106,9 +2111,9 @@ mage-conteiner-items {
 }
 .center-raceta-mars_img-one {
 
-    background-image: url(../image/center-raceta-one.png);
+    background-image: url(../image/telegram-bot-des.png);
     width: 100%;
-    height: 1024px;
+    height: 694px;
     display: flex;
     justify-content: center;
     background-position: center;
@@ -2203,9 +2208,9 @@ mage-conteiner-items {
 
 .center-raceta-mars_img-two {
 
-    background-image: url(../image/center-raceta-two.png);
+    background-image: url(../image/telegram-bot-de2.png);
     width: 100%;
-    height: 1200px;
+    height: 699px;
     display: flex;
     justify-content: center;
     background-position: center;
@@ -2279,9 +2284,9 @@ mage-conteiner-items {
 
 .center-raceta-mars_img-tree {
 
-    background-image: url(../image/center-raceta-tree.png);
+    background-image: url(../image/telegram-bot-top.png);
     width: 100%;
-    height: 1024px;
+    height: 700px;
     display: flex;
     justify-content: center;
     background-position: center;
@@ -2324,7 +2329,7 @@ mage-conteiner-items {
 .center-raceta-mars_img-one-mobile {
 
     display: none;
-    background-image: url(../image/perezapustim_vash_sait.png);
+    background-image: url(../image/reclama-mobile.png);
     width: 100%;
     height: 500px;
     justify-content: center;
@@ -2342,9 +2347,9 @@ mage-conteiner-items {
 .center-raceta-mars_img-two-mobile {
 
     display: none;
-    background-image: url(../image/etap.png);
+    background-image: url(../image/reclama-top.png);
     width: 100%;
-    height: 1053px;
+    height: 1260px;
     justify-content: center;
     background-position: center;
     background-repeat: no-repeat;

@@ -837,7 +837,7 @@
   }
   .center-raceta-mars-conteiner h4{
 
-    font-size: 40px;
+    font-size: 35px;
 
   }
   .horizontal-bar {
@@ -937,7 +937,10 @@
 @media (max-width: 380px) {
 
   .form-conteiner-top-text h6 {
-    font-size: 20px;
+    
+    font-size: 30px;
+    text-align: center;
+    
   }  
 
   .horizontal-bar {
