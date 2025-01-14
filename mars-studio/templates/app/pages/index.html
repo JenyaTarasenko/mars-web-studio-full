@@ -6,7 +6,28 @@
    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Совместимость с Internet Explorer -->
+    <meta name="description" content="Разработка интерактивных интернет-сайтов, лендингов, многостраничных интернет-магазинов и многофункциональных сайтов с адаптивным и уникальным дизайном.">
+    <meta name="keywords" content="Разработка сайтов, кроссплатформенные сайты, веб-разработка, адаптивный дизайн, создание сайтов, веб-дизайн, разработка приложений, мобильные сайты">
+    <meta name="author" content="Mars design studio">
+    <meta name="robots" content="index, follow"> <!-- Даем инструкции для поисковых систем -->
+    <meta name="robots" content="noarchive"> <!-- Запрещаем поисковикам кешировать страницу -->
 
+
+    <!-- Open Graph для социальных сетей -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mars design studio — Разработка интерактивных интернет-сайтов, лендингов, многостраничных интернет-магазинов и многофункциональных сайтов с адаптивным и уникальным дизайном.">
+    <meta property="og:description" content="Разработка интерактивных интернет-сайтов, лендингов, многостраничных интернет-магазинов и многофункциональных сайтов с адаптивным и уникальным дизайном.">
+    <meta property="og:url" content="https://example.com"> <!-- Здесь должен быть ваш домен -->
+    <meta property="og:site_name" content="Mars design studio">
+    <meta property="og:locale" content="uk_UA">
+    <!-- Twitter Cards для Twitter -->
+    <meta name="twitter:title" content="Mars studio — Разработка интерактивных интернет-сайтов, лендингов, многостраничных интернет-магазинов и многофункциональных сайтов с адаптивным и уникальным дизайном.">
+    <meta name="twitter:description" content="Разработка интерактивных интернет-сайтов, лендингов, многостраничных интернет-магазинов и многофункциональных сайтов с адаптивным и уникальным дизайном.">
+    <!-- Изображение для Twitter -->
+    <!-- Иконка сайта -->
+    <link rel="icon" href="https://example.com/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://example.com/apple-icon.png"> <!-- Для iOS устройств -->
     <!-- библиотека  иконок  https://cdnjs.com/libraries/font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,356 +57,343 @@
   </head>
   <body>
     
-  <!-- секция главного экрана -->
-  <section class="banner">
-      <div class="image-banner"><!-- картинка  -->
+    <!-- секция главного экрана -->
+    <section class="banner">
+        <div class="image-banner"><!-- картинка  -->
+          
+          {% include 'include/menu/menu.html' %}
+          <!-- навигация  -->
+          <div class="banner-title-top">
+            <h1>&nbsp;&nbsp;створення &<br>обслуговування сайтів</h1>
+            <a href="{% url "mars:about" %}"><div class="mars-button"><img src="{% static 'image/кнопка.png' %}"><span>про студію</span></div></a>
+          </div>
+        </div>
+    </section>
+    <!-- секция главного экрана -->
+
+    <!-- планшетная версия  главного экрана -->
+    <section class="planshet-banner">
+      <div class="image_planshet-banner">
         
+      
         {% include 'include/menu/menu.html' %}
-         <!-- навигация  -->
-        <div class="banner-title-top">
+
+        <div class="planshet-banner-text_conteiner">
           <h1>&nbsp;&nbsp;створення &<br>обслуговування сайтів</h1>
           <a href="{% url "mars:about" %}"><div class="mars-button"><img src="{% static 'image/кнопка.png' %}"><span>про студію</span></div></a>
         </div>
       </div>
-  </section>
-  <!-- секция главного экрана -->
+    </section>
+    <!-- планшетная версия  главного экрана -->
 
-  <!-- планшетная версия  главного экрана -->
-  <section class="planshet-banner">
-    <div class="image_planshet-banner">
+    <!--   секция banner-mobile -->
+    <section class="banner-mobile-section">
+      <div class="banner-mobile-image">
+        
+        {% include 'include/menu/menu.html' %}
       
-     
-      {% include 'include/menu/menu.html' %}
 
-      <div class="planshet-banner-text_conteiner">
-        <h1>&nbsp;&nbsp;створення &<br>обслуговування сайтів</h1>
-        <a href="{% url "mars:about" %}"><div class="mars-button"><img src="{% static 'image/кнопка.png' %}"><span>про студію</span></div></a>
+        <div class="banner-mobile-conteiner">
+          <h1>&nbsp;&nbsp;&nbsp;створення &<br>обслуговування сайтів</h1>
+          <a href="{% url "mars:about" %}"><div class="mars-button"><img src="{% static 'image/кнопка.png' %}"><span>про студію</span></div></a>
+
+        </div>
       </div>
-    </div>
-  </section>
-  <!-- планшетная версия  главного экрана -->
+    </section><!--   секция banner-mobile -->
 
-  <!--   секция banner-mobile -->
-  <section class="banner-mobile-section">
-    <div class="banner-mobile-image">
-      
-      {% include 'include/menu/menu.html' %}
-    
-
-      <div class="banner-mobile-conteiner">
-        <h1>&nbsp;&nbsp;&nbsp;створення &<br>обслуговування сайтів</h1>
-        <a href="{% url "mars:about" %}"><div class="mars-button"><img src="{% static 'image/кнопка.png' %}"><span>про студію</span></div></a>
-
+    <!--   секция text -->
+    <section class="new-text">
+      <div class="new-text-conteiner">
+        <h5 class="new-text-block">послуги</h5>
       </div>
-    </div>
-  </section><!--   секция banner-mobile -->
-
-<!--   секция text -->
- <section class="new-text">
-  <div class="new-text-conteiner">
-    <h5 class="new-text-block">послуги</h5>
-  </div>
- </section>
- <!--   секция text -->
+    </section>
+    <!--   секция text -->
  
-  <!-- секция карта -->
-  <section id="poslugi" class="card-top-wark-section">
-    
-    <div class="conteiner-card-top-wark"> 
+    <!-- секция карта -->
+    <section id="poslugi" class="card-top-wark-section">
       
-      <div class="card-top-wark" card-1 style="background-image: url({% static 'image/card_section1_one.png' %});" > 
-        <div class="card-title-top-wark"> 
-          <h5>Сайт<br>візитка</h5>
-        </div>
-        <div class="card-item-top-wark">
-          <h6>За допомогою цієї послуги ви зможете почати просування своєї компанії в інтернеті.</h6>
-        </div>
-      </div>  
-
-      <div class="card-top-wark" card-2 style="background-image: url({% static 'image/card_section1_two.png' %});" > 
-        <div class="card-title-top-wark"> 
-          <h5>ЛЕНДІНГ</h5>
-        </div>
-        <div class="card-item-top-wark">
-          <h6>Така форма сайту ідеально підходить для невеликих компаній, продуктів, подій та заходів.</h6>
-        </div>
-      </div>  
-
-
-        <div class="card-top-wark" card-3 style="background-image: url({% static 'image/card_section1_three.png' %});" > 
+      <div class="conteiner-card-top-wark"> 
+        
+        <div class="card-top-wark" card-1 style="background-image: url({% static 'image/card_section1_one.png' %});" > 
           <div class="card-title-top-wark"> 
-            <h5>Багатосторінковий<br>сайт</h5>
+            <h5>Сайт<br>візитка</h5>
           </div>
           <div class="card-item-top-wark">
-            <h6>На цьому сайті ви можете добавити перехід на внутрішні сторінки сайту</h6>
+            <h6>За допомогою цієї послуги ви зможете почати просування своєї компанії в інтернеті.</h6>
           </div>
         </div>  
-    </div>
 
-  </section>
-  <!-- секция карта -->
-  
-  
+        <div class="card-top-wark" card-2 style="background-image: url({% static 'image/card_section1_two.png' %});" > 
+          <div class="card-title-top-wark"> 
+            <h5>ЛЕНДІНГ</h5>
+          </div>
+          <div class="card-item-top-wark">
+            <h6>Така форма сайту ідеально підходить для невеликих компаній, продуктів, подій та заходів.</h6>
+          </div>
+        </div>  
 
-  <!-- секция визитка -->
-  <section class="vizitka-conteiner">
-    <div class="vizitka-image">
-      <div class="container">
-        <div class="row justify-content-end">
-            <div class="col-md-6">
-                <div class="vizitka-text text-right">
-                    <h2 class="vizi-text"><span class="vizi-span">&nbsp;&nbsp;[ сайт ]</span><br>&nbsp;&nbsp;Візитка</h2>
-                    <div class="vizitka-text_items">
-                      <h5>&nbsp;&nbsp;За допомогою цієї послуги ви зможете почати просування своєї компанії в інтернеті. Забронюйте домен (адресу сайта), підключіть хостинг (сервер), створіть опис компанії, підберіть візуальні матеріали та розмістіть посилання на соціальні сторінки компанії. Також через цю послугу ви зможете познайомитись з Web Studio “Mars” та розпочати тісну співпрацю.</h5>
-                      <h6 class="vizi-text">&nbsp;&nbsp;&nbsp;&nbsp;вартість:<span class="vizi-span">&nbsp;від 100$</span></h6>
-                    </div>
-                    
-                </div>
+
+          <div class="card-top-wark" card-3 style="background-image: url({% static 'image/card_section1_three.png' %});" > 
+            <div class="card-title-top-wark"> 
+              <h5>Багатосторінковий<br>сайт</h5>
             </div>
-        </div>
-    </div>
-  </section> <!-- конец секция баннер  -->
-
-  <section class="cosmonavt-planshet_section">
-    <div class="cosmonavt-planshet">
-
-      <div class="cosmonavt-planshet_conteiner">
-
-        <div class="cosmonavt-planshet_title">
-          <h5>[ Сайт ]</h5>
-          <h6 class="vizi-text cosmo-text">&nbsp;Візитка</h6>
-
-        </div>
-
-        <div class="cosmonavt-planshet_description">
-          <h6>
-            &nbsp;За допомогою цієї послуги ви зможете почати просування своєї компанії в інтернеті. Забронюйте домен (адресу сайта), підключіть хостинг (сервер), створіть опис компанії, підберіть візуальні матеріали та розмістіть посилання на соціальні сторінки компанії. Також через цю послугу ви зможете познайомитись з Web Studio “Mars” та розпочати тісну співпрацю.
-          </h6>
-
-        </div>
-
-        <div class="cosmonavt-planshet_price">
-          <p class="cosmo-text">
-            <span class="vizi-text text-cosmonavt">вартість:</span> 
-            <span class="price-value cosmonsvt-prise">від 100$</span>
-          </p>
-
-        </div>
-
-
+            <div class="card-item-top-wark">
+              <h6>На цьому сайті ви можете добавити перехід на внутрішні сторінки сайту</h6>
+            </div>
+          </div>  
       </div>
 
-      <div class="cosmonavt-planshet_img">
+    </section>
+    <!-- секция карта -->
+  
+  
+
+    <!-- секция визитка -->
+    <section class="vizitka-conteiner">
+      <div class="vizitka-image">
+        <div class="container">
+          <div class="row justify-content-end">
+              <div class="col-md-6">
+                  <div class="vizitka-text text-right">
+                      <h2 class="vizi-text"><span class="vizi-span">&nbsp;&nbsp;[ сайт ]</span><br>&nbsp;&nbsp;Візитка</h2>
+                      <div class="vizitka-text_items">
+                        <h5>&nbsp;&nbsp;За допомогою цієї послуги ви зможете почати просування своєї компанії в інтернеті. Забронюйте домен (адресу сайта), підключіть хостинг (сервер), створіть опис компанії, підберіть візуальні матеріали та розмістіть посилання на соціальні сторінки компанії. Також через цю послугу ви зможете познайомитись з Web Studio “Mars” та розпочати тісну співпрацю.</h5>
+                        <h6 class="vizi-text">&nbsp;&nbsp;&nbsp;&nbsp;вартість:<span class="vizi-span">&nbsp;від 100$</span></h6>
+                      </div>
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section> <!-- конец секция баннер  -->
+
+    <section class="cosmonavt-planshet_section">
+      <div class="cosmonavt-planshet">
+
+        <div class="cosmonavt-planshet_conteiner">
+
+          <div class="cosmonavt-planshet_title">
+            <h5>[ Сайт ]</h5>
+            <h6 class="vizi-text cosmo-text">&nbsp;Візитка</h6>
+
+          </div>
+
+          <div class="cosmonavt-planshet_description">
+            <h6>
+              &nbsp;За допомогою цієї послуги ви зможете почати просування своєї компанії в інтернеті. Забронюйте домен (адресу сайта), підключіть хостинг (сервер), створіть опис компанії, підберіть візуальні матеріали та розмістіть посилання на соціальні сторінки компанії. Також через цю послугу ви зможете познайомитись з Web Studio “Mars” та розпочати тісну співпрацю.
+            </h6>
+
+          </div>
+
+          <div class="cosmonavt-planshet_price">
+            <p class="cosmo-text">
+              <span class="vizi-text text-cosmonavt">вартість:</span> 
+              <span class="price-value cosmonsvt-prise">від 100$</span>
+            </p>
+
+          </div>
+
+
+        </div>
+
+        <div class="cosmonavt-planshet_img">
+        
+        </div>
+        <div class="cosmonavt-planshet_img-mobile">
+        
+        </div>
       
+
       </div>
-      <div class="cosmonavt-planshet_img-mobile">
-      
-      </div>
+
+    </section>
     
-
-    </div>
-
-  </section>
-  
-<!--   секция text -->
-<section class="new-text-center">
-  <div class="new-text-center-conteiner">
-    <h5 class="new-text-block">проєкти</h5>
-  </div>
-</section>
- <!--   секция text -->
+    <!--   секция text -->
+    <section class="new-text-center">
+      <div class="new-text-center-conteiner">
+        <h5 class="new-text-block">проєкти</h5>
+      </div>
+    </section>
+    <!--   секция text -->
 
  
 
-<!--   секция карты  -->
-<section id="projects"class="card-context-section">
-    <div class="card-context-conteiner">
+    <!--   секция карты  -->
+    <section id="projects"class="card-context-section">
+        <div class="card-context-conteiner">
 
-      {% for item in items|slice:":2" %}
-        <div class="card-context">
-          <div class="card-context-img">
-            <img src="{{ item.image.url }}" class="card-image" alt="{{item.name}}" style="object-fit: cover; width: 100%; height: 200px; border-radius: 30px 30px 0 0;">
+          {% for item in items|slice:":2" %}
+            <div class="card-context">
+              <div class="card-context-img">
+                <img src="{{ item.image.url }}" class="card-image" alt="{{item.name}}" style="object-fit: cover; width: 100%; height: 200px; border-radius: 30px 30px 0 0;">
+              </div>
+
+              <div class="card-context-title">
+                <h5 class="vizi-text">{{ item.name }}</h5>
+              </div>
+              <div class="card-context-title_items">
+              <h6>{{ item.description|truncatewords:30 }}</h6>
+              </div>
+              <div class="card-context-title_items_button" style="top: 90px;">
+                <a href="{% url 'mars:websait_detail' item.slug %}"><div class="card-context-card mars-button-topcard"><img src="{% static 'image/Кнопка 3.png' %}"></div></a>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+    </section>
+    <!--   секция карты  -->
+
+
+
+    <section class="center-raceta-mars-section">
+        <div class="center-raceta-mars_img-one">
+          <div class="center-raceta-mars-conteiner">
+            <h4>ми перезапустимо ваш сайт</h4>
+          </div>
+          <div class="center-raceta-mars-description">
+            <h5>[ Ми реанімуємо ваш сайт, виправимо та перезапустимо  ]</h5>
+          </div>
+          <div class="button-center-raceta-mars">
+            <button class="btn-center-racketa-mars">
+              <a href="{%  url 'mars:zapusk' %}">подробиці</a>
+            </button>
           </div>
 
-          <div class="card-context-title">
-            <h5 class="vizi-text">{{ item.name }}</h5>
+          
+
+        </div>
+        <div class="center-raceta-mars_img-one-mobile">
+          <div class="center-raceta-mars-conteiner">
+            <h4>ми перезапустимо ваш сайт</h4>
           </div>
-          <div class="card-context-title_items">
-           <h6>{{ item.description|truncatewords:30 }}</h6>
+          <div class="center-raceta-mars-description">
+            <h5>[ Ми реанімуємо ваш сайт, виправимо та перезапустимо  ]</h5>
           </div>
-          <div class="card-context-title_items_button" style="top: 90px;">
-            <a href="{% url 'mars:websait_detail' item.slug %}"><div class="card-context-card mars-button-topcard"><img src="{% static 'image/Кнопка 3.png' %}"></div></a>
+          <div class="button-center-raceta-mars">
+            <button class="btn-center-racketa-mars">
+              <a href="{%  url 'mars:zapusk' %}">подробиці</a>
+            </button>
           </div>
         </div>
-      {% endfor %}
-    </div>
-</section>
-<!--   секция карты  -->
+        <div class="center-raceta-mars_img-two">
+          <div class="center-raceta-mars-description-conteiner">
+            <div class="mars-description-one right-text-center">
+              <h5 class="vizi-text">Умови роботи</h5>
+              <p>Це мінімальні умови для того, щоб почати нашу співпрацю. У цих умовах ми  врахували наші та ваші інтереси, описали умови оплати, а також вказали,  що входить у ціну послуги і що потрібно купувати окремо.</p>
+              <a href="{% url 'mars:umovi' %}"><button class="btn-center-mars">далі</button></a>
+            </div>
+            <div class="mars-description-one">
+              <h5 class="vizi-text">Eтапи<br>роботи</h5>
+              <p>     Ми раді, що ви погодилися та розглядаєте можливість нашої співпраці. Хочемо нагадати вам, що ми разом з вами зацікавлені в успішності нашої місії, тому просимо розглядати наш підрозділ як ваших помічників, союзників тощо.</p>
+              <a href="{% url "mars:etapy" %}"><button class="btn-center-mars">далі</button></a>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="center-raceta-mars_img-two-mobile">
+          <div class="center-raceta-mars-conteiner">
+            <div class="umovi-raketa">
+              <div class="umovi-text">
+                <a href="{% url 'mars:umovi' %}"><h6 class="vizi-text">умови<br>оплати</h6></a>
+              </div>
+              <div class="umovi-text">
+                <a href="{% url 'mars:etapy' %}"><h6 class="vizi-text">етапи<br>роботи</h6></a>
+              </div>
+              
+            </div>
+          </div>
+
+        </div>
+        <div class="center-raceta-mars_img-tree">
+          <div class="conteiner-mars-icons">
+            <div class="text-mars-icons">
+              <p>Інші соціальні:</p>
+            </div>
+            <div class="icons-mars-social">
+              <a href=""><img src="{% static '/image/facebook-icons.png' %}" class="image-conteiner-items"></a>
+              <a href=""><img src="{% static '/image/behance.png' %}" class="image-conteiner-items"></a>
+              <a href=""><img src="{% static '/image/instagramm.png' %}" class="image-conteiner-items"></a>
+              <a href=""><img src="{% static '/image/pinterest.png' %}"class="image-conteiner-items"></a>
+            </div>
+            
+          </div>
+
+        </div>
+        <div class="center-raceta-mars_img-tree-mobile">
+          <div class="conteiner-mars-icons">
+            <div class="text-mars-icons">
+              <p>Інші соціальні:</p>
+            </div>
+            <div class="icons-mars-social">
+              <a href=""><img src="{% static '/image/facebook-icons.png' %}" class="image-conteiner-items"></a>
+              <a href=""><img src="{% static '/image/behance.png' %}" class="image-conteiner-items"></a>
+              <a href=""><img src="{% static '/image/instagramm.png' %}" class="image-conteiner-items"></a>
+              <a href=""><img src="{% static '/image/pinterest.png' %}"class="image-conteiner-items"></a>
+            </div>
+            
+          </div>
 
 
 
-<section class="center-raceta-mars-section">
-    <div class="center-raceta-mars_img-one">
-      <div class="center-raceta-mars-conteiner">
-        <h4>ми перезапустимо ваш сайт</h4>
-      </div>
-      <div class="center-raceta-mars-description">
-        <h5>[ Ми реанімуємо ваш сайт, виправимо та перезапустимо  ]</h5>
-      </div>
-      <div class="button-center-raceta-mars">
-        <button class="btn-center-racketa-mars">
-          <a href="{%  url 'mars:zapusk' %}">подробиці</a>
-        </button>
-      </div>
-
+        </div>
       
 
-    </div>
-    <div class="center-raceta-mars_img-one-mobile">
-      <div class="center-raceta-mars-conteiner">
-        <h4>ми перезапустимо ваш сайт</h4>
-      </div>
-      <div class="center-raceta-mars-description">
-        <h5>[ Ми реанімуємо ваш сайт, виправимо та перезапустимо  ]</h5>
-      </div>
-      <div class="button-center-raceta-mars">
-        <button class="btn-center-racketa-mars">
-          <a href="{%  url 'mars:zapusk' %}">подробиці</a>
-        </button>
-      </div>
-    </div>
-    <div class="center-raceta-mars_img-two">
-      <div class="center-raceta-mars-description-conteiner">
-        <div class="mars-description-one right-text-center">
-          <h5 class="vizi-text">Умови роботи</h5>
-          <p>Це мінімальні умови для того, щоб почати нашу співпрацю. У цих умовах ми  врахували наші та ваші інтереси, описали умови оплати, а також вказали,  що входить у ціну послуги і що потрібно купувати окремо.</p>
-          <a href="{% url 'mars:umovi' %}"><button class="btn-center-mars">далі</button></a>
         </div>
-        <div class="mars-description-one">
-          <h5 class="vizi-text">Eтапи<br>роботи</h5>
-          <p>     Ми раді, що ви погодилися та розглядаєте можливість нашої співпраці. Хочемо нагадати вам, що ми разом з вами зацікавлені в успішності нашої місії, тому просимо розглядати наш підрозділ як ваших помічників, союзників тощо.</p>
-          <a href="{% url "mars:etapy" %}"><button class="btn-center-mars">далі</button></a>
-        </div>
+    </section>
 
+    <!--   секция text -->
+    <section class="new-text-top">
+      <div class="new-text-top-conteiner">
+        <h5 class="new-text-block">переваги</h5>
       </div>
+    </section>
+    <!--   секция text -->
 
-    </div>
-    <div class="center-raceta-mars_img-two-mobile">
-      <div class="center-raceta-mars-conteiner">
-        <div class="umovi-raketa">
-          <div class="umovi-text">
-            <a href="{% url 'mars:umovi' %}"><h6 class="vizi-text">умови<br>оплати</h6></a>
+
+    <section class="card_mini_section">
+      <div class="card_mini_conteiner">
+
+        <!-- card1 -->
+        <div class="card_mini_image" style="background-image: url({% static 'image/plashka_one.png' %});">
+          <div class="card_mini_text_conteiner">
+            <h5 class="vizi-text mini__text">чесність</h5>
           </div>
-          <div class="umovi-text">
-            <a href="{% url 'mars:etapy' %}"><h6 class="vizi-text">етапи<br>роботи</h6></a>
+          <div class="card_mini_text_conteiner_text">
+            <h6 class="mini-description">чесність наш найкращий рекламний інструмент!</h6>
           </div>
-          
         </div>
-      </div>
+        <!-- card 1-->
 
-    </div>
-    <div class="center-raceta-mars_img-tree">
-      <div class="conteiner-mars-icons">
-        <div class="text-mars-icons">
-          <p>Інші соціальні:</p>
+        <!-- card2 -->
+        <div class="card_mini_image"  style="background-image: url({% static 'image/plashka_two.png' %});">
+          <div class="card_mini_text_conteiner">
+            <h5 class="vizi-text mini__text">вигідна<br>ціна</h5>
+          </div>
+          <div class="card_mini_text_conteiner_text">
+            <h6 class="mini-description">в нас реально гарні ціни!</h6>
+          </div>
         </div>
-        <div class="icons-mars-social">
-          <a href=""><img src="{% static '/image/facebook-icons.png' %}" class="image-conteiner-items"></a>
-          <a href=""><img src="{% static '/image/behance.png' %}" class="image-conteiner-items"></a>
-          <a href=""><img src="{% static '/image/instagramm.png' %}" class="image-conteiner-items"></a>
-          <a href=""><img src="{% static '/image/pinterest.png' %}"class="image-conteiner-items"></a>
+        <!-- card 2-->
+
+        <!-- card3 -->
+        <div class="card_mini_image">
+          <div class="card_mini_text_conteiner">
+            <h5 class="vizi-text mini__text">завжди на звязку</h5>
+          </div>
+          <div class="card_mini_text_conteiner_text">
+            <h6 class="mini-description">допоможемо вам 24/7</h6>
+          </div>
         </div>
-        
+        <!-- card3-->
+
       </div>
+    </section> 
 
-    </div>
-    <div class="center-raceta-mars_img-tree-mobile">
-      <div class="conteiner-mars-icons">
-        <div class="text-mars-icons">
-          <p>Інші соціальні:</p>
-        </div>
-        <div class="icons-mars-social">
-          <a href=""><img src="{% static '/image/facebook-icons.png' %}" class="image-conteiner-items"></a>
-          <a href=""><img src="{% static '/image/behance.png' %}" class="image-conteiner-items"></a>
-          <a href=""><img src="{% static '/image/instagramm.png' %}" class="image-conteiner-items"></a>
-          <a href=""><img src="{% static '/image/pinterest.png' %}"class="image-conteiner-items"></a>
-        </div>
-        
-      </div>
+    {% include 'include/form/contact_form.html' %}
 
+    {% include 'include/footer/footer.html' %}
 
-
-    </div>
-  
-
-    </div>
-</section>
-
-<!--   секция text -->
-<section class="new-text-top">
-  <div class="new-text-top-conteiner">
-    <h5 class="new-text-block">переваги</h5>
-  </div>
-</section>
- <!--   секция text -->
-
-
- <section class="card_mini_section">
-  <div class="card_mini_conteiner">
-
-    <!-- card1 -->
-    <div class="card_mini_image" style="background-image: url({% static 'image/plashka_one.png' %});">
-      <div class="card_mini_text_conteiner">
-        <h5 class="vizi-text mini__text">чесність</h5>
-      </div>
-      <div class="card_mini_text_conteiner_text">
-        <h6 class="mini-description">чесність наш найкращий рекламний інструмент!</h6>
-      </div>
-    </div>
-    <!-- card 1-->
-
-     <!-- card2 -->
-     <div class="card_mini_image"  style="background-image: url({% static 'image/plashka_two.png' %});">
-      <div class="card_mini_text_conteiner">
-        <h5 class="vizi-text mini__text">вигідна<br>ціна</h5>
-      </div>
-      <div class="card_mini_text_conteiner_text">
-        <h6 class="mini-description">в нас реально гарні ціни!</h6>
-      </div>
-    </div>
-    <!-- card 2-->
-
-    <!-- card3 -->
-     <div class="card_mini_image">
-      <div class="card_mini_text_conteiner">
-        <h5 class="vizi-text mini__text">завжди на звязку</h5>
-      </div>
-      <div class="card_mini_text_conteiner_text">
-        <h6 class="mini-description">допоможемо вам 24/7</h6>
-      </div>
-    </div>
-    <!-- card3-->
-
-  </div>
- </section> 
-
- {% include 'include/form/contact_form.html' %}
-
- {% include 'include/footer/footer.html' %}
-  
-
- 
-
- 
- 
-
-
- 
-
-
-       
-
-  
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 

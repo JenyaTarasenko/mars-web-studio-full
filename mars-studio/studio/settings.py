@@ -10,9 +10,8 @@ SECRET_KEY = 'django-insecure-d7mknz71=27lkgw)kr(_ykkhf9i!_tuyj)q^7lgwr3vnjb##6@
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['jdreamer.pythonanywhere.com', 'localhost', '127.0.0.1']
-
-
+ALLOWED_HOSTS = ['jdreamer.pythonanywhere.com', 'localhost', '127.0.0.1'] #хостинг
+SITE_URL = 'https://jdreamer.pythonanywhere.com'
 
 
 
@@ -24,6 +23,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    'django.contrib.sitemaps',  #карта сайта
 
     'mars.apps.MarsConfig', #app_name
 ]

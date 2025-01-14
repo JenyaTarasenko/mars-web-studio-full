@@ -24,7 +24,7 @@ class WebSait(models.Model):
         return self.name 
     
     def get_absolute_url(self):
-        return reverse("websait_detail", kwargs={"slug": self.slug})
+        return reverse("mars:websait_detail", kwargs={"slug": self.slug})
     
         
         
