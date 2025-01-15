@@ -8,11 +8,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-d7mknz71=27lkgw)kr(_ykkhf9i!_tuyj)q^7lgwr3vnjb##6@'
 
-DEBUG = True
+DEBUG = False
+# ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
-ALLOWED_HOSTS = ['jdreamer.pythonanywhere.com', 'localhost', '127.0.0.1'] #хостинг
-SITE_URL = 'https://jdreamer.pythonanywhere.com'
+# ALLOWED_HOSTS = ['jdreamer.pythonanywhere.com', 'localhost', '127.0.0.1']
+SITE_URL = 'https://www.web-mars.com'
 
+
+
+ALLOWED_HOSTS = ['web-mars.com', 'www.web-mars.com', '127.0.0.1', 'localhost']
+
+SECURE_SSL_REDIRECT = True  # Отключить редирект на HTTPS
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
 
 
 
@@ -103,9 +111,9 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'uk'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Kiev'
 
 USE_I18N = True
 
