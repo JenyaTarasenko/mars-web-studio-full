@@ -1,32 +1,102 @@
 <!doctype html>
 <html lang="en">
 {% load static %}
-  <head> 
-    <!-- Required meta tags -->
-   
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head> 
+  <!-- Required meta tags -->
+ 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Совместимость с Internet Explorer -->
+  <meta name="description" content="Разработка интерактивных интернет-сайтов, лендингов, многостраничных интернет-магазинов и многофункциональных сайтов с адаптивным и уникальным дизайном.">
+  <meta name="keywords" content="Разработка сайтов, кроссплатформенные сайты, веб-разработка, адаптивный дизайн, создание сайтов, веб-дизайн, разработка приложений, мобильные сайты">
+  <meta name="author" content="Mars design studio">
+  <meta name="robots" content="index, follow"> <!-- Даем инструкции для поисковых систем -->
+  <meta name="robots" content="noarchive"> <!-- Запрещаем поисковикам кешировать страницу -->
+  <meta name="google-site-verification" content="reL_Sx5gy9mocFUEHJA4ULjjJVxoGZUtpqkVioPkrTc" />
 
-    <!-- библиотека  иконок  https://cdnjs.com/libraries/font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  
+    <!-- Основной фавикон -->
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'image/favicon-32x32.png' %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'image/favicon-16x16.png' %}">
+  <link rel="icon" href="/path/to/favicon.ico">
+
+    <!-- Apple Touch Icon для устройств Apple -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'image/apple-touch-icon.png' %}">
+  
+
+    <!-- Android Icon -->
+  <link rel="icon" type="image/png" sizes="192x192" href="{% static 'image/android-192.png' %}">
+
+    <!-- Windows Tile Icon -->
+  <meta name="msapplication-TileImage" content="{% static 'image/favicon-32x32.png' %}">
 
 
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <!-- слайдер -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <!-- мой CSS -->
-    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
-    <!-- мой media CSS -->
-    <link rel="stylesheet" href="{% static 'CSS/media.css' %}">
 
-    <title>Mars design-studio</title>
-  </head>
+  <!-- Open Graph для социальных сетей -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mars design studio — Разработка интерактивных интернет-сайтов, лендингов, многостраничных интернет-магазинов и многофункциональных сайтов с адаптивным и уникальным дизайном.">
+  <meta property="og:description" content="Разработка интерактивных интернет-сайтов, лендингов, многостраничных интернет-магазинов и многофункциональных сайтов с адаптивным и уникальным дизайном.">
+  <meta property="og:url" content="https://www.web-mars.com/"> <!-- Здесь должен быть ваш домен -->
+  <meta property="og:site_name" content="Mars design studio">
+  <meta property="og:locale" content="uk_UA">
+  <!-- Twitter Cards для Twitter -->
+  <meta name="twitter:title" content="Mars studio — Разработка интерактивных интернет-сайтов, лендингов, многостраничных интернет-магазинов и многофункциональных сайтов с адаптивным и уникальным дизайном.">
+  <meta name="twitter:description" content="Разработка интерактивных интернет-сайтов, лендингов, многостраничных интернет-магазинов и многофункциональных сайтов с адаптивным и уникальным дизайном.">
+  <!-- Изображение для Twitter -->
+  <!-- Иконка сайта -->
+  
+  <link rel="apple-touch-icon" href="https://example.com/apple-icon.png"> <!-- Для iOS устройств -->
+  <!-- библиотека  иконок  https://cdnjs.com/libraries/font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  {% comment %} Inter {% endcomment %}
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  {% comment %} шрифт Raleway {% endcomment %}
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "https://www.web-mars.com",
+      "logo": "https://www.web-mars.com/static/image/лого.png",
+      "name": "Mars design studio",
+      "description": "Разработка интерактивных интернет-сайтов, лендингов и интернет-магазинов.",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+38-099-607-2979",
+          "contactType": "customer service",
+          "areaServed": "UA"
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+38-097-911-3267",
+          "contactType": "technical support",
+          "areaServed": "UA"
+        }
+      ]
+    }
+  </script>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- слайдер -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <!-- мой CSS -->
+  <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+  <!-- мой media CSS -->
+  <link rel="stylesheet" href="{% static 'CSS/media.css' %}">
+
+  <title>Mars Design Studio — Разработка сайтов и веб-дизайна</title>
+  <script src="{% static 'js/script.js' %}"></script>
+</head>
   <body>
     
   {% include 'include/menu/menu.html' %}
