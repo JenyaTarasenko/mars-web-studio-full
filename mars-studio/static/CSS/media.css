@@ -238,7 +238,7 @@
 
 
 @media (max-width: 790px) {
-
+  
   .card-top-wark-section {
 
     height: 700px;
@@ -344,6 +344,11 @@
 }
 
 @media (max-width: 768px) {/* замена главного экрана на 768 px */
+
+  .form-top-form h6{
+
+    font-size: 40px;
+  }
 
 
   .button-center-raceta-mars {
@@ -498,7 +503,8 @@
   .form-inline-top {/* меняется форма на колонку */
 
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
+    margin-top: 70px;
 
   } 
 
@@ -508,7 +514,8 @@
   }
   .form-conteiner-top-text {
 
-    margin-top: -270px;
+    margin-top: -200px;
+  
   }
   .form-button-one {
     margin-top: 5px;
@@ -517,6 +524,9 @@
   .form-conteiner-top-text h6 {
 
     font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+
 
   }
   .section-footer {/* футер */
@@ -639,6 +649,16 @@
   }
 }
 @media (max-width: 526px) {
+
+  .phone-button {
+
+    width: 380px;
+    
+  }
+  .mobile-footer-description {
+
+    width: 270px;
+  }
   .perezapusk_conteiner-description__planshet-two p{
 
     margin-left: 100px;
@@ -725,6 +745,21 @@
   }  
 }
 @media (max-width: 480px) {
+
+  .cosmonavt-planshet_title{
+
+    margin-top: 0;
+    padding: 20px;
+
+  }
+  .cosmonavt-planshet_title h6 {
+
+    font-size: 45px;
+
+  }
+  .phone-button {
+    width: 300px;
+  }
   .navbar-brand {
 
     display: none;
@@ -732,7 +767,7 @@
 
   .detail-image_one {
 
-    width: 380px;
+    width: 400px;
   }
 
   .cosmonavt-planshet_conteiner {
@@ -920,10 +955,11 @@
 
     display: block;
   }
-  .cosmonavt-planshet_title h6 {
- 
-    font-size: 60px;
-  }  
+  .cosmonavt-planshet_description {
+
+    padding: 0 30px;
+  }
+  
 
   .cosmonavt-planshet {
 

@@ -30,6 +30,7 @@ html,body {
     max-width: 1280px; /* Ограничиваем максимальную ширину */
     margin: 0 auto; /* Центрируем контент */
     padding: 0;
+    /* background-color: #7a7a7ae5; */
 
 }
 html {
@@ -292,6 +293,7 @@ html {
     font-size: 35px;
     color:#020607 !important;
     font-family: Inter;
+    font-weight: 400;
 }
 
 .vizitka-text h2 {
@@ -315,9 +317,10 @@ html {
 
     font-size: 40px;
     font-weight: 300;
-    color: #020607;
-
-
+    color: black; /* Ничего не дает */
+    -webkit-background-clip: unset; /* Убираем фон для текста */
+    -webkit-text-fill-color: #020607; /* Используем конкретный черный цвет */
+    background: none; /* Убираем фон */
 }
 
 .vizitka-text_items {
@@ -328,6 +331,11 @@ html {
     
 
 
+}
+
+.span-styles {
+
+    font-weight: 800;
 }
 .vizitka-text_items h5 {
 
@@ -527,11 +535,11 @@ html {
 
 .form-control::placeholder {
 
-    text-align: right;
+    text-align:left;
     font-size: 18px;
     font-weight: 300;
     color: #7C7C7466;
-    padding-right: 20px;
+    padding-right: 40px;
 
 }
 .form-text-center h6 {
@@ -648,38 +656,37 @@ html {
 /* animation block*/
 
 /* Темный экранный слой */
-.overlay {
-    position: absolute; /* Абсолютное позиционирование относительно секции .banner */
+/* .overlay {
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 1); /* Абсолютно черный */
-    z-index: 1; /* Темный слой будет поверх других элементов */
+    background-color: rgba(0, 0, 0, 1); 
+    z-index: 1; 
     opacity: 1;
     transition: opacity 1s ease-out; 
 }
 
-/* Состояние после загрузки страницы */
 .overlay.loaded {
-    opacity: 0; /* Скрываем слой */
+    opacity: 0;
 }
 .banner,
 .planshet-banner,
 .banner-mobile-section {
-    position: relative;  /* Обеспечиваем правильное позиционирование */
-    transform: translateY(-100%);  /* Блок начинается за пределами экрана */
-    opacity: 0; /* Начальная непрозрачность */
-    transition: transform 1s ease, opacity 1s ease; /* Плавный переход */
+    position: relative;
+    transform: translateY(-100%); 
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease; 
 }
 
-/* Стиль блока после загрузки или активации */
+
 .banner.loaded,
 .banner-mobile-section.loaded,
 .planshet-banner.loaded {
-    transform: translateY(0);  /* Блок перемещается на своё место */
-    opacity: 1;  /* Блок становится видимым */
-}
+    transform: translateY(0);
+    opacity: 1;  
+} */
 
 /* animation block*/
 .image-banner  {
@@ -745,18 +752,27 @@ html {
 }
 .form-conteiner-top-text {/* Абсолютное позиционирование для контейнера  родителбf lex */
 
-    position: absolute; /* Абсолютное позиционирование */
+    position: absolute; 
     margin-top: -200px;
+    /* width: 300px; */
+
 
   
 
 }
+
+.phone-button:hover {
+    background-color: rgba(0, 0, 0, 0.6); /* Увеличение непрозрачности при наведении */
+    transform: scale(1.05); /* Немного увеличиваем кнопку */
+}
+
 .form-conteiner-top-text h6 {
 
     font-size: 50px;
     color: #252422;
     font-weight: 900;
     font-family: 'MursGothic', sans-serif;
+    letter-spacing: 3px;
 
 }
 
@@ -777,7 +793,7 @@ html {
     height: 60px;
     border-radius: 30px;
     border: none;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     cursor: pointer;
     background-color: black;
@@ -786,6 +802,7 @@ html {
     text-transform: uppercase;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
+    letter-spacing: 3px;
 }
 
 .form-button:hover {
@@ -808,8 +825,7 @@ html {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 375px;
-    /*flex-wrap: wrap; перенос флекс элемента*/
+    height: 320px;
     box-sizing: border-box;
     gap:2px;
 }
@@ -830,10 +846,12 @@ html {
 }
 .card-top-wark:hover {
 
-    transform: scale(1.01);
-    box-shadow:  0 8px 24px rgba(13, 13, 13, 0.2);
+    transform: scale(1.05);
+    box-shadow:  0 8px 24px rgba(13, 13, 13, 0.5);
 }
-
+.card-top-wark {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавный переход */
+}
 
 .card-title-top-wark { /* карта  описанте*/
 
@@ -848,25 +866,21 @@ html {
     font-size: 23px;
     color: #FAFAFF;
     font-family: 'MursGothic', sans-serif;
+    text-transform: uppercase;
 
 }
 
 .card-item-top-wark {
-
     position: absolute;
     bottom: 10px;
-    left: 20px; 
-    margin: 10px;
-    width: 240px;
-    height: 100px;
-    margin-bottom: 30px;
-  
+    left: 32px;
+    width: 219px;
+    margin-bottom: 5px;
 }
-
 .card-item-top-wark h6 {
 
     font-family: Inter, sans-serif;
-    font-weight:100;
+    font-weight:300;
     font-size: 18px;
     color: #FAFAFF;
     letter-spacing: 5%;
@@ -970,11 +984,11 @@ html {
 
 .card-context-title {/* контейнер описание */
 
-    /* width: 244px; */
-    height:60px;
+    width: 244px;
+    height: 60px;
     position: relative;
-    margin: 20px;
-    padding: 20px;
+    /* margin: 20px; */
+    padding: 10px 30px;
 
 }
 .card-context-title h5 {
@@ -1012,14 +1026,37 @@ html {
 }
 .card-context-card {
 
-    margin-top: 30px;
+    background: linear-gradient(90deg, #FE0000 0%, #FED700 100%);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Плавный переход для фона */
+    display: inline-block;
+    width: 180px;
+    height: 60px;
+    margin-top: 40px;
+    text-align: center;
+    color: rgb(9, 8, 8); /* Цвет текста белый */
+    font-weight: bold; /* Жирный текст */
+    font-size: 18px; /* Размер шрифта */
+    font-weight: 800;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .card-context-card:hover {
+    background: linear-gradient(90deg, #FFD700, #FE0000); /* Изменение градиента */
+    transform: scale(1.1); /* Увеличение кнопки при наведении на 10% */
+}
 
-/* Изменяем цвет фона */
-    transform: scale(1.01);
-    
-
+/* Эффект при клике */
+.card-context-card:active {
+    transform: scale(0.95); /* Уменьшение кнопки на 5% при клике */
 }
 
 
@@ -1080,12 +1117,9 @@ html {
     height:256px;
     background-image: url(../image/Плашка\ 333.png);
     border: none;
-    border-radius: 30px;
-
-   
-
-
+    border-radius: 30px;  
 }
+
 
 
 .card_mini_text_conteiner {/*  rконтейнер для заголовка*/
@@ -1102,13 +1136,14 @@ html {
 
 .card_mini_text_conteiner_text {/*  контейнер для описания */
 
-    width: 245px;
+    /* width: 245px; */
     height: 50px;
     position: relative;
-    margin: 65px;
+    /* margin: 65px; */
     display: flex;
     align-items: center; /* Вертикальное центрирование */
     justify-content: center;
+   
 }
 
 
@@ -1291,6 +1326,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap:10px;
 
 
  }
@@ -1535,6 +1571,8 @@ html {
     line-height: 40px;
     letter-spacing: 5%;
     color:  #020607;
+    font-family: 'Inter', sans-serif; 
+
 }
 /* -------------------------------detail-items-conteiner-------------------------------------- */
 
@@ -1653,6 +1691,7 @@ html {
     line-height: 40px;
     letter-spacing: 5%; */
     color:  #020607;
+    font-family: 'Inter', sans-serif;
 }
 
 .opisanie-url a {
@@ -1874,6 +1913,7 @@ html {
     margin-left: 150px;
     text-align: left;
     margin-top: 40px;
+    text-transform: uppercase;
 }
 
 .foooter_new_mobile {
@@ -1918,7 +1958,7 @@ html {
     flex-direction: column;
     margin-bottom: 20px;
     text-align: left;
-    gap:10px;
+    /* gap:10px; */
 
 
 }
@@ -1949,6 +1989,7 @@ html {
     font-weight: 300;
     text-align: left;
     color:#FAFAFF;
+    letter-spacing: 1px;
 }
 .footer_new_item-one h6 {
 
@@ -1961,6 +2002,15 @@ html {
     margin-right: 30px;
     text-transform: uppercase;
     font-family: 'MursGothic', sans-serif;
+}
+
+.footer_new_item_two a {
+
+    font-size: 20px;
+    font-weight: 300;
+    text-align: left;
+    color: #FAFAFF;
+    letter-spacing: 1px;
 }
 .footer_new_items {
 
@@ -2053,7 +2103,8 @@ mage-conteiner-items {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 350px;
+    margin-top: 600px;
+    gap: 20px;
     
 
 }
@@ -2063,7 +2114,22 @@ mage-conteiner-items {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    gap: 10px;
 
+}
+
+.phone-button {
+    display: block; /* Блоковый элемент */
+    width: 450px; /* Ширина кнопки */
+    height: 60px; /* Высота кнопки */
+    background-color: #AEB2AA1A; /* Полупрозрачный черный фон */
+    color: white; /* Цвет текста */
+    font-size: 16px; /* Размер шрифта */
+    text-align: center; /* Выравнивание текста по центру */
+    line-height: 60px; /* Вертикальное центрирование текста */
+    border-radius: 30px; /* Закругленные углы */
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Плавный переход */
 }
 
 .mobile-footer-telephone a {
@@ -2117,12 +2183,13 @@ mage-conteiner-items {
 
     max-width: 400px; /* Максимальная ширина контейнера */
     margin: 0 auto; /* Центрирование контейнера */
-    padding: 20px;
+    /* padding: 20px; */
     align-items: center;
     display: flex;
     justify-content: center;
     color:#AEB2AA66;
     text-align: center;
+    margin-top: 60px
 }
 
 .mobile-conteiner_prava p {
@@ -2227,6 +2294,8 @@ mage-conteiner-items {
     width: 312px;
     height: 60px;
     margin-top: 40px;
+    letter-spacing: 3px;
+    font-weight: 300;
 
 
 }
@@ -2279,6 +2348,7 @@ mage-conteiner-items {
     font-weight: 900;
     font-size: 35px;
     font-family: 'MursGothic', sans-serif;
+    text-transform: uppercase;
 
 }
 .mars-description-one p {
@@ -2309,6 +2379,8 @@ mage-conteiner-items {
     display: inline-block;
     width: 180px;
     height: 60px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 .btn-center-mars:hover {
 
@@ -2750,9 +2822,10 @@ mage-conteiner-items {
 
 
     font-weight: 500;
-    font-size: 20px;
+    font-size: 35px;
     color: #010506;
     font-family: "inter", sans-serif;
+
 
 
 }
@@ -2786,6 +2859,7 @@ mage-conteiner-items {
     line-height: 25px;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
+    line-height: 25px;
 
 
 }
@@ -2845,7 +2919,7 @@ mage-conteiner-items {
 
 
 }
-.new-text-conteiner {
+/* .new-text-conteiner {
 
   
     display: flex;
@@ -2853,7 +2927,16 @@ mage-conteiner-items {
     width: 100%;
     height: 30px;
 
-}
+} */
+
+.new-text-conteiner {
+    display: flex;
+    margin-left: 70px;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+
+}    
 .new-text-block {
 
     font-weight: 900;
@@ -2861,6 +2944,8 @@ mage-conteiner-items {
     font-size: 60px;
     color: #020607E5;
     text-transform: uppercase;
+    /* margin-top: 40px; */
+    /* padding: 20px; */
 }
 
 /* -------------------------------new text-------------------------------------- */
@@ -2885,16 +2970,11 @@ mage-conteiner-items {
 
 }
 .new-text-center-conteiner {
-
     display: flex;
-    margin-left: 650px;
+    margin-left: 630px;
     width: 100%;
-    height: 45px;
-
-
-
+    height: 20px;
 }
-
 /* -------------------------------new text center-------------------------------------- */
 
 /* -------------------------------pages abaut-------------------------------------- */
@@ -3586,3 +3666,5 @@ mage-conteiner-items {
 
 /* font-family: 'MursGothic', sans-serif;
 font-family: 'Inter', sans-serif; */
+
+

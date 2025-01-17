@@ -99,12 +99,15 @@
   </head>
   <body>
     
+
     <!-- секция главного экрана -->
     <section class="banner">
-      <div class="overlay"></div>
+
+    {% include 'include/menu/menu.html' %}
+      
         <div class="image-banner"><!-- картинка  -->
           
-          {% include 'include/menu/menu.html' %}
+        
           <!-- навигация  -->
           <div class="banner-title-top">
             <h1>&nbsp;&nbsp;створення &<br>обслуговування сайтів</h1>
@@ -178,7 +181,7 @@
 
           <div class="card-top-wark" card-3 style="background-image: url({% static 'image/card_section1_three.png' %});" > 
             <div class="card-title-top-wark"> 
-              <h5>Багатосторінковий<br>сайт</h5>
+              <h5>Багатосторінок<br>сайт</h5>
             </div>
             <div class="card-item-top-wark">
               <h6>На цьому сайті ви можете добавити перехід на внутрішні сторінки сайту</h6>
@@ -201,7 +204,7 @@
                       <h2 class="vizi-text"><span class="vizi-span">&nbsp;&nbsp;[ сайт ]</span><br>&nbsp;&nbsp;Візитка</h2>
                       <div class="vizitka-text_items">
                         <h5>&nbsp;&nbsp;За допомогою цієї послуги ви зможете почати просування своєї компанії в інтернеті. Забронюйте домен (адресу сайта), підключіть хостинг (сервер), створіть опис компанії, підберіть візуальні матеріали та розмістіть посилання на соціальні сторінки компанії. Також через цю послугу ви зможете познайомитись з Web Studio “Mars” та розпочати тісну співпрацю.</h5>
-                        <h6 class="vizi-text">&nbsp;&nbsp;&nbsp;&nbsp;вартість:<span class="vizi-span">&nbsp;від 100$</span></h6>
+                        <h6 class="vizi-text">&nbsp;&nbsp;&nbsp;&nbsp;вартість:<span class="vizi-span span-styles" style="font-weight: 800;">&nbsp;від 100$</span></h6>
                       </div>
                       
                   </div>
@@ -278,13 +281,13 @@
               <h6>{{ item.description|truncatewords:30 }}</h6>
               </div>
               <div class="card-context-title_items_button" style="top: 90px;">
-                <a href="{% url 'mars:websait_detail' item.slug %}"><div class="card-context-card mars-button-topcard"><img src="{% static 'image/Кнопка 3.png' %}"></div></a>
+                <a href="{% url 'mars:websait_detail' item.slug %}"><div class="card-context-card mars-button-topcard" style="margin-top: 70px;">Читати</div></a>
               </div>
             </div>
           {% endfor %}
         </div>
     </section>
-    <!--   секция карты  -->
+    <!--   секция карты    <img src="{% static 'image/Кнопка 3.png' %}">-->
 
 
 
@@ -354,9 +357,9 @@
               <p>Інші соціальні:</p>
             </div>
             <div class="icons-mars-social">
-              <a href=""><img src="{% static '/image/facebook-icons.png' %}" class="image-conteiner-items"></a>
+              <a href="https://www.facebook.com/profile.php?id=61560573721784"><img src="{% static '/image/facebook-icons.png' %}" alt="" class="image-conteiner-items"></a>
               <a href=""><img src="{% static '/image/behance.png' %}" class="image-conteiner-items"></a>
-              <a href=""><img src="{% static '/image/instagramm.png' %}" class="image-conteiner-items"></a>
+              <a href="https://www.instagram.com/mars_webstudio/"><img src="{% static '/image/instagramm.png' %}" alt="" class="image-conteiner-items"></a>
               <a href=""><img src="{% static '/image/pinterest.png' %}"class="image-conteiner-items"></a>
             </div>
             
@@ -369,9 +372,9 @@
               <p>Інші соціальні:</p>
             </div>
             <div class="icons-mars-social">
-              <a href=""><img src="{% static '/image/facebook-icons.png' %}" class="image-conteiner-items"></a>
+              <a href="https://www.facebook.com/profile.php?id=61560573721784"><img src="{% static '/image/facebook-icons.png' %}" alt="" class="image-conteiner-items"></a>
               <a href=""><img src="{% static '/image/behance.png' %}" class="image-conteiner-items"></a>
-              <a href=""><img src="{% static '/image/instagramm.png' %}" class="image-conteiner-items"></a>
+              <a href="https://www.instagram.com/mars_webstudio/"><img src="{% static '/image/instagramm.png' %}" alt="" class="image-conteiner-items"></a>
               <a href=""><img src="{% static '/image/pinterest.png' %}"class="image-conteiner-items"></a>
             </div>
             
@@ -403,7 +406,7 @@
             <h5 class="vizi-text mini__text">чесність</h5>
           </div>
           <div class="card_mini_text_conteiner_text">
-            <h6 class="mini-description">чесність наш найкращий рекламний інструмент!</h6>
+            <h6 class="mini-description">Чесність наш найкращий<br>рекламний інструмент!</h6>
           </div>
         </div>
         <!-- card 1-->
@@ -414,7 +417,7 @@
             <h5 class="vizi-text mini__text">вигідна<br>ціна</h5>
           </div>
           <div class="card_mini_text_conteiner_text">
-            <h6 class="mini-description">в нас реально гарні ціни!</h6>
+            <h6 class="mini-description">В нас реально гарні ціни!</h6>
           </div>
         </div>
         <!-- card 2-->
@@ -425,7 +428,7 @@
             <h5 class="vizi-text mini__text">завжди на звязку</h5>
           </div>
           <div class="card_mini_text_conteiner_text">
-            <h6 class="mini-description">допоможемо вам 24/7</h6>
+            <h6 class="mini-description" style="text-align: left;">Допоможемо вам вирішити<br>ваші питання!</h6>
           </div>
         </div>
         <!-- card3-->
@@ -439,14 +442,14 @@
 
 
     <!-- анимация блока-->
-    <script>
+    {% comment %} <script>
       window.onload = function() {
         document.querySelector('.overlay').classList.add('loaded');
         document.querySelector('.banner').classList.add('loaded');
         document.querySelector('.planshet-banner').classList.add('loaded');
         document.querySelector('.banner-mobile-section').classList.add('loaded');
       };
-    </script>
+    </script> {% endcomment %}
     <!-- анимация блока-->
 
 
