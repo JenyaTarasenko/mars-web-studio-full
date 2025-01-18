@@ -4,12 +4,14 @@
 <footer class="footer_new">
     <div class="footer_new_section">
         <div class="footer_new_conteiner_left">
-            <div class="footer_new_logo"></div>
+            <div class="footer_new_logo">
+              <img src="{% static 'image/mars-style-logo.svg' %}" alt="Mars logo" />
+            </div>
             <div class="footer_new_telephone">
               <a href="tel:+380996072979">+38 (099) 607 29 79</a>
               <a href="tel:+380979113226">+38 (097) 911 32 26</a>
             </div>
-            <div class="footer_new_items">
+            <div class="footer_new_items footer-top-deskription">
                 <h6 class="vizi-text">Графік роботи:<br>пн-пт с 9.00 до 19.00/ сб, нд - вихідний.</h6>
             </div>
             <div class="footer-icon-mobile footer_new_mobile">
@@ -43,9 +45,9 @@
             </div>
             <div class="footer_new_item_two">
                 <h6 class="vizi-text text-footer">Меню</h6>
-                <a href="{% url "mars:index" %}">Головна</a>
-                <a href="/#projects">Проекти
-                <a href="/#poslugi">Послуги</a>
+                <a href="{% url "mars:index" %}" class="footer-top-style">Головна</a>
+                <a href="/#projects" class="footer-top-style">Проекти
+                <a href="/#poslugi" class="footer-top-style">Послуги</a>
             </div>
         </div>
     </div>
