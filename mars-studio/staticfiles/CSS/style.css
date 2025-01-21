@@ -1764,7 +1764,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    /* gap: 20px; */
     flex-wrap: wrap;
     margin-top: 90px;
 
@@ -1804,7 +1804,7 @@ html {
 }
 .etapy-item_conteiner h2 {
 
-    font-weight: 200;
+    font-weight: 300;
     font-size: 25px;
     line-height: 30px;
     color: #020607;
@@ -1884,7 +1884,7 @@ html {
 .etapy-description h4{
 
 
-    font-weight: 200;
+    font-weight: 300;
     font-size: 20px;
     color: #020607;
     font-family: 'Inter', sans-serif;
@@ -2630,7 +2630,8 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 40px;
+    gap:20px;
 }
 
 
@@ -2703,6 +2704,7 @@ html {
 /* -------------------------------meta_studio-------------------------------------- */
 
 /* -------------------------------princip_studio-------------------------------------- */
+
 .princip_studio-conteiner {
 
     display: flex;
@@ -2757,30 +2759,28 @@ html {
     flex-direction: column;
     gap: 1px;
 }
-.pricip-card_image {
+
+.pricip-card_image svg{
 
     width: 100px;
     height: 100px;
+    fill: #ff0000;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
-.pricip-card_image:hover {
-    transform: scale(1.1); /* Лёгкое увеличение при наведении */
-    opacity: 0.8; /* Небольшое снижение прозрачности */
+.pricip-card_image svg:hover {
+    transform: scale(1.1); 
+    fill: #ff0000; 
 }
 
-.pricip-card_image:active {
-    transform: scale(0.95); /* Лёгкое уменьшение при нажатии */
-    opacity: 1; /* Полная видимость при нажатии */
-}
 
 .princip-card-items h5 {
 
-    font-weight: 500;
-    font-size: 25px;
+    font-weight: 700;
+    font-size: 35px;
     line-height: 40px;
     color: #000000;
     font-family: 'Inter', sans-serif; 
-}
+} 
 /* -------------------------------princip_studio-------------------------------------- */
 .about-page_section {
 
@@ -2847,7 +2847,7 @@ html {
 
     font-weight: 200;
     font-size: 35px;
-    line-height: 40px;
+    line-height: 1.2em;
     letter-spacing: 5%;
     color: #252422;
     font-family: 'Inter', sans-serif; 
@@ -3177,15 +3177,27 @@ html {
     font-size: 16px; /* Размер текста */
     cursor: pointer;
     margin-top: 100px;
-    margin-left: 500px;
+    margin-left: 520px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    transition: all 0.3s ease; /* Добавляем плавный переход */
 
 }
-.perezapusk-button:hover {
+/* .perezapusk-button:hover {
 
     transform: scale(1.01);
 }  
+ */
 
+ /* Стили для ховера */
+.perezapusk-button:hover {
+    background-color: #fce24d; /* Изменение цвета фона */
+    color: #020607; /* Изменение цвета текста */
+    transform: scale(1.05); /* Лёгкое увеличение */
+    /* Тень при наведении */
+}
 
+/* Стили для фокуса (например, клавиатурного) */
 
 /* -------------------------------perezapusk_section-------------------------------------- */
 /* -------------------------------perezapusk_planshet-------------------------------------- */
@@ -3273,15 +3285,15 @@ html {
 }
 .perezapusk_conteiner-items__planshet h2{
 
-    font-weight: 100;
-    font-size: 20px;
-    line-height: 25px;
+    font-weight: 200;
+    font-size: 28px;
+    line-height: 35px;
     color: #FAFAFF;
     font-family: Inter, sans-serif;
     margin-top: 40px;
-    margin-left: 60px;
+    /* margin-left: 60px; */
     padding: 10px;
-
+    width: 450px;
 
 }
 .perezapusk-button__planshet {
@@ -3295,11 +3307,20 @@ html {
     font-size: 16px; /* Размер текста */
     cursor: pointer;
     margin-top: 20px;
-}
-.perezapusk-button__planshet:hover {
+    font-weight: 400;
+    line-height: 3px;
+    font-family: Inter;
+    transition: all 0.3s ease; 
 
-    transform: scale(1.01);
-}    
+}
+
+
+
+.perezapusk-button:hover {
+    background-color: #fce24d; /* Изменение цвета фона */
+    color: #020607; /* Изменение цвета текста */
+    transform: scale(1.05); /* Лёгкое увеличение */
+}  
 /* -------------------------------perezapusk_planshet-------------------------------------- */
 
 /* -------------------------------vam-potribno_section-------------------------------------- */
@@ -3325,6 +3346,13 @@ html {
 
   
 }
+/* .vam-potribno_items__text {
+
+
+    width: 500px;
+
+
+} */
 
 
 
@@ -3336,10 +3364,10 @@ html {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    max-width: 600px;
+    max-width: 500px;
     max-height: 370px;
     box-sizing: border-box; 
-    margin-left: 550px;
+    margin-left: 500px;
     gap: 40px;
 }
     
@@ -3353,12 +3381,13 @@ html {
  }
  .vam-potribno_items__text p {
 
-    font-weight: 200;
+    font-weight: 300;
     font-size: 20px;
     line-height: 25px;
     letter-spacing: 5;
     font-family: Inter, sans-serif;
     color: #252422;
+    
  }
 
 
@@ -3434,12 +3463,26 @@ html {
 
 
 }
+
+.proponuemo-description-conteiner-two {
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    margin-bottom: 70px;
+
+
+
+}
+
 .proponuemo-items {
 
     display: flex;
     justify-content: center;
     padding: 20px;
     flex-direction: column;
+    /* width: 500px; */
 
   
 
@@ -3455,6 +3498,7 @@ html {
     font-size: 70px;
     font-weight: 900;
     color: #252422;
+    margin-bottom: 40px;
 
 
 }
@@ -3463,7 +3507,7 @@ html {
 
     display: flex;
     flex-direction: row;
-    margin-right: 100px;
+    /* margin-right: 100px; */
     gap: 20px;
     align-items: flex-start;
 
@@ -3504,24 +3548,28 @@ html {
     color: #252422;
 }
 
+
 .proponuemo-items__text {
 
     display: flex;
     justify-content: center;
     align-items: center; 
     max-width: 540px;
-    padding: 10px;
+    /* padding: 10px;  */
 
 }
 
 .proponuemo-items__text h5 {
 
-    font-weight: 200;
+    font-weight: 300;
     font-size: 20px;
     font-family: Inter, sans-serif;
     color: #252422;
+    letter-spacing: 1px;
+
 
 }
+
 .proponuemo-text-item {
 
     width: 500px;
@@ -3561,6 +3609,9 @@ html {
 
     max-width:  500px;
     margin-left: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 
 }
 .vi-otrimuete-description h5 {
@@ -3572,11 +3623,12 @@ html {
 
 .vi-otrimuete-item h6{
 
-    font-weight: 100;
+    font-weight: 300;
     font-size: 25px;
-    line-height: 25px;
+    line-height: 1em;
     color: #FAFAFF;
     font-family: 'Inter', sans-serif;
+    letter-spacing: 2px;
 
 
 
@@ -3584,24 +3636,37 @@ html {
 
 .vi-button {
 
+    display: inline-block;
+    font-family: Inter;
     width: 312px;
     height: 60px;
     border-radius: 30px; /* Округляет углы */
     background-color:#FED700; /* Цвет кнопки */
     color: #020607; /* Цвет текста */
     border: none; /* Убирает рамку */
-    font-size: 16px; /* Размер текста */
+    font-size: 18px; /* Размер текста */
     cursor: pointer;
     margin-top: 30px;
+    font-weight: 400;
+    letter-spacing: 7px;
+    transition: all 0.3s ease; /* Добавляем плавный переход */
+
 
 
 
     
 }
-.vi-button:hover {
 
-    transform: scale(1.01);
-}  
+
+
+
+ /* Стили для ховера */
+ .vi-button:hover {
+    background-color: #fce24d; /* Изменение цвета фона */
+    color: #020607; /* Изменение цвета текста */
+    transform: scale(1.05); /* Лёгкое увеличение */
+    /* Тень при наведении */
+}
 
 /* -------------------------------vi-otrimuete-section-------------------------------------- */
 
@@ -3696,7 +3761,7 @@ html {
 }
 .about-page_items-description__planshet p {
 
-    font-weight: 200;
+    font-weight: 300;
     font-size: 35px;
     line-height: 40px;
     letter-spacing: 2px;

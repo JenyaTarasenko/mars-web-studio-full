@@ -28,6 +28,20 @@
         
     }
 }
+
+@media (max-width: 1150px){
+
+  .navbar-nav .nav-item {
+    margin-right: 40px;
+  }
+
+  .meta_studio-items-two,
+  .meta_studio-items-one {
+
+    padding: 10px 20px;
+  }
+}
+
 @media (max-width: 1024px){
 
   .about-page_conteiner-title {
@@ -111,6 +125,31 @@
   
 }
 @media (max-width: 992px) {
+
+  .proponuemo-txt {
+
+    margin-top: 40px;
+    font-size: 50px;
+  }
+  .proponuemo-items__text h5 {
+
+    width: 480px;
+  }
+  .proponuemo-section-conteiner {
+
+    gap: 0;
+  }
+
+  .proponuemo-items  {
+
+    padding: 0;
+  }
+  .vi-otrimuete-conteiner {
+
+    margin-left: 60px;
+    width: 450px;
+  }
+
   
   .page-umovi .navbar-brand img {
 
@@ -248,6 +287,11 @@
 
 @media (max-width: 768px) {
 
+  .about-page_items-description__planshet{
+
+    padding: 20px 20px;
+  }
+
   
   .page-umovi .navbar-brand img {
     width: 80px;  /* Уменьшаем логотип для мобильных устройств */
@@ -268,10 +312,10 @@
 
   }
 
-  .vi-otrimuete-conteiner {
+  /* .vi-otrimuete-conteiner {
 
     margin-right: 500px;
-  }
+  } */
   .vi-otrimuete-description h5 {
 
     font-size: 40px;
@@ -299,6 +343,9 @@
     align-items: center; 
 
   }
+
+
+
   .vam-potribno_items__description h3 {
 
     width: 400px;
@@ -314,9 +361,8 @@
 
     margin-top: 30px;
     padding: 10px;
-    
-
-    
+    letter-spacing: 1px;
+  
   }
 
 
@@ -346,10 +392,28 @@
 
 @media (max-width: 768px) {/* замена главного экрана на 768 px */
 
+
+  .vam-potribno_items-conteiner {
+
+    gap:0;
+  }
+
   .form-top-form h6{
 
     font-size: 40px;
   }
+
+  .princip_studio-discription h3 {
+
+    width: 400px;
+    height: 100px;
+  }
+  .princip_studio-discription {
+
+    padding: 30px;
+  }
+
+
 
 
   .button-center-raceta-mars {
@@ -366,6 +430,9 @@
   .meta_studio-items-two p, .meta_studio-items-one  {
 
     text-align: left;
+    width: 470px;
+    margin-top: 40px;
+   
 
 
   }
@@ -403,7 +470,7 @@
   }
   .perezapusk-fon-text h4 {
 
-    margin-bottom: 90px;
+    margin-bottom: 200px;
     font-size: 50px;
   }
 
@@ -592,6 +659,16 @@
 }
 @media (max-width: 526px) {
 
+  .about-page_items__planshet h1 {
+
+    font-size: 40px;
+  }
+  .about-page_items-description__planshet p{
+
+    font-size: 22px;
+    width: 320px;
+  }
+
   .cosmonavt-planshet_section {
   
     margin-top: 200px;
@@ -651,6 +728,27 @@
 }
 @media (max-width: 526px) {
 
+  .proponuemo-items {
+    padding: 10px;
+    width: 400px;
+  }
+  .proponuemo-image-logo p {
+
+    font-size: 25px;
+  }
+
+
+  .meta_studio-description h2 {
+
+  font-size: 40px;
+
+  }
+  .meta_studio-items-two p,
+  .meta_studio-items-one p{
+    font-size: 22px;
+    width: 320px;
+  }
+
   .phone-button {
 
     width: 380px;
@@ -668,6 +766,7 @@
   .perezapusk_conteiner-items__planshet h2 {
 
     margin-left: 0;
+    font-size: 22px;
   }
 
   .perezapusk_conteiner-description__planshet p {
@@ -722,6 +821,7 @@
     display: flex;
     justify-content: center;
     align-items: center; 
+    margin-top: -60px;
   }
   .about-page_conteiner-title__planshet {
 
@@ -745,7 +845,22 @@
     margin-bottom: 150px;
   }  
 }
+
+
+@media (max-width: 460px) {
+ 
+}  
 @media (max-width: 480px) {
+
+  .meta_studio-items-one {
+
+    margin-top: 10px;
+  }
+
+  .princip_studio-discription h3 {
+
+    font-size: 40px;
+  }
 
   .cosmonavt-planshet_title{
 
@@ -761,10 +876,10 @@
   .phone-button {
     width: 300px;
   }
-  .navbar-brand {
+  /* .navbar-brand {
 
     display: none;
-  }
+  } */
 
   .detail-image_one {
 
@@ -903,7 +1018,7 @@
   .meta_studio-description h2,
   .princip_studio-discription h3{ 
 
-    font-size: 50px;
+    font-size: 40px;
 
   }
   .about-page_items-description__planshet p,
@@ -911,6 +1026,7 @@
   .meta_studio-items-two p {
 
     font-size: 20px;
+    line-height: 1.2em;
 
 
   }
