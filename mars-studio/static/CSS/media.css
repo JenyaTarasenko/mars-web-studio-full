@@ -122,6 +122,11 @@
 
 }
 @media (max-width: 991px) {
+
+  .etapy-items-description h3{
+
+    font-size: 40px;
+  }
   
 }
 @media (max-width: 992px) {
@@ -392,6 +397,43 @@
 
 @media (max-width: 768px) {/* замена главного экрана на 768 px */
 
+  .etapy-section  {
+
+    align-items: center;
+  }
+
+  .etapy-item {
+
+    width: 400px;
+  }
+
+  .etepy-name {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+  .etapy-image {
+
+    width: 500px;
+  }
+  .etapy-name_conteiner {
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+  }
+  .etapy-item-description {
+
+    width: 500px;
+  }
+  .etapy-items-description {
+
+    justify-content: center;
+  }
 
   .vam-potribno_items-conteiner {
 
@@ -504,10 +546,7 @@
     margin: 0 auto; /* Центрирование по горизонтали */
 
   }
-  .etapy-description {
 
-    padding: 0;
-  }
 
  
 
@@ -847,15 +886,57 @@
 }
 
 
-@media (max-width: 460px) {
- 
-}  
 @media (max-width: 480px) {
+
+  .etapy-items-description h3 {
+
+    font-size: 30px;
+  }
+
+  .etapy-item_conteiner h2 {
+
+    font-size: 22px;
+  
+  }
 
   .meta_studio-items-one {
 
     margin-top: 10px;
   }
+
+  .etapy-name_conteiner h1 {
+
+    font-size: 60px;
+  }
+  .etapy-item-description {
+
+    width: 320px;
+  }
+  .etapy-items-description {
+
+    padding: 0 40px;
+  }
+  .etapy-description h4  {
+
+    font-size: 25px;
+    width: 370px;
+  } 
+  .etapy-description {
+
+    padding: 20px;
+
+
+  }
+  /* .etapy-description {
+
+    width: 320px;
+  } */
+
+
+  /* .etapy-image {
+
+    width: 320px;
+  } */
 
   .princip_studio-discription h3 {
 

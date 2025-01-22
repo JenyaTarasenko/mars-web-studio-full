@@ -1796,9 +1796,19 @@ html {
 
     width: 100%; /* длинна меняется взависимости от экрана*/
     max-height: 500px; /* ширина меняется взависимости от экрана*/
-   
     padding: 30px;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.etapy-item {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 
 }
@@ -1809,12 +1819,36 @@ html {
     line-height: 30px;
     color: #020607;
     font-family: 'Inter', sans-serif;
+    letter-spacing: 2px;
 
 
 
 }
+.etapy-items-description{
+
+    display: flex;
+   
+    align-items: center;
+    text-align: left;
 
 
+}
+.etapy-items-description h3 {
+
+    font-size: 45px;
+    font-weight: 800;
+    color: #000000;
+
+
+}
+.etapy-item-description {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
 .etapy-items_conteiner {
 
 
@@ -1861,6 +1895,15 @@ html {
     padding: 30px;
 }
 
+.etapy-image-conteiners {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
 
 
 
@@ -1875,19 +1918,21 @@ html {
 .etapy-description {
 
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+
+    
 }
 
 .etapy-description h4{
 
 
     font-weight: 300;
-    font-size: 20px;
+    font-size: 25px;
     color: #020607;
     font-family: 'Inter', sans-serif;
+    letter-spacing: 1px;
 
 
 
