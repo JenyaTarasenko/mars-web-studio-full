@@ -2904,8 +2904,8 @@ html {
 
     font-weight: 200;
     font-size: 35px;
-    line-height: 1.2em;
-    letter-spacing: 5%;
+    line-height: 40px;
+    letter-spacing: 5px;
     color: #252422;
     font-family: 'Inter', sans-serif; 
     margin-top: 30px;
@@ -3798,7 +3798,7 @@ html {
 }
 .about-page_items__planshet, .about-page_items-description__planshet {
 
-   max-width: 500px;
+    max-width: 500px;
     padding: 20px 0;
     display: flex;
     justify-content: center;
@@ -3930,8 +3930,8 @@ font-family: 'Inter', sans-serif; */
     /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
-    width: 100%;
-    max-width: 1100px;
+    /* width: 100%;
+    max-width: 1100px; */
     height: auto;
     /* margin: 0 auto; */
     /* padding: 10px 80px; */
@@ -3986,39 +3986,45 @@ font-family: 'Inter', sans-serif; */
 /* new-umovi-section */
 
 /* umovi-card-section */
-.umovi-card-section {
-
-    margin-top: 50px;
-    height: 1600px;
-    
-
-}
 
 .new-umovi-section {
 
-    width: 90vw;
-    /* max-width: 1200px;
-    min-width: 320px;
-
+    display: flex; /* Используем flexbox для расположения карточек */
+    flex-wrap: wrap; /* Карточки могут переноситься на новые строки */
+    justify-content: center; /* Центрируем карточки по горизонтали */
+    align-items: center; /* Центрируем карточки по вертикали */
+    gap: 20px; /* Отступы между карточками */
     padding: 20px;
-    box-sizing: border-box; */
+    min-height: 100vh; /* Секцию растягиваем на весь экран по высоте */
+    box-sizing: border-box;
 }
 
 .new-card-conteiner {
 
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 40px;
     width: 90%;
     max-width: 1200px;
+    box-sizing: border-box; */
+
+    
+    flex: 1 1 22%; /* Задаем ширину карточек, которые могут сжиматься/растягиваться */
+   
+    padding: 40px;
     box-sizing: border-box;
 
-  
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
 
 
 }
+
+
 .new-umovi-card {
 
     display: flex;
@@ -4043,7 +4049,7 @@ font-family: 'Inter', sans-serif; */
 .new-umovi-description-card {
 
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     max-width: 1000px;
 
@@ -4066,3 +4072,26 @@ font-family: 'Inter', sans-serif; */
 }
 /* umovi-card-section */
 
+
+
+.test-section {
+
+    display: flex; /* Используем flexbox для расположения карточек */
+    flex-wrap: wrap; /* Карточки могут переноситься на новые строки */
+    justify-content: center; /* Центрируем карточки по горизонтали */
+    align-items: center; /* Центрируем карточки по вертикали */
+    gap: 20px; /* Отступы между карточками */
+    padding: 20px;
+    min-height: 100vh; /* Секцию растягиваем на весь экран по высоте */
+   
+}    
+.test-card {
+
+    flex: 1 1 22%; /* Карточки занимают 22% ширины, но могут растягиваться или сжиматься */
+  
+    padding: 20px;
+  
+    text-align: center;
+  
+
+}
