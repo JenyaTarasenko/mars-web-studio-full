@@ -20,11 +20,82 @@
     .mobile-card-wark {
       display: none;
     }
+}
+/* секция .imobile-card-wark  скрыта */
+@media (max-width: 1120px) {
+
+  .umovi-card-section {
+
+    height: 1850px;
   }
+}
+/* секция .imobile-card-wark  скрыта */
+@media (max-width: 850px) {
+
+  .umovi-card-section {
+    height: 2000px;
+  }
+}
+@media (max-width: 690px) {
+
+  .umovi-card-section {
+    height: 2500px;
+  } 
+
+}
+
+@media (max-width: 550px) {
+/* 
+  .umovi-card-section {
+    height: 2500px;
+  } */
+  .new-umovi-description-card h6{
+
+    font-size: 22px;
+  }
+}
+
+/* @media (max-width: 490px) {
+
+  .umovi-card-section {
+    height: 2700px;
+  }  
+} */
+
+
+/* @media (max-width: 768px) {
+
+  .umovi-card-section {
+    height: 2200px;
+  }
+} */
+
+
+/* @media (max-width: 690px) {
+
+  .umovi-card-section {
+    height: 2500px;
+  }
+}
+@media (max-width: 630px) {
+
+  .umovi-card-section {
+    height: 2500px;
+  }
+}
+
+@media (max-width: 590px) {
+
+  .umovi-card-section {
+    height: 2700px;
+  }  
+} */
+
+
 
 @media (max-width: 1150px) and (min-width: 1100px) {
     .conteiner-card-top-wark {
-        gap: 3px; /* Устанавливаем расстояние между картами */
+      gap: 3px; /* Устанавливаем расстояние между картами */
         
     }
 }
@@ -281,7 +352,6 @@
 
 }
 
-
 @media (max-width: 790px) {
   
   .card-top-wark-section {
@@ -291,6 +361,11 @@
 }
 
 @media (max-width: 768px) {
+
+  .new-umovi-conteiner {
+
+    margin-top: 50px;
+  }
 
   .about-page_items-description__planshet{
 
@@ -415,17 +490,8 @@
 
 
   }
-  .etapy-image {
+  
 
-    width: 500px;
-  }
-  .etapy-name_conteiner {
-
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-  }
   .etapy-item-description {
 
     width: 500px;
@@ -696,6 +762,45 @@
 
 
 }
+
+@media (max-width: 600px) {
+
+
+  .new-umovi-text h1 {
+    font-size: 65px;
+  }
+  
+  .new-umovi-description {
+
+    margin-top: 30px;
+  }
+
+  .new-umovi-items h4 {
+    font-size: 30px; 
+  }
+  .new-umovi-description h2  {
+
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 5%;
+  }  
+  .line-one {
+
+    display: flex;
+    margin-top: 40px;
+    opacity: 30%;
+    
+  }
+}
+
+@media (max-width: 670px) {
+
+  .etapy-name_conteiner {
+
+    text-align: center;
+    margin-right: 70px;
+  }
+}
 @media (max-width: 526px) {
 
   .about-page_items__planshet h1 {
@@ -880,6 +985,9 @@
   }
 }
 @media (max-width: 470px) {
+  .new-umovi-items h4 {
+    width: 300px  ;
+  }
   .perezapusk-fon-text h4 {
     margin-bottom: 150px;
   }  
@@ -927,16 +1035,9 @@
 
 
   }
-  /* .etapy-description {
-
-    width: 320px;
-  } */
 
 
-  /* .etapy-image {
-
-    width: 320px;
-  } */
+  
 
   .princip_studio-discription h3 {
 

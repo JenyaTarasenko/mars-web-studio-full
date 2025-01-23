@@ -1775,7 +1775,7 @@ html {
     display: flex;
     text-align: left;
     width: 100%;
-   
+
     padding: 30px;
     flex-direction: column;
 
@@ -1880,6 +1880,7 @@ html {
     justify-content: center;
     gap: 10px;
     flex-wrap: wrap;
+    margin: 0 auto;
    
 
 
@@ -1888,11 +1889,22 @@ html {
 
 .etapy-image {
 
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
     padding: 30px;
+     */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+   
+   
+    align-items: center; /* Центрируем элементы по вертикали */
+    margin: 0 auto; /* Центрируем сам контейнер в родительском блоке */
+    max-width: 100%; /* Ограничиваем ширину */
+    box-sizing: border-box;
 }
 
 .etapy-image-conteiners {
@@ -3870,6 +3882,11 @@ html {
 
 
 }
+.new-umovi-text h1 {
+
+    animation: fadeInUp 1.5s ease forwards;
+
+}
 
 
 
@@ -3877,4 +3894,175 @@ html {
 /* font-family: 'MursGothic', sans-serif;
 font-family: 'Inter', sans-serif; */
 
+/* -------------------------------new-html-------------------------------------- */
+
+/* new-umovi-section */
+.new-umovi-conteiner {
+
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: column;
+    /* padding: 40px; */
+    margin-top: 150px;
+}
+
+.new-umovi-text {
+    width: 100%; /* Ширина адаптируется */
+    max-width: 1100px; /* Максимальная ширина */
+    margin-left: 65px;
+    word-wrap: break-word; /* Перенос длинных слов */
+    overflow-wrap: break-word; /* Перенос при необходимости */
+    padding: 10px;
+}
+.new-umovi-text  h1{
+
+    font-size: 90px;
+    font-weight: 800;
+    line-height: 1.2; /* уменьшен интервал между строками */
+    color: #000000;
+    margin: 0; /* Убираем лишние отступы */
+    
+}
+.new-umovi-description {
+
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    /* margin: 0 auto; */
+    /* padding: 10px 80px; */
+    box-sizing: border-box;
+    text-align: left;
+    margin-top: 70px;
+    margin-left: 70px;
+    padding-right: 40px;
+}
+.new-umovi-description h2 {
+
+    font-family: Inter, sans-serif; 
+    font-size: 25px;
+    font-weight: 300;
+    color: #000000;
+    line-height: 1.1; /* Удобочитаемость текста */
+
+}
+.new-umovi-items h4 {
+
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #000000;
+    margin: 0; /* Убираем лишние отступы */
+    white-space: normal; /* Разрешаем перенос строк */
+    word-wrap: break-word;
+
+}
+
+.new-umovi-items {
+
+    width: 100%; /* Ширина адаптируется */
+    max-width: 1100px; /* Максимальная ширина */
+    margin-left: 65px;
+    word-wrap: break-word; /* Перенос длинных слов */
+    overflow-wrap: break-word; /* Перенос при необходимости */
+    padding: 10px;
+    margin-top: 20px;
+}
+
+    
+
+
+
+.line-one {
+    display: none;
+    width: 480px; /* Ширина линии */
+    border: 1px solid black; /* Граница черного цвета */
+    margin: 0 auto; /* Выравнивание по центру */
+}
+/* new-umovi-section */
+
+/* umovi-card-section */
+.umovi-card-section {
+
+    margin-top: 50px;
+    height: 1600px;
+    
+
+}
+
+.new-umovi-section {
+
+    width: 90vw;
+    /* max-width: 1200px;
+    min-width: 320px;
+
+    padding: 20px;
+    box-sizing: border-box; */
+}
+
+.new-card-conteiner {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    width: 90%;
+    max-width: 1200px;
+    box-sizing: border-box;
+
+  
+
+
+}
+.new-umovi-card {
+
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 20px;
+    /* padding: 0 60px; */
+    margin-left: 50px;
+}
+
+.umovi-img-conteiner {
+
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: row;
+    gap:20px;
+
+
+}
+.new-umovi-description-card {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+
+}
+.umovi-image-text p {
+
+    font-weight: 800;
+    font-size: 25px;
+    color:#000000;
+
+}
+.new-umovi-description-card h6{
+
+    font-weight: 300;
+    font-size: 25px;
+    color: #020607;
+    font-family: Inter, sans-serif; 
+
+
+}
+/* umovi-card-section */
 
