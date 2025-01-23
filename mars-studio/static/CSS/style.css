@@ -1965,17 +1965,20 @@ html {
     flex-direction: row;
 
 
+    height: 500px;
+
+
 }
 .footer_new_conteiner_left {
 
     width: 600px;
-    height: 600px;
+    /* height: 600px; */
     display: flex;
     justify-content: center;
     align-items: center;
     background-position: center;
     flex-direction: column;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 
 }
 .footer_new_logo {
@@ -2051,14 +2054,15 @@ html {
 .footer_new_conteiner_right {
 
     width: 500px;
-    height: 500px;
+    /* height: 500px; */
     display: flex;
-    margin-top: 120px;
+    /* margin-top: 120px; */
     
     text-align: left;
     background-position: center;
     flex-direction: row;
     margin-left: 150px;
+    margin-top: 40px;
 }
 
 .footer_new_item-one {
@@ -2902,10 +2906,10 @@ html {
 
 .about-page_conteiner-title p {
 
-    font-weight: 200;
+    font-weight: 300;
     font-size: 35px;
     line-height: 40px;
-    letter-spacing: 5px;
+    letter-spacing: 1px;
     color: #252422;
     font-family: 'Inter', sans-serif; 
     margin-top: 30px;
