@@ -938,6 +938,39 @@
 
 
 @media (max-width: 480px) {
+
+  .new-umovi-section {
+
+    padding: 30px 0;
+  }
+  .new-umovi-items {
+
+    margin-left: 0;
+    padding: 0 30px;
+  }
+
+  .new-umovi-description {
+
+    margin-left: 0;
+    padding: 30px;
+  }
+
+  .new-card-conteiner {
+
+    padding-right: 10px;
+    padding: 0;
+  }
+  .new-umovi-card{
+
+    margin-left: 0;
+    padding: 0 30px;
+
+  }
+
+  .new-umovi-text {
+
+    padding: 0;
+  }
   .new-umovi-description-card h6{
 
     font-size: 22px;
