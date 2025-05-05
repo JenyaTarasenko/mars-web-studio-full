@@ -106,12 +106,11 @@
         
           <div class="about-page_conteiner-title">
     
-            <div class="about-page_items">
+            {% comment %} <div class="about-page_items">
               <h1>хлопці<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;з дніпра</h1>
-            </div>
+            </div> {% endcomment %}
             <div class="about-page_items-descriptiontitle">
-         
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;Ми створюємо сайти саме для бізнесів та стартапів. Наша команда має досвід у рекламі та дизайні, тому ми занємо як буде краще для вашего бізнеса, як буде краще для Вас!</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;"Ми - дизайн студія Mars створюємо сайти під ключ для вашого бізнесу та стартапу, з урахуванням усіх аспектів розвитку вашого онлайн-присутності.Наша команда має багаторічний досвід у розробці, рекламі та дизайні, що дозволяє нам створювати не просто сайти, а ефективні інструменти для вашого бізнесу. Ми допоможемо вам пройти весь цикл розробки – від ідеї до запуску сайту та його подальшої підтримки.З нами ваш сайт буде не тільки красивим, а й максимально зручним для користувачів, оптимізованим для пошукових систем та адаптованим до всіх пристроїв. Ми знаємо, як створити сайт, який працюватиме на вас і принесе максимальний результат.Вибір нас – це вибір професіоналів, які розуміють, що саме потрібно для успішного розвитку вашого бізнесу в Інтернеті."</p>
             </div>
           </div>
          
@@ -128,18 +127,16 @@
 
       <div class="about-page_conteiner-title__planshet">
       
-        <div class="about-page_items__planshet">
-          <h1>хлопці<br>&nbsp;&nbsp;&nbsp;з дніпра</h1>
-        </div>
+        {% comment %} <div class="about-page_items__planshet">
+          <h1>Студія<br>&nbsp;&nbsp;&nbsp;розробки</h1>
+        </div> {% endcomment %}
         <div class="about-page_items-description__planshet">
-          
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;Ми створюємо сайти саме для бізнесів та стартапів.Наша команда має досвід у рекламі та дизайні, тому ми занємо як буде краще для вашего бізнеса, як буде краще для Вас!</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Ми -  Mars студія веб розробки  яка створює сайти під ключ для бізнесів і стартапів. Повний цикл розробки — від ідеї до запуску. Сайти, що привертають увагу та працюють на результат.</p>
         </div>
       </div>
 
       <div class="about-image_planshet-item">
       </div>
-
     </section> 
     {% comment %} planshet-version {% endcomment %}
 
@@ -150,30 +147,71 @@
     
         <div class="meta_studio-conteiner">
             <div class="meta_studio-description">
-              <h2>мета студії</h2>
+              <h2>Mars</h2>
             </div>
            
             <div class="meta_studio-items-one">
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;Основна ідея – це діджиталізація бізнесу.Ми розуміємо, що світ все більше переходить в онлайн.</p>
+              <p class="text-start">&nbsp;&nbsp;&nbsp;&nbsp;Ми — студія повного циклу розробки, яка супроводжує ваш проєкт від першого ескізу дизайну до запуску складних, високонавантажених веб-рішень.Наша команда створює унікальні дизайни з урахуванням сучасних тенденцій UI/UX, адаптує їх під усі типи пристроїв за допомогою HTML, CSS та фреймворку Bootstrap. Ми розробляємо динамічні інтерфейси з використанням React.js, які швидко працюють та забезпечують зручний досвід користувача.Серверна частина проєкту будується на Django (Python) — одному з найнадійніших фреймворків для бекенду. Він дозволяє створювати масштабовані системи з потужною логікою, гнучким керуванням контентом, підключенням до баз даних, сервісів оплат і не тільки.Ми не просто розробляємо сайти — ми створюємо повноцінні цифрові продукти, які вирішують задачі бізнесу, виділяють вас серед конкурентів і забезпечують зростання.</p>
             </div>
-            <div class="meta_studio-items-one">
+            {% comment %} <div class="meta_studio-items-one">
               <p>&nbsp;&nbsp;&nbsp;&nbsp;Багато сервісів та послуг вже доступні онлайн: купівля квитків, меню в ресторанах, конференції, концерти та інше.</p>
             </div>
             <div class="meta_studio-items-one">
               <p>&nbsp;&nbsp;&nbsp;&nbsp;Сучасні виклики змушують бізнес бути онлайн.Як кажуть: "Якщо тебе нема в інтернеті, тебе не існує". Ми, Mars, хочемо допомогти бізнесу діджиталізуватись!</p>
-            </div>
+            </div> {% endcomment %}
         </div>
 
     </section><!-- секция мета студии марс  -->
-    
-    <section class="princip_studio">
+
+    <section class="new-text-top mt-2">
+      <div class="new-text-top-conteiner">
+        <h5 class="new-text-block">Послуги</h5>
+      </div>
+    </section>
+  
+     <!-- секция карта -->
+    <section class="card-top-wark-section pb-4">
+      
+      <div class="conteiner-card-top-wark"> 
         
+        <div class="card-top-wark" card-1 style="background-image: url({% static 'image/card_section1_one.png' %});" > 
+          <div class="card-title-top-wark"> 
+            <h5>Сайт<br>візитка</h5>
+          </div>
+          <div class="card-item-top-wark">
+            <h6>За допомогою цієї послуги ви зможете почати просування своєї компанії в інтернеті.</h6>
+          </div>
+        </div>  
+
+        <div class="card-top-wark" card-2 style="background-image: url({% static 'image/card_section1_two.png' %});" > 
+          <div class="card-title-top-wark"> 
+            <h5>ЛЕНДІНГ</h5>
+          </div>
+          <div class="card-item-top-wark">
+            <h6>Така форма сайту ідеально підходить для невеликих компаній, продуктів, подій та заходів.</h6>
+          </div>
+        </div>  
+
+
+          <div class="card-top-wark" card-3 style="background-image: url({% static 'image/card_section1_three.png' %});" > 
+            <div class="card-title-top-wark"> 
+              <h5>Багатосторінок<br>сайт</h5>
+            </div>
+            <div class="card-item-top-wark">
+              <h6>На цьому сайті ви можете добавити перехід на внутрішні сторінки сайту</h6>
+            </div>
+          </div>  
+      </div>
+
+    </section>
+    <!-- секция карта -->
+    <section class="princip_studio mt-5 pb-5">
+          
         <div class="princip_studio-discription">
             <h3>принципи mars</h3>
         </div>
 
         <div class="princip_studio-conteiner">
-            
             
             <div class="princip_studio-items">
               <!-- карта 1  -->
@@ -274,17 +312,117 @@
             </div><!-- карта 5  -->
         </div>
     </section>
-    <div class="about-image_planshet-stvoreno"></div>
-    <div class="about-image-raceta-style-desctop"></div>
+    <section class="new-text-top mt-2">
+      <div class="new-text-top-conteiner">
+        <h5 class="new-text-block">ціни</h5>
+      </div>
+    </section>
+    <section class="review mt-3 py-3">
+      <div class="container">
+          <div class="row align-items-center justify-content-center gap-2">
+              <div class="card fixed-card bg-orange" style="width: 300px; height: 500px; border-radius: 50px;">
+                  <div class="card-body">
+                    <img src="{% static 'image/price-raceta.svg' %}" class="card-img-bottom" alt="Image" style="height: 100px; width: 100px;">
+                    <!-- Имя -->
+                    <h5 class="card-title-design mt-2 text-left text-white">Landing page</h5>
+                    <h5 class="card-title-design-price mt-2 text-left text-white">Односторінковий сай</h5>
+                    <h5 class="card-title-price mt-4 text-left"><span class="price-text-small">от</span> 100$</h5>
+            
+                    <p class="card-text-review text-left mt-4 text-white">У вартість входить розробка унікального дизайну, адаптивна верстка з використанням Bootstrap, CSS, JavaScript, підключення форми зворотного зв’язку, створення адмін-панелі на основі Django (Python), інтеграція з поштою, програмування бекенд-частини, а також викладка сайту на сервер.</p>
+      
+                  </div>
+              </div>
+              <div class="card fixed-card bg-orange" style="width: 300px; height: 500px; border-radius: 50px;">
+                <div class="card-body">
+                  <img src="{% static 'image/price-planat.svg' %}" class="card-img-bottom" alt="Image" style="height: 100px; width: 100px;">
+                  <!-- Имя -->
+                  <h5 class="card-title-design mt-2 text-left text-white">Багатосторінкові</h5>
+                  <h5 class="card-title-design-price mt-2 text-left text-white">Сайти бильше 3 сторінок</h5>
+                  <h5 class="card-title-price mt-4 text-left"><span class="price-text-small">от</span> 300$</h5>
+          
+                  <p class="card-text-review text-left mt-4 text-white">Багатосторінкові сайти — це унікальний дизайн, адаптивна верстка на Bootstrap і React.js, потужний бекенд на Django (Python) з адмін-панеллю та підключеною базою даних. Ідеальні для блогів, бізнес-сторінок, каталогів, де ви зможете додавати та змінювати контент самостійно.</p>
+    
+                </div>
+              </div>
+              <div class="card fixed-card bg-orange" style="width: 300px; height: 500px; border-radius: 50px;">
+                <div class="card-body">
+                  <img src="{% static 'image/price-plan.svg' %}" class="card-img-bottom" alt="Image" style="height: 100px; width: 100px;">
+                  <!-- Имя -->
+                  <h5 class="card-title-design mt-2 text-left text-white">Інтернет магазини</h5>
+                  <h5 class="card-title-design-price mt-2 text-left text-white">Багатосторінкові сайти</h5>
+                  <h5 class="card-title-price mt-4 text-left"><span class="price-text-small">от</span> 400$</h5>
+          
+                  <p class="card-text-review text-left mt-4 text-white">Інтернет-магазини — це повноцінні сайти з унікальним дизайном, адаптивною версткою (Bootstrap, React.js) та потужним бекендом на Django (Python).Включають каталог товарів, вивантаження/оновлення товарів, зручну адмін-панель.Кошик покупця, оформлення замовлень, інтеграцію з поштою та платіжними системами</p>
+    
+                </div>
+              </div>
+          </div>
+          </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-md-8"> <!-- ширина и центрирование -->
+            <h6 class="text-section-center">У вартість не входять доменне ім’я та хостингДоменне ім’я — це адреса вашого сайту в інтернеті (наприклад, example.com). Хостинг — це місце на сервері, де зберігаються файли вашого сайту, щоб він був доступний 24/7.Ці послуги оплачуються окремо клієнтом.</h6>
+          </div>  
+        </div>  
+      </div>  
+    </section>
+    <section class="new-text-top mt-2">
+      <div class="new-text-top-conteiner">
+        <h5 class="new-text-block">питання</h5>
+      </div>
+    </section>
+    <section class="text-question pb-3">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-3 d-flex justify-content-start flex-column">
+              <h5 class="text-vartist">UI-UX</h5>
+              <div style="width: 100px; height: 3px; background-color:#E77B2D"></div>
+          </div>
+          <div class="col-md-8 mt-4">
+            <h6 class="text-description-vartist">У нашій студії ми використовуємо сучасні дизайн-технології, зокрема Figma та Photoshop.
+            Ми створюємо макети, що відповідають актуальним трендам UI/UX-дизайну, приділяючи особливу увагу зручності для користувача та естетиці.
+            Наші дизайнери застосовують новітні підходи, щоб кожен проєкт виглядав стильно, був інтуїтивно зрозумілим та ефективно виконував свої функції.</h6>
+          </div>
+        </div>
+        <div class="row align-items-center justify-content-center mt-4">
+          <div class="col-md-3 d-flex justify-content-start flex-column">
+              <h5 class="text-vartist">Програмування</h5>
+              <div style="width: 100px; height: 3px; background-color:#E77B2D;"></div>
+          </div>
+          <div class="col-md-8 mt-3">
+            <h6 class="text-description-vartist">Ми використовуємо всі сучасні технології у веброзробці, щоб створювати якісні та ефективні сайти.
+            Наші розробники працюють з передовими інструментами фронтенду — HTML, CSS, JavaScript, React, що дозволяє створювати гнучкі, стильні та адаптивні інтерфейси.</h6>
+            <h6 class="text-description-vartist">На стороні бекенду ми використовуємо Python, Django та Docker — це забезпечує надійність, масштабованість і швидке розгортання проєктів.
+            Завдяки цьому наші сайти легко обслуговувати, оновлювати та інтегрувати з іншими сервісами.</h6>
+          </div>
+        </div>
+
+    </section>
+    
+   
+    {% comment %} <div class="about-image_planshet-stvoreno"></div>
+    <div class="about-image-raceta-style-desctop"></div> {% endcomment %}
     
 
-
+    <div class="social-icons-fixed">
+      <div class="social-circle">
+        <a href="tel:+380996072979" target="_blank">
+          <img src="{% static '/image/massege.svg' %}" alt="Tel" style="width: 40px;">
+        </a>
+      </div>
+      <div class="social-circle">
+        <a href="https://t.me/jenyatarasenko" target="_blank">
+          <img src="{% static '/image/massege1.svg' %}" alt="Telegram">
+        </a>
+      </div>
+    </div>  
     {% comment %} {% include 'include/form/contact_form.html' %} {% endcomment %}
 
     {% include 'include/footer/footer.html' %}
-
-
-  
+   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <script src="/script.js"></script>

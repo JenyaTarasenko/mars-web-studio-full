@@ -112,35 +112,137 @@
       </div>
     </div>
 
-    {% comment %} <div class="opisanie-description">
-      <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum facere tenetur odio consequatur vitae. Illo esse nulla reprehenderit, quisquam veniam cupiditate tenetur ducimus ex, ab sapiente laboriosam, ipsa obcaecati voluptatibus!</h5>
-    </div> {% endcomment %}
-
-    <div class="detail-image_conteiner">
-      <img src="{{ detail.image.url }}" class="detail-image_one" alt="{{item.name}}">
-    
-      {% comment %} <div class="detail-image_two"></div> {% endcomment %}
-    </div>
-
-
-    <div class="detail-opisanie-conteiner">
-      {% comment %} <div class="opisanie-name">
-        <h3>Заголовок</h3>
-      </div>
-
-      <div class="opisanie-description">
-        <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum facere tenetur odio consequatur vitae. Illo esse nulla reprehenderit, quisquam veniam cupiditate tenetur ducimus ex, ab sapiente laboriosam, ipsa obcaecati voluptatibus!</h5>
-      </div> {% endcomment %}
-
+    <div class="detail-opisanie-conteiner ">
       <div class="opisanie-url">
-        <h4>Подивитись на проект: <a href="{{ detail.link }}">{{ detail.link }}</a></h4>
+        <h4><a href="{{ detail.link }}">Дивитись проєкт</a></h4>
       </div>
     </div>
 
-
-    
-
+    <div class="detail-image_conteiner pb-4">
+      <img src="{{ detail.image.url }}" class="img-fluid px-3 rounded-2" alt="{{ item.name }}" style="border-radius: 20px;">
+    </div>
   </section>
+   <!-- секция карта -->
+
+  <section class="new-text-top mt-2">
+    <div class="new-text-top-conteiner">
+      <h5 class="new-text-block">Процес</h5>
+    </div>
+  </section>
+  <section class="review mt-3 py-3">
+    <div class="container">
+        <div class="row align-items-center justify-content-center gap-2">
+            <div class="card fixed-card bg-black" style="width: 300px; height: 300px; border-radius: 50px;">
+                <div class="card-body">
+                  <!-- Изображение -->
+                  <img src="{% static 'image/design1.svg' %}" class="card-img-bottom" alt="Image" style="height: 100px; width: 100px;">
+              
+                  <!-- Имя -->
+                  <h5 class="card-title-design mt-2 text-left text-white">Дизайн</h5>
+              
+                  <!-- Текст отзыва (будет изменяться динамически) -->
+                  <p class="card-text-review text-left mt-3 text-white">Команда дизайнерів створює унікальний дизайн для кожного проєкту. Жодних шаблонів — лише індивідуальний стиль і креативний підхід.</p>
+                </div>
+            </div>
+            <div class="card fixed-card bg-black" style="width: 300px; height: 300px; border-radius: 50px;">
+              <div class="card-body">
+                <!-- Изображение -->
+                <img src="{% static 'image/html.svg' %}" class="card-img-bottom" alt="Image" style="height: 100px; width: 100px;">
+            
+                <!-- Имя -->
+                <h5 class="card-title-design mt-2 text-left text-white">Програмування</h5>
+            
+                <!-- Текст отзыва (будет изменяться динамически) -->
+                <p class="card-text-review text-left mt-3 text-white">Верстка та програмування, включаючи фронтенд-розробку проєкту, здійснюються за допомогою HTML, CSS, JavaScript та React.</p>
+              </div>
+            </div>
+            <div class="card fixed-card bg-black" style="width: 300px; height: 300px; border-radius: 50px;">
+
+            <div class="card-body">
+              <!-- Изображение -->
+              <img src="{% static 'image/terminal.svg' %}" class="card-img-bottom" alt="Image" style="height: 80px; width: 70px;">
+          
+              <!-- Имя -->
+              <h5 class="card-title-design mt-4 text-left text-white">Сервер</h5>
+          
+              <!-- Текст отзыва (будет изменяться динамически) -->
+              <p class="card-text-review text-left mt-3 text-white">Серверна розробка здійснюється за допомогою Python та Django. Ми налаштовуємо підключення домену, а також інтегруємо Google Search Console та Google Analytics.</p>
+            </div>
+           
+            </div>            
+        </div>
+    </div>
+  </section>
+
+  <section class="new-text-top mt-2">
+    <div class="new-text-top-conteiner">
+      <h5 class="new-text-block">відгуки</h5>
+    </div>
+  </section>
+  <!--   секция text -->
+  <section class="review mt-3 py-3">
+    <div class="container">
+        <div class="row align-items-center justify-content-center gap-2">
+            <div class="card fixed-card" style="width: 300px; height: 300px; border-radius: 50px;">
+                <div class="card-body">
+                  <!-- Изображение -->
+                  <img src="{% static 'image/otziv-man2.jpg' %}" class="card-img-bottom" alt="Image" style="height: 100px; width: 100px;  border-radius: 50%;">
+              
+                  <!-- Имя -->
+                  <h5 class="card-title-review mt-2 text-left">Антон</h5>
+              
+                  <!-- Фамилия -->
+                  <img src="{% static 'image/stars.png' %}" class="card-img-bottom" alt="Image" style="width: 70px;">
+              
+                  <!-- Текст отзыва (будет изменяться динамически) -->
+                  <p class="card-text-review text-left mt-3" id="review-text">Швидкий підхід до роботи, стильний дизайн та якісне виконання. Команда працює оперативно, враховує побажання і завжди на зв’язку.</p>
+                </div>
+            </div>
+            <div class="card fixed-card" style="width: 300px; height: 300px; border-radius: 50px;">
+              <div class="card-body">
+                <!-- Изображение -->
+                <img src="{% static 'image/3otziv.jpg' %}" class="card-img-bottom" alt="Image" style="height: 100px; width: 100px;  border-radius: 50%;">
+            
+                <!-- Имя -->
+                <h5 class="card-title-review mt-2 text-left">Алекс</h5>
+            
+                <!-- Фамилия -->
+                <img src="{% static 'image/stars.png' %}" class="card-img-bottom" alt="Image" style="width: 70px;">
+            
+                <!-- Текст отзыва (будет изменяться динамически) -->
+                <p class="card-text-review text-left mt-3" id="review-text">Чудова робота! Вебстудія створила наш сайт з нуля — дизайн, функціонал, просування. Все якісно, професійно та вчасно.</p>
+              </div>
+          </div>
+          <div class="card fixed-card" style="width: 300px; height: 300px; border-radius: 50px;">
+            <div class="card-body">
+              <!-- Изображение -->
+              <img src="{% static 'image/6otziv.jpg' %}" class="card-img-bottom" alt="Image" style="height: 100px; width: 100px;  border-radius: 50%;">
+          
+              <!-- Имя -->
+              <h5 class="card-title-review mt-2 text-left">Катя</h5>
+              <!-- Фамилия -->
+              <img src="{% static 'image/stars.png' %}" class="card-img-bottom" alt="Image" style="width: 70px;">
+              <!-- Текст отзыва (будет изменяться динамически) -->
+              <p class="card-text-review text-left mt-3" id="review-text">Дуже задоволені співпрацею! Програмісти справжні професіонали — все працює стабільно, швидко та якісно.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+  </section>
+ 
+  <div class="social-icons-fixed">
+    <div class="social-circle">
+      <a href="tel:+380996072979" target="_blank">
+        <img src="{% static '/image/massege.svg' %}" alt="Tel" style="width: 40px;">
+      </a>
+    </div>
+    <div class="social-circle">
+      <a href="https://t.me/jenyatarasenko" target="_blank">
+        <img src="{% static '/image/massege1.svg' %}" alt="Telegram">
+      </a>
+    </div>
+
+  </div>  
 
 
 

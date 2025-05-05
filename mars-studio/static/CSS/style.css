@@ -74,6 +74,10 @@ html {
 
     fill:white;
 }
+.navbar-nav {
+
+    align-items: center;
+}
 
 
 .navbar-nav .nav-link {
@@ -987,7 +991,7 @@ html {
     box-sizing: border-box;
     gap:20px;
     width: 100%;
-    height: 800px;
+    /* height: 800px; */
     flex-wrap: wrap; 
 
 }
@@ -1076,10 +1080,7 @@ html {
     color: rgb(9, 8, 8); /* Цвет текста белый */
     font-weight: bold; /* Жирный текст */
     font-size: 18px; /* Размер шрифта */
-    font-weight: 800;
-    font-weight: 800;
-    letter-spacing: 3px;
-    text-transform: uppercase;
+    font-weight: 400;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1108,7 +1109,7 @@ html {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    /* border-radius: 30px 30px 0 0; */
+  
   
 }
 
@@ -1121,12 +1122,11 @@ html {
     border-bottom-left-radius: 30px;
 
 }
-.card-context-img img {
-    width: 100%; /* добавлено для растягивания изображения на всю ширину */
-     /* добавлено для сохранения пропорций изображения */
-    height: auto; /* Сохраняет пропорции изображения */
-    object-fit: cover;
-}
+/* .card-context-img img {
+    width: 100%; 
+
+    height: auto;
+} */
 
 
 /* -------------------------------card-context-section--------------------------------------- */
@@ -1603,8 +1603,8 @@ html {
 .detail-items_description h2{
 
     font-weight: 200;
-    font-size: 25px;
-    line-height: 40px;
+    font-size: 18px;
+    line-height: 1.5;
     letter-spacing: 5%;
     color:  #020607;
     font-family: 'Inter', sans-serif; 
@@ -1628,14 +1628,11 @@ html {
 
     display: flex;
     width: 100%;
-    /* height: 500px;  */
     flex-direction: row;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
    
-
-
 }
 
 .detail-image_one{
@@ -1667,7 +1664,7 @@ html {
     text-align: left;
     width: 100%;
     /* height: 430px;  */
-    padding: 30px;
+    /* padding: 30px; */
     flex-direction: column;
 
 
@@ -1710,6 +1707,9 @@ html {
 
 }
 
+.opisanie-url a:hover {
+    color: #FFA500; /* оранжевый при наведении (по желанию) */
+}
 .opisanie-url {
 
     width: 100%; /* длинна меняется взависимости от экрана*/
@@ -1719,16 +1719,18 @@ html {
 
 
 }
+.opisanie-url a {
+    color: #FFCC00; /* жёлтый */
+    text-decoration: underline;
+}
 
-.opisanie-url h4 {
+
+/* .opisanie-url h4 {
 
     font-weight: 300;
-    /* font-size: 30px;
-    line-height: 40px;
-    letter-spacing: 5%; */
     color:  #020607;
     font-family: 'Inter', sans-serif;
-}
+} */
 
 .opisanie-url a {
 
@@ -2726,11 +2728,11 @@ html {
 
 .meta_studio-items-one p {
 
-    font-size: 35px;
+    font-size: 20px;
     color:#020607;
     font-weight: 200;
     line-height: 40px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
 }
@@ -2907,9 +2909,9 @@ html {
 .about-page_conteiner-title p {
 
     font-weight: 300;
-    font-size: 35px;
-    line-height: 40px;
-    letter-spacing: 1px;
+    font-size: 20px;
+    /* line-height: 40px; */
+    /* letter-spacing: 1px; */
     color: #252422;
     font-family: 'Inter', sans-serif; 
     margin-top: 30px;
@@ -3099,6 +3101,17 @@ html {
     /* margin-top: 40px; */
     /* padding: 20px; */
 }
+.text-section-center {
+
+    font-weight: 600;
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    color: #5c5d5de5;
+
+
+}
+
+
 
 /* -------------------------------new text-------------------------------------- */
 /* -------------------------------new text top-------------------------------------- */
@@ -3817,13 +3830,13 @@ html {
     color:#020607;
     font-family: 'MursGothic', sans-serif;
     text-transform: uppercase;
-    
+    margin-top: 460px;
 
 }
 .about-page_items-description__planshet p {
 
     font-weight: 300;
-    font-size: 35px;
+    font-size: 17px;
     line-height: 40px;
     letter-spacing: 2px;
     color:#020607;
@@ -4096,6 +4109,228 @@ font-family: 'Inter', sans-serif; */
     padding: 20px;
   
     text-align: center;
-  
 
+}
+.card-text-review {
+
+    font-weight: 400;
+    font-size: 13px;
+    color: #020607;
+    font-family: Inter, sans-serif; 
+}
+
+.card-title-review {
+
+    font-weight: 400;
+    font-size: 12px;
+    color: #9d9d9d;
+    font-family: Inter, sans-serif;
+
+
+}
+
+.fixed-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .fixed-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .bg-cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+.design-text {
+
+
+    font-weight: 600;
+    font-size: 20px;
+    font-family: Inter, sans-serif;
+
+}
+
+.bg-black {
+
+    background-color: #000 !important;
+
+
+}
+
+.bg-orange {
+    background-color:#474747!important;
+
+}
+
+.card-title-design {
+
+
+    font-weight: 800;
+    font-size: 20px;
+    color: #f1f1f1;
+    font-family: Inter, sans-serif;
+}
+
+.card-title-stoimost {
+
+    font-weight:400;
+    font-size: 20px;
+    color: #0b0b0b;
+    font-family: Inter, sans-serif;
+
+}
+
+.text-vartist {
+
+    font-size: 25px;
+    font-weight: 700;
+    margin-right: 30px;
+    text-transform: uppercase;
+    font-family: 'MursGothic', sans-serif;
+    color: #000000;
+    
+}
+.text-description-vartist {
+
+    font-weight:400;
+    font-size: 14px;
+    color: #313131;
+    line-height: 1.5;
+    font-family: Inter, sans-serif;
+
+}
+.new-text-top-projects {
+
+
+}
+.text-primary {
+
+    font-weight:900;
+    font-size: 30px;
+    color: #E77B2D;
+    font-family: 'MursGothic', sans-serif;
+}
+.social-icons-fixed {
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 9999;
+    gap:5px;
+
+}
+
+.social-circle {
+
+    width: 60px;
+    height: 60px;
+    background-color: #E77B2D ; /* Цвет круга, можешь поменять */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+   
+
+
+}
+.social-circle img {
+    width: 30px;
+    height: 30px;
+}
+
+.social-circle:hover {
+    transform: scale(1.1);
+}
+
+.card-title-price {
+
+    font-size: 40px;
+    font-weight: 800;
+    margin-right: 30px;
+    text-transform: uppercase;
+    font-family: 'MursGothic', sans-serif;
+    color: #ecb289!important;
+
+
+
+}
+.card-title-design-price  {
+
+    font-size: 14px;
+    font-weight: 200;
+    margin-right: 30px;
+    font-family: Inter, sans-serif;
+
+}
+.price-text-small {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Inter, sans-serif;
+}
+
+.job-text {
+
+
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'MursGothic', sans-serif;
+    text-transform: uppercase;
+    color: #ecb289;
+
+}
+.job-text-deskription {
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2;
+    font-family: Inter, sans-serif;
+    color: #323030;
+}
+.image-job {
+
+    height: 300px;
+    width: 350px; 
+}
+.image-job-item {
+
+    height: 300px;
+    width: 500px; 
+
+
+}
+.btn-job-racketa-mars {
+
+
+    background-color: #020607; /* Цвет фона кнопки */
+    padding: 10px 20px;        /* Внутренние отступы */
+    border: none;              /* Убираем стандартную границу */
+    border-radius: 30px;       /* Закругляем углы */
+    cursor: pointer;           /* Указатель при наведении */
+    transition: background-color 0.3s ease; /* Плавный переход при изменении фона */
+    display: inline-block;
+    width: 312px;
+    height: 60px;
+    margin-top: 40px;
+    letter-spacing: 3px;
+    font-weight: 300;
+
+
+}
+
+.btn-job-racketa-mars:hover {
+    background-color: #E77B2D ; /* Изменяем цвет фона */
+    transform: scale(1.01);   /* Легкое увеличение кнопки */
+}
+
+.btn-job-racketa-mars a {
+
+    font-size: 14px;
+    color: #FAFAFF;
 }

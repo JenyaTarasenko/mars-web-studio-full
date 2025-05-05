@@ -15,5 +15,7 @@ urlpatterns = [
     path('etapy-raboti-mars/', TemplateView.as_view(template_name="app/pages/etapy.html"), name="etapy"),
     path('umovi-raboti-mars/', TemplateView.as_view(template_name="app/pages/umovi.html"), name="umovi"),
     path('perezapusk-saita-mars/', TemplateView.as_view(template_name="app/pages/zapusk-saita.html"), name="zapusk"),
-   
+    path('projects-all/', views.project_list, name="projects-all"),
+    path('contact/', TemplateView.as_view(template_name="app/pages/contact.html"), name="contact"),
+    path('poslugi-mars/', TemplateView.as_view(template_name="app/pages/poslugi.html"), name="poslugi"),
 ]

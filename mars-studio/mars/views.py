@@ -7,7 +7,9 @@ from django.views.generic.detail import DetailView
 from django.views.generic import TemplateView
 
 
-
+def project_list(request):
+    projects = WebSait.objects.all()
+    return render(request,'app/pages/projects-all.html', {'projects': projects})
 
 
 def submith_question(request):
@@ -22,17 +24,6 @@ def submith_question(request):
     items =   WebSait.objects.all()   
     return render(request, 'app/pages/index.html', {'form': form, 'items': items})
     
- 
-
-# class AboutPageView(TemplateView):
-#     template_name = "app/pages/about.html"
-    
-#     def get_context_data(self, **kwargs):
-#         context = super().get_context_data(**kwargs)
-#         context['form'] = ContactForm(self.request)  # Добавляем форму 
-#         return context
-     
-
 
 class DetailViewItem(DetailView):
     

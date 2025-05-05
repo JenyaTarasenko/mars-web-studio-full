@@ -32,10 +32,10 @@
               <a class="nav-link {% if request.path == '/about-mars-studio/' %}active{% endif %}" href="{% url 'mars:about' %}">Про нас</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/#poslugi">Послуги</a>
+              <a class="nav-link {% if request.path == '/poslugi-mars/' %}active{% endif %}" href="{% url 'mars:poslugi' %}">Послуги</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/#projects">Проекти</a>
+              <a class="nav-link {% if request.path == '/projects-all/' %}active{% endif %}" href="{% url 'mars:projects-all' %}">Проєкти</a>
             </li>
             <li class="nav-item">
               <a class="nav-link {% if 'umovi-raboti-mars' in request.path  %}active{% endif %}"href="{% url 'mars:umovi' %}">Умови</a>
@@ -44,7 +44,7 @@
               <a class="nav-link {% if 'etapy-raboti-mars/' in request.path  %}active{% endif %}" href="{% url 'mars:etapy' %}">Етапи</a>
             </li> 
             <li class="nav-item">
-              <a class="nav-link" href="/#form-top">Контакти</a>
+              <a class="nav-link {% if 'contact/' in request.path  %}active{% endif %}" href="{% url 'mars:contact' %}" >Контакти</a>
             </li>
           </ul>
         </div>

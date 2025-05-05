@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+  <head> 
+    <!-- Required meta tags -->
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Совместимость с Internet Explorer -->
+    <meta name="description" content="Разработка интерактивных интернет-сайтов, лендингов, многостраничных интернет-магазинов и многофункциональных сайтов с адаптивным и уникальным дизайном.">
+    <meta name="keywords" content="Разработка сайтов, кроссплатформенные сайты, веб-разработка, адаптивный дизайн, создание сайтов, веб-дизайн, разработка приложений, мобильные сайты">
+    <meta name="author" content="Mars design studio">
+    <meta name="robots" content="index, follow"> <!-- Даем инструкции для поисковых систем -->
+    <meta name="robots" content="noarchive"> <!-- Запрещаем поисковикам кешировать страницу -->
+    <meta name="google-site-verification" content="reL_Sx5gy9mocFUEHJA4ULjjJVxoGZUtpqkVioPkrTc" />
+
+    
+      <!-- Основной фавикон -->
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'image/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'image/favicon-16x16.png' %}">
+    <link rel="icon" href="/path/to/favicon.ico">
+  
+      <!-- Apple Touch Icon для устройств Apple -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'image/apple-touch-icon.png' %}">
+    
+  
+      <!-- Android Icon -->
+    <link rel="icon" type="image/png" sizes="192x192" href="{% static 'image/android-192.png' %}">
+  
+      <!-- Windows Tile Icon -->
+    <meta name="msapplication-TileImage" content="{% static 'image/favicon-32x32.png' %}">
+  
+  
+  
+
+    <!-- Open Graph для социальных сетей -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mars design studio — Разработка интерактивных интернет-сайтов, лендингов, многостраничных интернет-магазинов и многофункциональных сайтов с адаптивным и уникальным дизайном.">
+    <meta property="og:description" content="Разработка интерактивных интернет-сайтов, лендингов, многостраничных интернет-магазинов и многофункциональных сайтов с адаптивным и уникальным дизайном.">
+    <meta property="og:url" content="https://www.web-mars.com/"> <!-- Здесь должен быть ваш домен -->
+    <meta property="og:site_name" content="Mars design studio">
+    <meta property="og:locale" content="uk_UA">
+    <!-- Twitter Cards для Twitter -->
+    <meta name="twitter:title" content="Mars studio — Разработка интерактивных интернет-сайтов, лендингов, многостраничных интернет-магазинов и многофункциональных сайтов с адаптивным и уникальным дизайном.">
+    <meta name="twitter:description" content="Разработка интерактивных интернет-сайтов, лендингов, многостраничных интернет-магазинов и многофункциональных сайтов с адаптивным и уникальным дизайном.">
+    <!-- Изображение для Twitter -->
+    <!-- Иконка сайта -->
+    
+    <link rel="apple-touch-icon" href="https://example.com/apple-icon.png"> <!-- Для iOS устройств -->
+    <!-- библиотека  иконок  https://cdnjs.com/libraries/font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    {% comment %} Inter {% endcomment %}
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    {% comment %} шрифт Raleway {% endcomment %}
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://www.web-mars.com",
+        "logo": "https://www.web-mars.com/static/image/лого.png",
+        "name": "Mars design studio",
+        "description": "Разработка интерактивных интернет-сайтов, лендингов и интернет-магазинов.",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+38-099-607-2979",
+            "contactType": "customer service",
+            "areaServed": "UA"
+          },
+          {
+            "@type": "ContactPoint",
+            "telephone": "+38-097-911-3267",
+            "contactType": "technical support",
+            "areaServed": "UA"
+          }
+        ]
+      }
+    </script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- слайдер -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- мой CSS -->
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+    <!-- мой media CSS -->
+    <link rel="stylesheet" href="{% static 'CSS/media.css' %}">
+    
+    <title>Mars Design Studio — Разработка та веб-дизайн</title>
+
+
+
+    <script src="{% static 'js/script.js' %}"></script>
+  </head>
+    <body>
+        {% include 'include/menu/menu.html' %}
+            <section class="bg-cover d-flex align-items-center text-center text-white" style="background-image: url('{% static "image/mars2.jpg" %}'); min-height: 600px;">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div>
+                        <h1 class="display-4 fw-bold">Розробка та створення сайтів під ключ</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+               <!--   секция text -->
+            <section class="new-text-top mt-2">
+                <div class="new-text-top-conteiner">
+                  <h5 class="new-text-block">послуги</h5>
+                </div>
+            </section>
+            <!--   секция text -->
+    
+            <!-- секция карта -->
+            <section  class="card-top-wark-section">
+                
+                <div class="conteiner-card-top-wark"> 
+                
+                <div class="card-top-wark" card-1 style="background-image: url({% static 'image/card_section1_one.png' %});" > 
+                    <div class="card-title-top-wark"> 
+                    <h5>Сайт<br>візитка</h5>
+                    </div>
+                    <div class="card-item-top-wark">
+                    <h6>За допомогою цієї послуги ви зможете почати просування своєї компанії в інтернеті.</h6>
+                    </div>
+                </div>  
+        
+                <div class="card-top-wark" card-2 style="background-image: url({% static 'image/card_section1_two.png' %});" > 
+                    <div class="card-title-top-wark"> 
+                    <h5>ЛЕНДІНГ</h5>
+                    </div>
+                    <div class="card-item-top-wark">
+                    <h6>Така форма сайту ідеально підходить для невеликих компаній, продуктів, подій та заходів.</h6>
+                    </div>
+                </div>  
+        
+        
+                    <div class="card-top-wark" card-3 style="background-image: url({% static 'image/card_section1_three.png' %});" > 
+                    <div class="card-title-top-wark"> 
+                        <h5>Багатосторінок<br>сайт</h5>
+                    </div>
+                    <div class="card-item-top-wark">
+                        <h6>На цьому сайті ви можете добавити перехід на внутрішні сторінки сайту</h6>
+                    </div>
+                    </div>  
+                </div>
+        
+            </section>
+            <!-- секция карта -->
+            <section class="new-text-top mt-2">
+                <div class="new-text-top-conteiner">
+                  <h5 class="new-text-block">зв'язок</h5>
+                </div>
+              </section>
+              <section class="review mt-3 py-3">
+                <div class="container">
+                    <div class="row align-items-center justify-content-center gap-2">
+                        <div class="card fixed-card bg-black" style="width: 300px; height: 300px; border-radius: 50px;">
+                            <div class="card-body">
+                              <!-- Изображение -->
+                              <img src="{% static 'image/soc-tel.svg' %}" class="card-img-bottom" alt="Image" style="height: 70px; width: 70px;">
+                          
+                              <!-- Имя -->
+                              <h5 class="card-title-design mt-2 text-left text-white">Телефони</h5>
+                          
+                              <!-- Текст отзыва (будет изменяться динамически) -->
+                              <p class="card-text-review text-left  mt-3 text-white">Зв’яжіться з нами за телефоном.</p>
+                              <p class="card-text-review text-left  text-white" style="font-size: 20px; font-weight:800;">+38 (099) 607 29 79</p>
+                              <p class="card-text-review text-left text-white" style="font-size: 20px; font-weight:800;">+38 (073) 160 67 31</p>
+                            </div>
+                        </div>
+                        <div class="card fixed-card bg-black" style="width: 300px; height: 300px; border-radius: 50px;">
+                          <div class="card-body">
+                            <!-- Изображение -->
+                            <img src="{% static 'image/soc-soc.svg' %}" class="card-img-bottom" alt="Image" style="height: 70px; width: 70px;">
+                        
+                            <!-- Имя -->
+                            <h5 class="card-title-design mt-2 text-left text-white">Coціальні</h5>
+                        
+                            <div class="d-flex flex-row text-left gap-3" style="margin-top:90px;">
+                                <a href="https://www.facebook.com/profile.php?id=61560573721784"><img src="{% static '/image/facebook-icons.png' %}" style="width:30px;"></a>
+                                <a href=""><img src="{% static '/image/behance.png' %}"   style="width:30px;"></a>
+                                <a href="https://www.instagram.com/mars_webstudio/"><img src="{% static '/image/instagramm.png' %}" style="width:30px;"></a>
+
+                            </div>
+                          </div>
+                      </div>
+                    
+                    </div>
+                        
+                    </div>
+                </div>
+              </section>
+              <div class="social-icons-fixed">
+                <div class="social-circle">
+                    <a href="tel:+380996072979" target="_blank">
+                        <img src="{% static '/image/massege.svg' %}" alt="Tel" style="width: 40px;">
+                    </a>
+                </div>
+                <div class="social-circle">
+                  <a href="https://t.me/jenyatarasenko" target="_blank">
+                    <img src="{% static '/image/massege1.svg' %}" alt="Telegram">
+                  </a>
+                </div>
+          
+              </div> 
+              
+              
+
+            <section class="new-text-top mt-2">
+              <div class="new-text-top-conteiner">
+                <h5 class="new-text-block">ціни</h5>
+              </div>
+            </section>
+            <section class="review mt-3 py-3">
+              <div class="container">
+                  <div class="row align-items-center justify-content-center gap-2">
+                      <div class="card fixed-card bg-orange" style="width: 300px; height: 500px; border-radius: 50px;">
+                          <div class="card-body">
+                            <img src="{% static 'image/price-raceta.svg' %}" class="card-img-bottom" alt="Image" style="height: 100px; width: 100px;">
+                            <!-- Имя -->
+                            <h5 class="card-title-design mt-2 text-left text-white">Landing page</h5>
+                            <h5 class="card-title-design-price mt-2 text-left text-white">Односторінковий сай</h5>
+                            <h5 class="card-title-price mt-4 text-left"><span class="price-text-small">от</span> 100$</h5>
+                    
+                            <p class="card-text-review text-left mt-4 text-white">У вартість входить розробка унікального дизайну, адаптивна верстка з використанням Bootstrap, CSS, JavaScript, підключення форми зворотного зв’язку, створення адмін-панелі на основі Django (Python), інтеграція з поштою, програмування бекенд-частини, а також викладка сайту на сервер.</p>
+              
+                          </div>
+                      </div>
+                      <div class="card fixed-card bg-orange" style="width: 300px; height: 500px; border-radius: 50px;">
+                        <div class="card-body">
+                          <img src="{% static 'image/price-planat.svg' %}" class="card-img-bottom" alt="Image" style="height: 100px; width: 100px;">
+                          <!-- Имя -->
+                          <h5 class="card-title-design mt-2 text-left text-white">Багатосторінкові</h5>
+                          <h5 class="card-title-design-price mt-2 text-left text-white">Сайти бильше 3 сторінок</h5>
+                          <h5 class="card-title-price mt-4 text-left"><span class="price-text-small">от</span> 300$</h5>
+                  
+                          <p class="card-text-review text-left mt-4 text-white">Багатосторінкові сайти — це унікальний дизайн, адаптивна верстка на Bootstrap і React.js, потужний бекенд на Django (Python) з адмін-панеллю та підключеною базою даних. Ідеальні для блогів, бізнес-сторінок, каталогів, де ви зможете додавати та змінювати контент самостійно.</p>
+            
+                        </div>
+                      </div>
+                      <div class="card fixed-card bg-orange" style="width: 300px; height: 500px; border-radius: 50px;">
+                        <div class="card-body">
+                          <img src="{% static 'image/price-plan.svg' %}" class="card-img-bottom" alt="Image" style="height: 100px; width: 100px;">
+                          <!-- Имя -->
+                          <h5 class="card-title-design mt-2 text-left text-white">Інтернет магазини</h5>
+                          <h5 class="card-title-design-price mt-2 text-left text-white">Багатосторінкові сайти</h5>
+                          <h5 class="card-title-price mt-4 text-left"><span class="price-text-small">от</span> 400$</h5>
+                  
+                          <p class="card-text-review text-left mt-4 text-white">Інтернет-магазини — це повноцінні сайти з унікальним дизайном, адаптивною версткою (Bootstrap, React.js) та потужним бекендом на Django (Python).Включають каталог товарів, вивантаження/оновлення товарів, зручну адмін-панель.Кошик покупця, оформлення замовлень, інтеграцію з поштою та платіжними системами</p>
+            
+                        </div>
+                      </div>
+                  </div>
+                  </div>
+              </div>
+            </section>
+            <section>
+              <div class="container">
+                <div class="row justify-content-center text-center">
+                  <div class="col-md-8"> <!-- ширина и центрирование -->
+                    <h6 class="text-section-center">У вартість не входять доменне ім’я та хостингДоменне ім’я — це адреса вашого сайту в інтернеті (наприклад, example.com). Хостинг — це місце на сервері, де зберігаються файли вашого сайту, щоб він був доступний 24/7.Ці послуги оплачуються окремо клієнтом.</h6>
+                  </div>  
+                </div>  
+              </div>  
+            </section>
+        {% include 'include/footer/footer.html' %}
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>        

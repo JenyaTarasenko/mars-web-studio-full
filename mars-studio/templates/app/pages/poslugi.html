@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+  <head> 
+    <!-- Required meta tags -->
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Совместимость с Internet Explorer -->
+    <meta name="description" content="Разработка интерактивных интернет-сайтов, лендингов, многостраничных интернет-магазинов и многофункциональных сайтов с адаптивным и уникальным дизайном.">
+    <meta name="keywords" content="Разработка сайтов, кроссплатформенные сайты, веб-разработка, адаптивный дизайн, создание сайтов, веб-дизайн, разработка приложений, мобильные сайты">
+    <meta name="author" content="Mars design studio">
+    <meta name="robots" content="index, follow"> <!-- Даем инструкции для поисковых систем -->
+    <meta name="robots" content="noarchive"> <!-- Запрещаем поисковикам кешировать страницу -->
+    <meta name="google-site-verification" content="reL_Sx5gy9mocFUEHJA4ULjjJVxoGZUtpqkVioPkrTc" />
+
+    
+      <!-- Основной фавикон -->
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'image/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'image/favicon-16x16.png' %}">
+    <link rel="icon" href="/path/to/favicon.ico">
+  
+      <!-- Apple Touch Icon для устройств Apple -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'image/apple-touch-icon.png' %}">
+    
+  
+      <!-- Android Icon -->
+    <link rel="icon" type="image/png" sizes="192x192" href="{% static 'image/android-192.png' %}">
+  
+      <!-- Windows Tile Icon -->
+    <meta name="msapplication-TileImage" content="{% static 'image/favicon-32x32.png' %}">
+  
+  
+  
+
+    <!-- Open Graph для социальных сетей -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mars design studio — Разработка интерактивных интернет-сайтов, лендингов, многостраничных интернет-магазинов и многофункциональных сайтов с адаптивным и уникальным дизайном.">
+    <meta property="og:description" content="Разработка интерактивных интернет-сайтов, лендингов, многостраничных интернет-магазинов и многофункциональных сайтов с адаптивным и уникальным дизайном.">
+    <meta property="og:url" content="https://www.web-mars.com/"> <!-- Здесь должен быть ваш домен -->
+    <meta property="og:site_name" content="Mars design studio">
+    <meta property="og:locale" content="uk_UA">
+    <!-- Twitter Cards для Twitter -->
+    <meta name="twitter:title" content="Mars studio — Разработка интерактивных интернет-сайтов, лендингов, многостраничных интернет-магазинов и многофункциональных сайтов с адаптивным и уникальным дизайном.">
+    <meta name="twitter:description" content="Разработка интерактивных интернет-сайтов, лендингов, многостраничных интернет-магазинов и многофункциональных сайтов с адаптивным и уникальным дизайном.">
+    <!-- Изображение для Twitter -->
+    <!-- Иконка сайта -->
+    
+    <link rel="apple-touch-icon" href="https://example.com/apple-icon.png"> <!-- Для iOS устройств -->
+    <!-- библиотека  иконок  https://cdnjs.com/libraries/font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    {% comment %} Inter {% endcomment %}
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    {% comment %} шрифт Raleway {% endcomment %}
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://www.web-mars.com",
+        "logo": "https://www.web-mars.com/static/image/лого.png",
+        "name": "Mars design studio",
+        "description": "Разработка интерактивных интернет-сайтов, лендингов и интернет-магазинов.",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+38-099-607-2979",
+            "contactType": "customer service",
+            "areaServed": "UA"
+          },
+          {
+            "@type": "ContactPoint",
+            "telephone": "+38-097-911-3267",
+            "contactType": "technical support",
+            "areaServed": "UA"
+          }
+        ]
+      }
+    </script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- слайдер -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- мой CSS -->
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+    <!-- мой media CSS -->
+    <link rel="stylesheet" href="{% static 'CSS/media.css' %}">
+
+    <title>Mars Design Studio — Разработка сайтов и веб-дизайна</title>
+    <script src="{% static 'js/script.js' %}"></script>
+  </head>
+  <body>
+    {% include 'include/menu/menu.html' %}
+        <section class="bg-cover d-flex align-items-center text-center text-white" style="background-image: url('{% static "image/mars1.jpg" %}'); min-height: 600px;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div>
+                      <h1 class="display-4 fw-bold">Mars — студія розробки  сайтів з нуля для бізнесу</h1>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="new-text-top">
+            <div class="new-text-top-conteiner">
+              <h5 class="new-text-block">розробка</h5>
+            </div>
+        </section>
+        <section class="job-section mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 ms-auto d-flex flex-column justify-content-md-start align-items-md-end justify-content-center align-items-center">
+                        <img src="{% static 'image/ui.jpg' %}" class="image-job" alt="Image" style="border-radius:40px;">
+                        <div class="colum-job d-flex flex-row gap-4 align-items-center mt-3">
+                            <h5 class="job-text">Розробка дизайну</h5>
+                            <img src="{% static 'image/strela.svg' %}" class="card-img-bottom" alt="Image" style="height: 30px; width: 30px;">
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-8 justify-content-end">
+                        <h4 class="job-text-deskription mt-2">Розробка дизайну — одна з найважливіших частин створення сайту. Ми створюємо візуальну концепцію з урахуванням сучасних трендів, принципів UI/UX та зручності для користувача.У процесі використовуємо професійні інструменти, як-от Figma, Photoshop, Illustrator, щоб досягти максимальної якості та точності в деталях.Наші дизайнери створюють не шаблонні, а унікальні рішення, які привертають увагу, викликають довіру та виокремлюють ваш бренд серед конкурентів в інтернеті.</h4>
+                        <h4 class="job-text-deskription mt-4">Ми узгоджуємо з вами дизайн — таким, яким ви його бачите та відчуваєте.Проводимо аналіз конкурентів, виявляємо сильні та слабкі сторони.Наш підхід — це чистий, легкий і продуманий до деталей дизайн, без візуального перевантаження.</h4>
+                        <div class="mt-4" style="width: 100px; height: 3px; background-color:#ecb289;"></div>
+                    </div>
+                </div> 
+
+                <div class="row mt-5">    
+                    <div class="col-md-8 justify-content-end">
+                        <h4 class="job-text-deskription mt-2">Після затвердження дизайну, розробник приступає до його технічної реалізації, перетворюючи візуальний макет у функціональний веб-сайт. Використовуючи сучасні технології, такі як HTML, CSS, Bootstrap 5 та React, програміст створює адаптивну та інтерактивну структуру сайту. </h4>
+                        <h4 class="job-text-deskription mt-4">Цей процес включає тісну співпрацю з дизайнером для точного відтворення всіх елементів та функціональностей, обговорених із замовником. Особлива увага приділяється оптимізації коду та впровадженню SEO-налаштувань, що забезпечує ефективну індексацію сайту пошуковими системами</h4>
+                       
+                        <h4 class="job-text-deskription mt-4">Далі в роботу вступає розробник, який займається серверною частиною проєкту. На цьому етапі відбувається підключення бази даних, створення адміністративної панелі, інтеграція сервісів оплати та інших функцій, необхідних для повноцінної роботи сайту.</h4>
+                        <h4 class="job-text-deskription mt-4">Уся ця «магія» реалізується за допомогою Python та фреймворку Django — потужного інструменту для створення надійних, безпечних та масштабованих веб-додатків. Django дозволяє швидко будувати внутрішню логіку сайту, автоматизувати багато процесів і легко керувати контентом завдяки зручній адмін-панелі.Завдяки Django ми створюємо системи, які не лише ефективно працюють, а й легко розширюються та обслуговуються в майбутньому.</h4>
+                        <div class="mt-4" style="width: 100px; height: 3px; background-color:#ecb289;"></div>
+                      
+                    </div>
+                    <div class="col-md-4 ms-auto d-flex flex-column justify-content-md-start align-items-md-end justify-content-center align-items-center">
+                        <img src="{% static 'image/new-code.jpg' %}" class="image-job" alt="Image" style="border-radius:40px; object-fit: cover;">
+                        <div class="colum-job d-flex flex-row gap-4 align-items-center mt-3">
+                            <h5 class="job-text">Верстка та програмування</h5>
+                            <img src="{% static 'image/strela.svg' %}" class="card-img-bottom" alt="Image" style="height: 30px; width: 30px;">
+                        </div>
+                    </div>
+                </div> 
+            </div>     
+        </section>
+        <section class="new-text-top mt-2">
+            <div class="new-text-top-conteiner">
+              <h5 class="new-text-block">Процес</h5>
+            </div>
+          </section>
+          <section class="review mt-3 py-3">
+            <div class="container">
+                <div class="row align-items-center justify-content-center gap-2">
+                    <div class="card fixed-card bg-black" style="width: 300px; height: 300px; border-radius: 50px;">
+                        <div class="card-body">
+                          <!-- Изображение -->
+                          <img src="{% static 'image/design1.svg' %}" class="card-img-bottom" alt="Image" style="height: 100px; width: 100px;">
+                      
+                          <!-- Имя -->
+                          <h5 class="card-title-design mt-2 text-left text-white">Дизайн</h5>
+                      
+                          <!-- Текст отзыва (будет изменяться динамически) -->
+                          <p class="card-text-review text-left mt-3 text-white">Команда дизайнерів створює унікальний дизайн для кожного проєкту. Жодних шаблонів — лише індивідуальний стиль і креативний підхід.</p>
+                        </div>
+                    </div>
+                    <div class="card fixed-card bg-black" style="width: 300px; height: 300px; border-radius: 50px;">
+                      <div class="card-body">
+                        <!-- Изображение -->
+                        <img src="{% static 'image/html.svg' %}" class="card-img-bottom" alt="Image" style="height: 100px; width: 100px;">
+                    
+                        <!-- Имя -->
+                        <h5 class="card-title-design mt-2 text-left text-white">Програмування</h5>
+                    
+                        <!-- Текст отзыва (будет изменяться динамически) -->
+                        <p class="card-text-review text-left mt-3 text-white">Верстка та програмування, включаючи фронтенд-розробку проєкту, здійснюються за допомогою HTML, CSS, JavaScript та React.</p>
+                      </div>
+                    </div>
+                    <div class="card fixed-card bg-black" style="width: 300px; height: 300px; border-radius: 50px;">
+      
+                    <div class="card-body">
+                      <!-- Изображение -->
+                      <img src="{% static 'image/terminal.svg' %}" class="card-img-bottom" alt="Image" style="height: 80px; width: 70px;">
+                  
+                      <!-- Имя -->
+                      <h5 class="card-title-design mt-4 text-left text-white">Сервер</h5>
+                  
+                      <!-- Текст отзыва (будет изменяться динамически) -->
+                      <p class="card-text-review text-left mt-3 text-white">Серверна розробка здійснюється за допомогою Python та Django. Ми налаштовуємо підключення домену, а також інтегруємо Google Search Console та Google Analytics.</p>
+                    </div>
+                   
+                    </div>            
+                </div>
+            </div>
+          </section>
+        <section class="new-text-top">
+            <div class="new-text-top-conteiner">
+              <h5 class="new-text-block">відгуки</h5>
+            </div>
+        </section>
+        <section class="review mt-3 py-3">
+            <div class="container">
+                <div class="row align-items-center justify-content-center gap-2">
+                    <div class="card fixed-card" style="width: 300px; height: 300px; border-radius: 50px;">
+                        <div class="card-body">
+                          <!-- Изображение -->
+                          <img src="{% static 'image/otziv-man2.jpg' %}" class="card-img-bottom" alt="Image" style="height: 100px; width: 100px;  border-radius: 50%;">
+                      
+                          <!-- Имя -->
+                          <h5 class="card-title-review mt-2 text-left">Антон</h5>
+                      
+                          <!-- Фамилия -->
+                          <img src="{% static 'image/stars.png' %}" class="card-img-bottom" alt="Image" style="width: 70px;">
+                      
+                          <!-- Текст отзыва (будет изменяться динамически) -->
+                          <p class="card-text-review text-left mt-3" id="review-text">Швидкий підхід до роботи, стильний дизайн та якісне виконання. Команда працює оперативно, враховує побажання і завжди на зв’язку.</p>
+                        </div>
+                    </div>
+                    <div class="card fixed-card" style="width: 300px; height: 300px; border-radius: 50px;">
+                      <div class="card-body">
+                        <!-- Изображение -->
+                        <img src="{% static 'image/3otziv.jpg' %}" class="card-img-bottom" alt="Image" style="height: 100px; width: 100px;  border-radius: 50%;">
+                    
+                        <!-- Имя -->
+                        <h5 class="card-title-review mt-2 text-left">Алекс</h5>
+                    
+                        <!-- Фамилия -->
+                        <img src="{% static 'image/stars.png' %}" class="card-img-bottom" alt="Image" style="width: 70px;">
+                    
+                        <!-- Текст отзыва (будет изменяться динамически) -->
+                        <p class="card-text-review text-left mt-3" id="review-text">Чудова робота! Вебстудія створила наш сайт з нуля — дизайн, функціонал, просування. Все якісно, професійно та вчасно.</p>
+                      </div>
+                  </div>
+                  <div class="card fixed-card" style="width: 300px; height: 300px; border-radius: 50px;">
+                    <div class="card-body">
+                      <!-- Изображение -->
+                      <img src="{% static 'image/6otziv.jpg' %}" class="card-img-bottom" alt="Image" style="height: 100px; width: 100px;  border-radius: 50%;">
+                  
+                      <!-- Имя -->
+                      <h5 class="card-title-review mt-2 text-left">Катя</h5>
+                      <!-- Фамилия -->
+                      <img src="{% static 'image/stars.png' %}" class="card-img-bottom" alt="Image" style="width: 70px;">
+                      <!-- Текст отзыва (будет изменяться динамически) -->
+                      <p class="card-text-review text-left mt-3" id="review-text">Дуже задоволені співпрацею! Програмісти справжні професіонали — все працює стабільно, швидко та якісно.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="new-text-top mt-2">
+          <div class="new-text-top-conteiner">
+            <h5 class="new-text-block">питання</h5>
+          </div>
+        </section>
+        <section class="text-question pb-3">
+          <div class="container">
+            <div class="row align-items-center justify-content-center">
+              <div class="col-md-3 d-flex justify-content-start flex-column">
+                  <h5 class="text-vartist">Landing page</h5>
+                  <div style="width: 100px; height: 3px; background-color:#E77B2D;"></div>
+              </div>
+              <div class="col-md-8 mt-4">
+                <h6 class="text-description-vartist">Ми спеціалізуємося на розробці лендінгів, які не просто виглядають добре, а й працюють ефективно. Наша команда охоплює дизайн, верстку та серверне програмування, щоб ви отримали повністю готовий продукт, готовий до онлайн-просування.</h6>
+              </div>
+            </div>
+            <div class="row align-items-center justify-content-center">
+              <div class="col-md-3 d-flex justify-content-start flex-column">
+                  <h5 class="text-vartist">Чим ми краще ??</h5>
+                  <div style="width: 100px; height: 3px; background-color:#E77B2D;"></div>
+              </div>
+              <div class="col-md-8 mt-3">
+                <h6 class="text-description-vartist">Ми — Mars, і нас вирізняє не просто якість, а підхід.Ми поєднуємо унікальний дизайн, створений під кожного клієнта, з передовими технологіями у веброзробці.</h6>
+              </div>
+            </div>
+    
+        </section>
+    {% include 'include/footer/footer.html' %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>  

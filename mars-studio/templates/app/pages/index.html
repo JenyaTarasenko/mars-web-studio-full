@@ -156,7 +156,7 @@
     <!--   секция text -->
  
     <!-- секция карта -->
-    <section id="poslugi" class="card-top-wark-section">
+    <section class="card-top-wark-section">
       
       <div class="conteiner-card-top-wark"> 
         
@@ -267,7 +267,7 @@
     <!--   секция карты  -->
     <section id="projects"class="card-context-section">
         <div class="card-context-conteiner">
-
+        {% if items %}  
           {% for item in items|slice:":2" %}
             <div class="card-context">
               <div class="card-context-img">
@@ -278,20 +278,92 @@
                 <h5 class="vizi-text">{{ item.name }}</h5>
               </div>
               <div class="card-context-title_items">
-              <h6>{{ item.description|truncatewords:30 }}</h6>
+              <h6>{{ item.description|truncatewords:25 }}</h6>
               </div>
               <div class="card-context-title_items_button" style="top: 90px;">
-                <a href="{% url 'mars:websait_detail' item.slug %}"><div class="card-context-card mars-button-topcard" style="margin-top: 70px;">Читати</div></a>
+                <a href="{% url 'mars:websait_detail' item.slug %}"><div class="card-context-card mars-button-topcard" style="margin-top: 70px;">Дивитись</div></a>
               </div>
             </div>
           {% endfor %}
+        {% else %} 
+          <div class="new-text-center-conteiner">
+            <h5 class="new-text-block">Нема проєктів</h5>
+          </div>
+        {% endif %}
         </div>
     </section>
+    {% comment %} <section class="buton-section ">
+      <div class="container">
+        <div class="row">
+          <div class="button-center-raceta-mars">
+            <button class="btn-center-racketa-mars">
+              <a href="{%  url 'mars:projects-all' %}">Всі проєкти</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section> {% endcomment %}
     <!--   секция карты    <img src="{% static 'image/Кнопка 3.png' %}">-->
 
+    <section class="new-text-top mt-2">
+      <div class="new-text-top-conteiner">
+        <h5 class="new-text-block">ціни</h5>
+      </div>
+    </section>
+    <section class="review mt-3 py-3">
+      <div class="container">
+          <div class="row align-items-center justify-content-center gap-2">
+              <div class="card fixed-card bg-orange" style="width: 300px; height: 500px; border-radius: 50px;">
+                  <div class="card-body">
+                    <img src="{% static 'image/price-raceta.svg' %}" class="card-img-bottom" alt="Image" style="height: 100px; width: 100px;">
+                    <!-- Имя -->
+                    <h5 class="card-title-design mt-2 text-left text-white">Landing page</h5>
+                    <h5 class="card-title-design-price mt-2 text-left text-white">Односторінковий сай</h5>
+                    <h5 class="card-title-price mt-4 text-left"><span class="price-text-small">от</span> 100$</h5>
+            
+                    <p class="card-text-review text-left mt-4 text-white">У вартість входить розробка унікального дизайну, адаптивна верстка з використанням Bootstrap, CSS, JavaScript, підключення форми зворотного зв’язку, створення адмін-панелі на основі Django (Python), інтеграція з поштою, програмування бекенд-частини, а також викладка сайту на сервер.</p>
+       
+                  </div>
+              </div>
+              <div class="card fixed-card bg-orange" style="width: 300px; height: 500px; border-radius: 50px;">
+                <div class="card-body">
+                  <img src="{% static 'image/price-planat.svg' %}" class="card-img-bottom" alt="Image" style="height: 100px; width: 100px;">
+                  <!-- Имя -->
+                  <h5 class="card-title-design mt-2 text-left text-white">Багатосторінкові</h5>
+                  <h5 class="card-title-design-price mt-2 text-left text-white">Сайти бильше 3 сторінок</h5>
+                  <h5 class="card-title-price mt-4 text-left"><span class="price-text-small">от</span> 300$</h5>
+          
+                  <p class="card-text-review text-left mt-4 text-white">Багатосторінкові сайти — це унікальний дизайн, адаптивна верстка на Bootstrap і React.js, потужний бекенд на Django (Python) з адмін-панеллю та підключеною базою даних. Ідеальні для блогів, бізнес-сторінок, каталогів, де ви зможете додавати та змінювати контент самостійно.</p>
+     
+                </div>
+              </div>
+              <div class="card fixed-card bg-orange" style="width: 300px; height: 500px; border-radius: 50px;">
+                <div class="card-body">
+                  <img src="{% static 'image/price-plan.svg' %}" class="card-img-bottom" alt="Image" style="height: 100px; width: 100px;">
+                  <!-- Имя -->
+                  <h5 class="card-title-design mt-2 text-left text-white">Інтернет магазини</h5>
+                  <h5 class="card-title-design-price mt-2 text-left text-white">Багатосторінкові сайти</h5>
+                  <h5 class="card-title-price mt-4 text-left"><span class="price-text-small">от</span> 400$</h5>
+          
+                  <p class="card-text-review text-left mt-4 text-white">Інтернет-магазини — це повноцінні сайти з унікальним дизайном, адаптивною версткою (Bootstrap, React.js) та потужним бекендом на Django (Python).Включають каталог товарів, вивантаження/оновлення товарів, зручну адмін-панель.Кошик покупця, оформлення замовлень, інтеграцію з поштою та платіжними системами</p>
+     
+                </div>
+              </div>
+          </div>
+          </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-md-8"> <!-- ширина и центрирование -->
+            <h6 class="text-section-center">У вартість не входять доменне ім’я та хостингДоменне ім’я — це адреса вашого сайту в інтернеті (наприклад, example.com). Хостинг — це місце на сервері, де зберігаються файли вашого сайту, щоб він був доступний 24/7.Ці послуги оплачуються окремо клієнтом.</h6>
+          </div>  
+        </div>  
+      </div>  
+    </section>
 
-
-    <section class="center-raceta-mars-section">
+    <section class="center-raceta-mars-section mt-4">
         <div class="center-raceta-mars_img-one">
           <div class="center-raceta-mars-conteiner">
             <h4>ми перезапустимо ваш сайт</h4>
@@ -379,21 +451,17 @@
             </div>
             
           </div>
-
-
-
         </div>
-      
-
         </div>
     </section>
-
+  
     <!--   секция text -->
     <section class="new-text-top">
       <div class="new-text-top-conteiner">
         <h5 class="new-text-block">переваги</h5>
       </div>
     </section>
+  
     <!--   секция text -->
 
 
@@ -437,25 +505,164 @@
     </section> 
 
     {% include 'include/form/contact_form.html' %}
+     <!--   секция text -->
+    <section class="new-text-top mt-2">
+      <div class="new-text-top-conteiner">
+        <h5 class="new-text-block">відгуки</h5>
+      </div>
+    </section>
+    <!--   секция text -->
+    <section class="review mt-3 py-3">
+      <div class="container">
+          <div class="row align-items-center justify-content-center gap-2">
+              <div class="card fixed-card" style="width: 300px; height: 300px; border-radius: 50px;">
+                  <div class="card-body">
+                    <!-- Изображение -->
+                    <img src="{% static 'image/otziv-man2.jpg' %}" class="card-img-bottom" alt="Image" style="height: 100px; width: 100px;  border-radius: 50%;">
+                
+                    <!-- Имя -->
+                    <h5 class="card-title-review mt-2 text-left">Антон</h5>
+                
+                    <!-- Фамилия -->
+                    <img src="{% static 'image/stars.png' %}" class="card-img-bottom" alt="Image" style="width: 70px;">
+                
+                    <!-- Текст отзыва (будет изменяться динамически) -->
+                    <p class="card-text-review text-left mt-3" id="review-text">Швидкий підхід до роботи, стильний дизайн та якісне виконання. Команда працює оперативно, враховує побажання і завжди на зв’язку.</p>
+                  </div>
+              </div>
+              <div class="card fixed-card" style="width: 300px; height: 300px; border-radius: 50px;">
+                <div class="card-body">
+                  <!-- Изображение -->
+                  <img src="{% static 'image/3otziv.jpg' %}" class="card-img-bottom" alt="Image" style="height: 100px; width: 100px;  border-radius: 50%;">
+              
+                  <!-- Имя -->
+                  <h5 class="card-title-review mt-2 text-left">Алекс</h5>
+              
+                  <!-- Фамилия -->
+                  <img src="{% static 'image/stars.png' %}" class="card-img-bottom" alt="Image" style="width: 70px;">
+              
+                  <!-- Текст отзыва (будет изменяться динамически) -->
+                  <p class="card-text-review text-left mt-3" id="review-text">Чудова робота! Вебстудія створила наш сайт з нуля — дизайн, функціонал, просування. Все якісно, професійно та вчасно.</p>
+                </div>
+            </div>
+            <div class="card fixed-card" style="width: 300px; height: 300px; border-radius: 50px;">
+              <div class="card-body">
+                <!-- Изображение -->
+                <img src="{% static 'image/6otziv.jpg' %}" class="card-img-bottom" alt="Image" style="height: 100px; width: 100px;  border-radius: 50%;">
+            
+                <!-- Имя -->
+                <h5 class="card-title-review mt-2 text-left">Катя</h5>
+                <!-- Фамилия -->
+                <img src="{% static 'image/stars.png' %}" class="card-img-bottom" alt="Image" style="width: 70px;">
+                <!-- Текст отзыва (будет изменяться динамически) -->
+                <p class="card-text-review text-left mt-3" id="review-text">Дуже задоволені співпрацею! Програмісти справжні професіонали — все працює стабільно, швидко та якісно.</p>
+              </div>
+          </div>
+          </div>
+      </div>
+    </section>
+    <section class="bg-cover d-flex align-items-center text-center text-white" style="background-image: url('{% static "image/stap1.png" %}'); min-height: 700px;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div>
+            <h5 class="display-4 fw-bold">Ми — студія повного циклу веброзробки.</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="new-text-top mt-2">
+      <div class="new-text-top-conteiner">
+        <h5 class="new-text-block">Процес</h5>
+      </div>
+    </section>
+    <section class="review mt-3 py-3">
+      <div class="container">
+          <div class="row align-items-center justify-content-center gap-2">
+              <div class="card fixed-card bg-black" style="width: 300px; height: 300px; border-radius: 50px;">
+                  <div class="card-body">
+                    <!-- Изображение -->
+                    <img src="{% static 'image/design1.svg' %}" class="card-img-bottom" alt="Image" style="height: 100px; width: 100px;">
+                
+                    <!-- Имя -->
+                    <h5 class="card-title-design mt-2 text-left text-white">Дизайн</h5>
+                
+                    <!-- Текст отзыва (будет изменяться динамически) -->
+                    <p class="card-text-review text-left mt-3 text-white">Команда дизайнерів створює унікальний дизайн для кожного проєкту. Жодних шаблонів — лише індивідуальний стиль і креативний підхід.</p>
+                  </div>
+              </div>
+              <div class="card fixed-card bg-black" style="width: 300px; height: 300px; border-radius: 50px;">
+                <div class="card-body">
+                  <!-- Изображение -->
+                  <img src="{% static 'image/html.svg' %}" class="card-img-bottom" alt="Image" style="height: 100px; width: 100px;">
+              
+                  <!-- Имя -->
+                  <h5 class="card-title-design mt-2 text-left text-white">Програмування</h5>
+              
+                  <!-- Текст отзыва (будет изменяться динамически) -->
+                  <p class="card-text-review text-left mt-3 text-white">Верстка та програмування, включаючи фронтенд-розробку проєкту, здійснюються за допомогою HTML, CSS, JavaScript та React.</p>
+                </div>
+              </div>
+              <div class="card fixed-card bg-black" style="width: 300px; height: 300px; border-radius: 50px;">
 
+              <div class="card-body">
+                <!-- Изображение -->
+                <img src="{% static 'image/terminal.svg' %}" class="card-img-bottom" alt="Image" style="height: 80px; width: 70px;">
+            
+                <!-- Имя -->
+                <h5 class="card-title-design mt-4 text-left text-white">Сервер</h5>
+            
+                <!-- Текст отзыва (будет изменяться динамически) -->
+                <p class="card-text-review text-left mt-3 text-white">Серверна розробка здійснюється за допомогою Python та Django. Ми налаштовуємо підключення домену, а також інтегруємо Google Search Console та Google Analytics.</p>
+              </div>
+             
+              </div>            
+          </div>
+      </div>
+    </section>
+    <section class="new-text-top mt-2">
+      <div class="new-text-top-conteiner">
+        <h5 class="new-text-block">питання</h5>
+      </div>
+    </section>
+    <section class="text-question pb-3">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-3 d-flex justify-content-start flex-column">
+              <h5 class="text-vartist">Яка вартість проєктів ?</h5>
+              <div style="width: 100px; height: 3px; background-color:#E77B2D;"></div>
+          </div>
+          <div class="col-md-8 mt-4">
+            <h6 class="text-description-vartist">Наші проекти — це повний цикл розробки, від унікального дизайну до запуску та налаштування повноцінного сайту. Ми пропонуємо високоякісні рішення для вашого бізнесу з урахуванням всіх ваших потреб. Вартість наших послуг варіюється: односторінковий сайт з індивідуальним дизайном, версткою та викладкою на сервер коштує від 100 доларів (без врахування витрат на сервер та домен). Багатосторінкові сайти стартують від 300 доларів і включають унікальний дизайн, верстку, викладку на сервер, а також можливість додавання різноманітних функцій.</h6>
+            <h6 class="text-description-vartist"> Ми також пропонуємо розробку інтерактивних функцій, таких як адмін-панель, через яку ви зможете легко редагувати та додавати нові елементи на вашому сайті, змінювати контент та налаштовувати функціональність за власними потребами. Кожен проект — це не просто сайт, а інструмент для досягнення ваших бізнес-цілей, з урахуванням усіх специфічних вимог та побажань.Наш підхід ґрунтується на індивідуальності кожного проєкту, що дозволяє нам створювати рішення, які відповідають останнім тенденціям та максимізують ефективність.</h6>
+          </div>
+        </div>
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-3 d-flex justify-content-start flex-column">
+              <h5 class="text-vartist">Що обираює бізнес ?</h5>
+              <div style="width: 100px; height: 3px; background-color:#E77B2D;"></div>
+          </div>
+          <div class="col-md-8 mt-3">
+            <h6 class="text-description-vartist">Найбільш затребуваними сьогодні є сайти середнього рівня — зазвичай це ресурси від 4 сторінок.Це чудове бізнес-рішення для компаній, які прагнуть заявити про себе в інтернеті. Такі сайти ефективно презентують послуги чи товари, формують довіру до бренду та забезпечують присутність у пошуковій видачі.</h6>
+            <h6 class="text-description-vartist">Вони ідеально підходять для реклами, просування в мережі та покращення комунікації з клієнтами. Якщо ви хочете, щоб ваш бізнес був помітний — багатосторінковий сайт стане вашим надійним онлайн-інструментом.</h6>
+          </div>
+        </div>
+
+    </section>
+    <!--   секция text -->
+    <div class="social-icons-fixed">
+      <div class="social-circle">
+        <a href="tel:+380996072979" target="_blank">
+          <img src="{% static '/image/massege.svg' %}" alt="Tel" style="width: 40px;">
+        </a>
+      </div>
+      <div class="social-circle">
+        <a href="https://t.me/jenyatarasenko" target="_blank">
+          <img src="{% static '/image/massege1.svg' %}" alt="Telegram">
+        </a>
+      </div>
+
+    </div>  
     {% include 'include/footer/footer.html' %}
-
-
-    <!-- анимация блока-->
-    {% comment %} <script>
-      window.onload = function() {
-        document.querySelector('.overlay').classList.add('loaded');
-        document.querySelector('.banner').classList.add('loaded');
-        document.querySelector('.planshet-banner').classList.add('loaded');
-        document.querySelector('.banner-mobile-section').classList.add('loaded');
-      };
-    </script> {% endcomment %}
-    <!-- анимация блока-->
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
- 
-  
   </body>
 </html>
