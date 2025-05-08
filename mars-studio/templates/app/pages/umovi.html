@@ -12,7 +12,6 @@
         <meta name="keywords" content="Разработка сайтов, кроссплатформенные сайты, веб-разработка, адаптивный дизайн, создание сайтов, веб-дизайн, разработка приложений, мобильные сайты">
         <meta name="author" content="Mars design studio">
         <meta name="robots" content="index, follow"> <!-- Даем инструкции для поисковых систем -->
-        <meta name="robots" content="noarchive"> <!-- Запрещаем поисковикам кешировать страницу -->
         <meta name="google-site-verification" content="reL_Sx5gy9mocFUEHJA4ULjjJVxoGZUtpqkVioPkrTc" />
 
         
@@ -101,6 +100,7 @@
 
     <body>
         {% include 'include/menu/menu.html' %}
+      
 
         <section class="new-umovi-section">
            
@@ -118,161 +118,73 @@
         
             </div>
         </section>
-        
-        
-        <section class="umovi-card-section">
-
-            <div class="new-card-conteiner">
+        <section class="umovi-ta-robota pb-3">
+            <div class="container">
+                <div class="row justify-content-center align-items-center gap-3">
+                    <div class="card-etapy d-flex flex-column" style="width:300px; height:300px; border: 1px solid #000; border-radius: 40px;  padding: 20px;">
+                        <div class="card-etapy-text">
+                            <h4 class="vizi-text">Предоплата</h4>
+                           
+                        </div>
+                        <div class="card-etapy-text-description" style="margin-top: 90px;">
+                            <h5>Для старту роботи необхідно внести передоплата в розмірі 50% від загальної вартості проєкту. Предоплата здійснюється після узгодження всіх деталей та підписання договору</h5>
+                        </div>
+                        <div class="circle">1</div>
                 
-                <!-- карта -->
-                <div class="new-umovi-card">
-        
-                    <div class="umovi-img-conteiner">
-        
-                        <div class="new-umovi-image">
-                            <img src="{% static '/image/Цифра 1.png' %}"  alt="mars-studio">
-                        </div>
-                        <div class="umovi-image-text">
-                            <p>“Предоплата”</p>
-                        </div>
                     </div>
-                    <div class="new-umovi-description-card">
-                       
-                        <h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Для старту <strong style="font-weight: 800;">роботи</strong> необхідно внести передоплата в розмірі 50% від загальної вартості проєкту. Предоплата здійснюється після узгодження всіх деталей та підписання договору.</h6>
-                        
-                    </div>
-                </div>
-                <!-- карта -->
-        
-                <!-- карта 2-->
-                <div class="new-umovi-card">
-        
-                    <div class="umovi-img-conteiner">
-        
-                        <div class="new-umovi-image">
-                            <img src="{% static '/image/Цифра 2.png' %}"  alt="mars-studio">
+                    <div class="card-etapy d-flex flex-column" style="width:300px; height:300px; border: 1px solid #000; border-radius: 40px;  padding: 20px;">
+                        <div class="card-etapy-text">
+                            <h4 class="vizi-text">Поетапна<br>оплата</h4>
                         </div>
-                        <div class="umovi-image-text">
-                            <p>“Поетапна оплата”</p>
+                        <div class="card-etapy-text-description mt-5 ">
+                            <h5>Можлива оплата частинами — 3-4 етапи з погодженими сумами. Оплата після кожного етапу, але перед стартом потрібна передоплата — без неї не працюємо.</h5>
                         </div>
+                        <div class="circle">2</div>
                     </div>
-                    <div class="new-umovi-description-card">
-                       
-                        <h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Також ми можемо розбити оплату на 3-4 платежі та поділити етапи виконання. Тоді оплата здійснюватиметься після завершення кожного етапу. Розподіл етапів і суми погоджуються заздалегідь. Однак передоплату за перший етап потрібно буде внести — ми не працюємо без передоплати.</h6>
-                        
-                    </div>
-                </div>
-                <!-- карта -->
-        
-                <!-- карта -->
-                <div class="new-umovi-card">
-        
-                    <div class="umovi-img-conteiner">
-        
-                        <div class="new-umovi-image">
-                            <img src="{% static '/image/Цифра 3.png' %}"  alt="mars-studio">
+                    <div class="card-etapy d-flex flex-column" style="width:300px; height:300px; border: 1px solid #000; border-radius: 40px;  padding: 20px;">
+                        <div class="card-etapy-text">
+                            <h4 class="vizi-text">Фінальна оплата</h4>
                         </div>
-                        <div class="umovi-image-text">
-                            <p>“Фінальна оплата”</p>
+                        <div class="card-etapy-text-description mt-5">
+                            <h5>Завершальні 50% оплачуються після здачі та схвалення проєкту. Якщо за 5 днів немає зауважень — проєкт вважається завершеним, платіж обов’язковий.</h5>
                         </div>
+                        <div class="circle">3</div>
                     </div>
-                    <div class="new-umovi-description-card">
-                       
-                        <h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Останні 50% оплачуються після завершення роботи та її схвалення клієнтом. У випадку відсутності зауважень протягом 5 робочих днів після здачі проекту він вважається завершеним, а фінальний платіж стає обов’язковим.</h6>
-                        
+                    <div class="card-etapy d-flex flex-column" style="width:300px; height:300px; border: 1px solid #000; border-radius: 40px;  padding: 20px;">
+                        <div class="card-etapy-text">
+                            <h4 class="vizi-text">Додаткові роботи</h4>
+                        </div>
+                        <div class="card-etapy-text-description mt-5">
+                            <h5>Усі зміни поза початковими домовленостями оцінюються окремо — їхня вартість та строки узгоджуються заздалегідь.</h5>
+                        </div>
+                        <div class="circle">4</div>
+                    </div>
+                    <div class="card-etapy d-flex flex-column" style="width:300px; height:300px; border: 1px solid #000; border-radius: 40px;  padding: 20px;">
+                        <div class="card-etapy-text">
+                            <h4 class="vizi-text">Способи оплати</h4>
+                        </div>
+                        <div class="card-etapy-text-description mt-5">
+                            <h5>Оплата здійснюється через банківський переказ, платіжні системи (PayPal) або інші узгоджені способи.</h5>
+                        </div>
+                        <div class="circle">5</div>
+                    </div>
+                    <div class="card-etapy d-flex flex-column" style="width:300px; height:300px; border: 1px solid #000; border-radius: 40px;  padding: 20px;">
+                        <div class="card-etapy-text">
+                            <h4 class="vizi-text">Право Власності</h4>
+                        </div>
+                        <div class="card-etapy-text-description mt-5">
+                            <h5> Оплачений проект переходить у власність клієнта. Веб-агенція зобов'язується зберігати конфіденційність інформації клієнта</h5>
+                        </div>
+                        <div class="circle">6</div>
                     </div>
                 </div>
-                <!-- карта -->
-        
-                <!-- карта -->
-                <div class="new-umovi-card">
-        
-                    <div class="umovi-img-conteiner">
-        
-                        <div class="new-umovi-image">
-                            <img src="{% static '/image/Цифра 4.png' %}"  alt="mars-studio">
-                        </div>
-                        <div class="umovi-image-text">
-                            <p>“Додаткові роботи”</p>
-                        </div>
-                    </div>
-                    <div class="new-umovi-description-card">
-                       
-                        <h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Всі зміни або додаткові завдання, які не були узгоджені під час початкового обговорення, будуть оцінюватися окремо. Вартість та строки виконання таких робіт обговорюються перед їх початком.</h6>
-                        
-                    </div>
-                </div>
-                <!-- карта -->
-        
-                <!-- карта -->
-                <div class="new-umovi-card">
-        
-                    <div class="umovi-img-conteiner">
-        
-                        <div class="new-umovi-image">
-                            <img src="{% static '/image/Цифра 5.png' %}"  alt="mars-studio">
-                        </div>
-                        <div class="umovi-image-text">
-                            <p>“Способи оплати”</p>
-                        </div>
-                    </div>
-                    <div class="new-umovi-description-card">
-                       
-                        <h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Оплата здійснюється через банківський переказ, платіжні системи (PayPal) або інші узгоджені способи.</h6>
-                        
-                    </div>
-                </div>
-                <!-- карта -->
-        
-                <!-- карта -->
-                <div class="new-umovi-card">
-        
-                    <div class="umovi-img-conteiner">
-        
-                        <div class="new-umovi-image">
-                            <img src="{% static '/image/Цифра 6.png' %}" alt="mars-studio">
-                        </div>
-                        <div class="umovi-image-text">
-                            <p>“Повернення Коштів”</p>
-                        </div>
-                    </div>
-                    <div class="new-umovi-description-card">
-                       
-                        <h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Повернення коштів можливе лише у випадку скасування проекту на початкових етапах, але не пізніше, ніж після виконання 30% робіт. Усі повернення узгоджуються індивідуально.</h6>
-                        
-                    </div>
-                </div>
-                <!-- карта -->
-        
-                <!-- карта -->
-                <div class="new-umovi-card">
-        
-                    <div class="umovi-img-conteiner">
-        
-                        <div class="new-umovi-image">
-                            <img src="{% static '/image/Цифра 7.png' %}" alt="mars-studio">
-                        </div>
-                        <div class="umovi-image-text">
-                            <p>“Конфіденційність і Право Власності”</p>
-                        </div>
-                    </div>
-                    
-                    <div class="new-umovi-description-card">
-                       
-                        <h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Оплачений проект переходить у власність клієнта. Веб-агенція зобов'язується зберігати конфіденційність інформації клієнта.</h6>
-                        
-                    </div>
-                </div>
-                <!-- карта -->
-    
-        
             </div>
         </section>
         <section class="bg-cover d-flex align-items-center text-center text-white" style="background-image: url('{% static "image/umovi.jpg" %}'); min-height: 600px;">
             <div class="container">
             <div class="row justify-content-center">
                 <div>
-                <h5 class="display-4 fw-bold">Mars-озробка Landing Page та малосторінкових сайтів</h5>
+                <h5 class="display-4 fw-bold">Mars<br>Розробка Landing Page та малосторінкових сайтів</h5>
                 </div>
             </div>
             </div>

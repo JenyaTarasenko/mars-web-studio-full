@@ -83,9 +83,9 @@ html {
 .navbar-nav .nav-link {
 
     font-family: Inter, sans-serif;
-    font-weight: 400;
+    font-weight: 800;
     font-size: 16px;
-    color :#CCC5B9 !important; 
+    color :#e4e4e4 !important; 
     padding: 10px; 
     text-align: center; 
 
@@ -2501,6 +2501,29 @@ html {
     height: 600px;
     margin-top: 120px;
 }
+.btn-secondary-mars {
+    background-color: #E77B2D;
+    color:#FAFAFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    width: 280px;
+    height: 60px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+
+}
+.btn-secondary-mars:hover {
+
+    background-color: #000000 ; /* Изменяем цвет фона */
+    transform: scale(1.01);
+
+
+}
 
 
 .btn-center-mars {
@@ -2839,7 +2862,7 @@ html {
 .princip-card-items h5 {
 
     font-weight: 700;
-    font-size: 35px;
+    font-size: 25px;
     line-height: 40px;
     color: #000000;
     font-family: 'Inter', sans-serif; 
@@ -4334,3 +4357,101 @@ font-family: 'Inter', sans-serif; */
     font-size: 14px;
     color: #FAFAFF;
 }
+.card-etapy-text h4{
+    font-size: 30px;
+    color: #000;
+}
+.card-etapy-text-description  h5{
+    font-weight: 300;
+    font-family: Inter, sans-serif;
+    font-size: 15px;
+    color: #000;
+}
+.circle {
+   
+    width: 30px;
+    height: 30px;
+    background-color: rgb(231, 123, 45);
+    border-radius: 50%;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 230px;
+    margin-top: 230px;
+    position: absolute;
+}
+.card-etapy {
+    transition: transform 0.3s ease;
+  }
+  
+.card-etapy:hover {
+    transform: scale(1.03); /* увеличение при наведении */
+}
+  
+.card-etapy:active {
+    transform: scale(1.05); /* чуть большее увеличение при клике */
+}
+.card-team {
+    width: 200px;
+    height: 200px;
+
+}
+.card-team p{
+
+    font-weight: 400;
+    font-size: 12px;
+    color: #080808;
+    line-height: 1.5;
+    font-family: Inter, sans-serif;
+
+}
+
+.circle-image-wrapper {
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* background-color: #ecb289;  */
+    background: linear-gradient(90deg,rgb(255 107 0 / 53%), rgb(255 237 223));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+/* слайдер */
+.logo-marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    background: transparent; 
+
+    
+  }
+  
+  .logo-track {
+    display: inline-flex;
+    animation: scroll 40s linear infinite;
+  }
+  
+  .logo-track img {
+    height: 40px; /* Подгоните под ваш размер */
+    margin: 0 50px;
+  }
+  
+@keyframes scroll {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+}
+/* слайдер */
+  
+

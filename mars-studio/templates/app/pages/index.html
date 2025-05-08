@@ -7,11 +7,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Совместимость с Internet Explorer -->
-    <meta name="description" content="Разработка интерактивных интернет-сайтов, лендингов, многостраничных интернет-магазинов и многофункциональных сайтов с адаптивным и уникальным дизайном.">
+    <meta name="description" content="Разработка интерактивных интернет-сайтов, лендингов, многостраничных интернет-магазинов и многофункциональных сайтов с адаптивным и уникальным дизайном c помощью технологий Django, React">
     <meta name="keywords" content="Разработка сайтов, кроссплатформенные сайты, веб-разработка, адаптивный дизайн, создание сайтов, веб-дизайн, разработка приложений, мобильные сайты">
     <meta name="author" content="Mars design studio">
     <meta name="robots" content="index, follow"> <!-- Даем инструкции для поисковых систем -->
-    <meta name="robots" content="noarchive"> <!-- Запрещаем поисковикам кешировать страницу -->
+
     <meta name="google-site-verification" content="reL_Sx5gy9mocFUEHJA4ULjjJVxoGZUtpqkVioPkrTc" />
 
     
@@ -66,7 +66,7 @@
         "url": "https://www.web-mars.com",
         "logo": "https://www.web-mars.com/static/image/лого.png",
         "name": "Mars design studio",
-        "description": "Разработка интерактивных интернет-сайтов, лендингов и интернет-магазинов.",
+        "description": "Разработка интерактивных интернет-сайтов, лендингов и интернет-магазинов,многостраничных сайтов",
         "contactPoint": [
           {
             "@type": "ContactPoint",
@@ -76,7 +76,7 @@
           },
           {
             "@type": "ContactPoint",
-            "telephone": "+38-097-911-3267",
+            "telephone": "+38-073-160-6731",
             "contactType": "technical support",
             "areaServed": "UA"
           }
@@ -146,6 +146,42 @@
         </div>
       </div>
     </section><!--   секция banner-mobile -->
+    <section class="technology mt-5">
+      <div class="logo-marquee">
+        <div class="logo-track">
+          <img src="{% static 'image/sl11.svg' %}" alt="logo">
+          <img src="{% static 'image/sl1.svg' %}" alt="logo">
+          <img src="{% static 'image/sl2.svg' %}" alt="logo">
+          <img src="{% static 'image/sl10.svg' %}" alt="logo">
+          <img src="{% static 'image/sl3.svg' %}" alt="logo">
+          <img src="{% static 'image/sl4.svg' %}" alt="logo">
+          <img src="{% static 'image/sl5.svg' %}" alt="logo">
+          <img src="{% static 'image/sl22.svg' %}" alt="logo">
+          <img src="{% static 'image/sl6.svg' %}" alt="logo">
+          <img src="{% static 'image/sl12.svg' %}" alt="logo">
+          <img src="{% static 'image/sl13.svg' %}" alt="logo">
+          <img src="{% static 'image/sl14.svg' %}" alt="logo">
+          <img src="{% static 'image/sl15.svg' %}" alt="logo">
+          <img src="{% static 'image/sl11.svg' %}" alt="logo">
+          <img src="{% static 'image/sl1.svg' %}" alt="logo">
+          <img src="{% static 'image/sl18.svg' %}" alt="logo">
+          <img src="{% static 'image/sl2.svg' %}" alt="logo">
+          <img src="{% static 'image/sl10.svg' %}" alt="logo">
+          <img src="{% static 'image/sl3.svg' %}" alt="logo">
+          <img src="{% static 'image/sl4.svg' %}" alt="logo">
+          <img src="{% static 'image/sl21.svg' %}" alt="logo">
+          <img src="{% static 'image/sl5.svg' %}" alt="logo">
+          <img src="{% static 'image/sl-19.svg' %}" alt="logo">
+          <img src="{% static 'image/sl6.svg' %}" alt="logo">
+          <img src="{% static 'image/sl12.svg' %}" alt="logo">
+          <img src="{% static 'image/sl13.svg' %}" alt="logo">
+          <img src="{% static 'image/sl14.svg' %}" alt="logo">
+          <img src="{% static 'image/sl15.svg' %}" alt="logo">
+          <img src="{% static 'image/sl10.svg' %}" alt="logo">
+          <img src="{% static 'image/sl20.svg' %}" alt="logo">
+        </div>
+      </div>
+    </section>
 
     <!--   секция text -->
     <section class="new-text">
@@ -191,6 +227,7 @@
 
     </section>
     <!-- секция карта -->
+
   
   
 
@@ -292,18 +329,6 @@
         {% endif %}
         </div>
     </section>
-    {% comment %} <section class="buton-section ">
-      <div class="container">
-        <div class="row">
-          <div class="button-center-raceta-mars">
-            <button class="btn-center-racketa-mars">
-              <a href="{%  url 'mars:projects-all' %}">Всі проєкти</a>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section> {% endcomment %}
-    <!--   секция карты    <img src="{% static 'image/Кнопка 3.png' %}">-->
 
     <section class="new-text-top mt-2">
       <div class="new-text-top-conteiner">
@@ -319,7 +344,7 @@
                     <!-- Имя -->
                     <h5 class="card-title-design mt-2 text-left text-white">Landing page</h5>
                     <h5 class="card-title-design-price mt-2 text-left text-white">Односторінковий сай</h5>
-                    <h5 class="card-title-price mt-4 text-left"><span class="price-text-small">от</span> 100$</h5>
+                    <h5 class="card-title-price mt-4 text-left"><span class="price-text-small">від</span> 100$</h5>
             
                     <p class="card-text-review text-left mt-4 text-white">У вартість входить розробка унікального дизайну, адаптивна верстка з використанням Bootstrap, CSS, JavaScript, підключення форми зворотного зв’язку, створення адмін-панелі на основі Django (Python), інтеграція з поштою, програмування бекенд-частини, а також викладка сайту на сервер.</p>
        
@@ -330,8 +355,8 @@
                   <img src="{% static 'image/price-planat.svg' %}" class="card-img-bottom" alt="Image" style="height: 100px; width: 100px;">
                   <!-- Имя -->
                   <h5 class="card-title-design mt-2 text-left text-white">Багатосторінкові</h5>
-                  <h5 class="card-title-design-price mt-2 text-left text-white">Сайти бильше 3 сторінок</h5>
-                  <h5 class="card-title-price mt-4 text-left"><span class="price-text-small">от</span> 300$</h5>
+                  <h5 class="card-title-design-price mt-2 text-left text-white">Сайти більше 3 сторінок</h5>
+                  <h5 class="card-title-price mt-4 text-left"><span class="price-text-small">від</span> 300$</h5>
           
                   <p class="card-text-review text-left mt-4 text-white">Багатосторінкові сайти — це унікальний дизайн, адаптивна верстка на Bootstrap і React.js, потужний бекенд на Django (Python) з адмін-панеллю та підключеною базою даних. Ідеальні для блогів, бізнес-сторінок, каталогів, де ви зможете додавати та змінювати контент самостійно.</p>
      
@@ -343,9 +368,33 @@
                   <!-- Имя -->
                   <h5 class="card-title-design mt-2 text-left text-white">Інтернет магазини</h5>
                   <h5 class="card-title-design-price mt-2 text-left text-white">Багатосторінкові сайти</h5>
-                  <h5 class="card-title-price mt-4 text-left"><span class="price-text-small">от</span> 400$</h5>
+                  <h5 class="card-title-price mt-4 text-left"><span class="price-text-small">від</span> 400$</h5>
           
                   <p class="card-text-review text-left mt-4 text-white">Інтернет-магазини — це повноцінні сайти з унікальним дизайном, адаптивною версткою (Bootstrap, React.js) та потужним бекендом на Django (Python).Включають каталог товарів, вивантаження/оновлення товарів, зручну адмін-панель.Кошик покупця, оформлення замовлень, інтеграцію з поштою та платіжними системами</p>
+     
+                </div>
+              </div>
+              <div class="card fixed-card bg-orange" style="width: 300px; height: 500px; border-radius: 50px;">
+                <div class="card-body">
+                  <img src="{% static 'image/paints.svg' %}" class="card-img-bottom" alt="Image" style="height: 100px; width: 100px;">
+                  <!-- Имя -->
+                  <h5 class="card-title-design mt-2 text-left text-white">Лого, брендбук</h5>
+                  <h5 class="card-title-design-price mt-2 text-left text-white">Логотипи брендбуки колажи</h5>
+                  <h5 class="card-title-price mt-4 text-left"><span class="price-text-small">від</span> 40$</h5>
+          
+                  <p class="card-text-review text-left mt-4 text-white">Логотип — основа, яка відображає суть вашого бізнесу ,характер і цінності  роблячи його впізнаваним серед конкурентів. Брендбук — набір правил використання логотипу, кольорів, шрифтів — для єдиного стилю на всіх платформах,креативні візуальні композиції для презентацій, сайтів, соцмереж.Це все допомагає сформувати професійний імідж і викликати довіру у клієнтів.</p>
+     
+                </div>
+              </div>
+              <div class="card fixed-card bg-orange" style="width: 300px; height: 500px; border-radius: 50px;">
+                <div class="card-body">
+                  <img src="{% static 'image/seo-new.svg' %}" class="card-img-bottom" alt="Image" style="height: 100px; width: 100px;">
+                  <!-- Имя -->
+                  <h5 class="card-title-design mt-2 text-left text-white">SEO та реклама</h5>
+                  <h5 class="card-title-design-price mt-2 text-left text-white">Допомагаємо бути помітними </h5>
+                  <h5 class="card-title-price mt-4 text-left"><span class="price-text-small">від</span> 50$</h5>
+          
+                  <p class="card-text-review text-left mt-4 text-white">Запускаємо рекламні кампанії, які приводять цільову аудиторію на ваш сайт,  підключаємо аналітику, відстежуємо поведінку користувачів і вдосконалюємо стратегію просування вашого сайту допомогаємо просуванню веб застосунків. Результат — більше трафіку, більше заявок, зростання вашого бізнесу.</p>
      
                 </div>
               </div>
@@ -565,7 +614,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div>
-            <h5 class="display-4 fw-bold">Ми — студія повного циклу веброзробки.</h5>
+            <h5 class="display-4 fw-bold">Mars — студія повного циклу веброзробки.</h5>
           </div>
         </div>
       </div>
@@ -649,6 +698,46 @@
 
     </section>
     <!--   секция text -->
+    <section class="new-text-top mt-2">
+      <div class="new-text-top-conteiner">
+        <h5 class="new-text-block">Команда</h5>
+      </div>
+    </section>  
+    <section  class="mt-4">
+      <div class="container">
+        <div class="row justify-content-center  align-items-center">
+    
+          <div class="card-team d-flex flex-column justify-content-center align-items-center">
+            <div class="circle-image-wrapper mx-auto">
+              <img src="{% static 'image/rozrobnik.png' %}" alt="mars-team-logo"></img>
+             
+            </div>
+            <p class="mt-3">UI-UX</p>
+            
+          </div>
+          <div class="card-team d-flex flex-column justify-content-center align-items-center">
+            <div class="circle-image-wrapper mx-auto">
+              <img src="{% static 'image/ui.png' %}" alt="mars-team-logo"></img>
+            </div>
+            <p class="mt-4">Developer</p>
+          </div>
+          <div class="card-team d-flex flex-column justify-content-center align-items-center">
+            <div class="circle-image-wrapper mx-auto">
+              <img src="{% static 'image/seo.png' %}" alt="mars-team-logo"></img>
+            </div>
+            <p class="mt-4">SEO</p>
+          </div>
+          <div class="card-team d-flex flex-column justify-content-center align-items-center">
+            <div class="circle-image-wrapper mx-auto">
+              <img src="{% static 'image/graphic.png' %}" alt="mars-team-logo"></img>
+            </div>
+            <p class="mt-3">Graphic</p>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+   
     <div class="social-icons-fixed">
       <div class="social-circle">
         <a href="tel:+380996072979" target="_blank">
