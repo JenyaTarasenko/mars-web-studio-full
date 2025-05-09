@@ -127,7 +127,7 @@
                 </div>
   
                 <div class="card-context-title">
-                  <h5 class="vizi-text">{{ item.name }}</h5>
+                  <h5 class="vizi-text">{{ item.name|truncatechars:18  }}</h5>
                 </div>
                 <div class="card-context-title_items">
                 <h6>{{ item.description|truncatewords:25 }}</h6>
