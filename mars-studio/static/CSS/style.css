@@ -1712,15 +1712,15 @@ html {
 }
 .opisanie-url {
 
-    width: 100%; /* длинна меняется взависимости от экрана*/
+    /* width: 100%;
     max-height: 100px;
     margin-top: 20px;
-    padding: 30px
+    padding: 30px */
 
 
 }
 .opisanie-url a {
-    color: #FFCC00; /* жёлтый */
+    color: #E77B2D; /* жёлтый */
     text-decoration: underline;
 }
 
@@ -1732,27 +1732,14 @@ html {
     font-family: 'Inter', sans-serif;
 } */
 
-.opisanie-url a {
 
-    font-weight: 600;
-    font-size: 25px;
-   
-    color:#1915E4;
-    ;
-
-
-}
 
 /* -------------------------------detail-opisanie-------------------------------------- */
 
 
-.abaut-section-test{
+.text-detail-new{
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+   
     margin-top: 90px;
 
 }
@@ -2932,11 +2919,13 @@ html {
 .about-page_conteiner-title p {
 
     font-weight: 300;
-    font-size: 20px;
+    font-size: 16px;
     /* line-height: 40px; */
     /* letter-spacing: 1px; */
     color: #252422;
     font-family: 'Inter', sans-serif; 
+
+
     margin-top: 30px;
 
 }
@@ -3984,7 +3973,7 @@ font-family: 'Inter', sans-serif; */
 .new-umovi-description h2 {
 
     font-family: Inter, sans-serif; 
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 300;
     color: #000000;
     line-height: 1.1; /* Удобочитаемость текста */
@@ -4457,7 +4446,7 @@ font-family: 'Inter', sans-serif; */
 
 .text-description-old {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     color: #313131;
     line-height: 1.5;
     font-family: Inter, sans-serif;

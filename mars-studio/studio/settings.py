@@ -18,7 +18,7 @@ SITE_URL = 'https://www.web-mars.com'
 
 ALLOWED_HOSTS = ['web-mars.com', 'www.web-mars.com', '127.0.0.1', 'localhost']
 
-DEBUG = True
+DEBUG = False
 SECURE_SSL_REDIRECT = True 
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
